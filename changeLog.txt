@@ -1,0 +1,13 @@
+**06/12/2015 update by Rex Twedt
+ - Updated sitemap.xml to reflect organizational changes to website
+
+**06/11/2015 update by Rex Twedt
+Thanks to Kunal, Ruchi, and Lauren for your help and hard work!
+ - Added table to 'Courses' section summarizing the courses offered by CodeAbode, update main.css to style the table
+ - Added Database storage for form submissions, update form.php to connect to this database
+ - Added 2 additional sections to form ('day/night classes' and 'desired start time'), update form.php to sanitize/check this input
+ - Added blog links to the social media section on desktop and mobile layouts
+ - Move all unnecessary files to the 'old_pages' folder, this can be deleted at some point when it is confirmed the site is working
+ - Fix issue with main menu resizing
+ - Embed promo video with Vimeo at top of index.html
+ - Add Fox News story to news.html, embed video

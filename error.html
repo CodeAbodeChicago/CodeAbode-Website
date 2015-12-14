@@ -1,0 +1,174 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<title>CodeAbode</title>
+	<meta charset="utf-8">
+	<!--<meta http-equiv="X-UA-Compatible" content="chrome=1">-->
+	<meta name="description" content="CodeAbode is a new Chicago-based code academy, designed to turn students into web and mobile app developers.">			
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+	  JQUERY LIBRARY & MODERNIZR
+	 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+	<script src='js/modernizr.js'></script>
+
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+	  Legacy Browser CSS3 Polyfill & CSS
+	 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<script src='js/html5shiv.js'></script>
+	<!--[if lt IE 9]>
+	<script type='text/javascript' src="js/html5shiv.js"></script>
+	<script type='text/javascript' src="js/placeholder_polyfill.jquery.min.js"></script>
+	<link rel='stylesheet' type='text/css' href='css/placeholder_polyfill.min.css' />
+	<![endif]-->
+
+	<script src="js/cssfx.min.js"></script>
+	<link rel="stylesheet" href='css/main.css' class='cssfx'>
+
+	<!--script for form validation-->
+	<script src="js/registrationFormHandler.js"></script>
+
+		
+		
+	<!--Favicon-->
+	<link link rel="icon" type="image/ico" href="favicon.ico">
+      
+	  
+	<!--Google Analytics-->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-63298538-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</head>
+
+<body>
+	<div id='page'>
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+		  HEADER (fixed left bar)
+		 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<header>
+			<div class="display">
+				<h1></h1> 
+				<a href='index.html' class="smoothScroll"> <img src='img/logo_ca.png' width='90%'alt='CODE ABODE logo' /> </a> 
+				<!-- <a href='#home' class="smoothScroll"> <img src='img/logo_ca.png' height='125'alt='CODE ABODE logo' /> </a> -->
+				<hr2 /> <p id='pronounciation'> <!-- CodeAbode<br /> -->DECODING YOUR FUTURE</p>
+
+				<nav>
+					<br />
+					<div class='normalmenu'>
+						<p id='linkstatement'>
+						<a href='index.html#about' class="smoothScroll">About</a> 
+						<br />
+						<a href='index.html#structure' class="smoothScroll" text-decoration='none'>Structure</a>
+						<br />
+						<a href='index.html#instructors' class="smoothScroll" text-decoration='none'>Instructors</a>
+						<br />
+						<a href='index.html#coursesection' class="smoothScroll" text-decoration='none'>Courses</a> 
+						<br />
+						<a href='index.html#students' class="smoothScroll" text-decoration='none'>Student Profile</a>
+						<br />
+						<a href='index.html#features' class="smoothScroll" text-decoration='none'>Features</a>
+						<br />
+						<a href='index.html#apply' class="smoothScroll" text-decoration='none'>Apply</a>
+						<br />
+						<a href='news.html' target="blank" class="smoothScroll" text-decoration='none'>News</a>
+						</p>
+					</div>
+				</nav>
+
+
+				<div class='contactinfo'>	
+					<a href='https://www.facebook.com/CodeAbode' target="_blank" style="text-decoration:none"> <img src='img/facebook_white4.png' onmouseover="this.src='img/facebook_green2.png'" 
+					onmouseout="this.src='img/facebook_white4.png'" class="smoothScroll" width='30px' alt="CodeAbode facebook page"/> </a> 
+					<a href='https://www.twitter.com/codeabode_chi' target="_blank" style="text-decoration:none"> <img src='img/twitter_white.png' onmouseover="this.src='img/twitter_green2.png'" 
+					onmouseout="this.src='img/twitter_white.png'" class="smoothScroll" width='27px' alt="CodeAbode twitter page"/> </a> 
+					<a href='http://nmhmchicago.org/' target="_blank" style="text-decoration:none"> <img src='img/nmhmc.png' title='NMHM Chicago' class="smoothScroll" padding-left='5px' width='30px' 
+					alt="National Museum of Health and Medicine Chicago"/> </a> 
+					</br>
+					</br>
+					CONTACT US: </br>
+					<a href="mailto:info@codeabode.com?subject=CodeAbode Inquiry" class="smoothScroll" text-color='white' line-height='200px'>scott@codeabode.com</a> 
+					</br>Scott at 630-235-6282
+				</div>
+			</div>
+
+			<div class="mobilelogo">
+					<a href='index.html' class="smoothScroll"> <img src='img/logo_ca.png' width='100px'alt='CODE ABODE logo' /> </a> 
+			</div>
+
+			<div class="mobiledisplay">
+				<ul class="nav">
+					<li><a href='javascript:void()' id='drop' onclick=dropdown()>Menu <div class="arrowdown" id="arrow"></div><!--<img src="img/menu.png" width="15px"/>--></a>
+						<ul id='dropmenu'>
+							<li><a href='index.html#about' class="smoothScroll" text-decoration='none'>About</a> </li>
+							<li><a href='index.html#structure' class="smoothScroll" text-decoration='none'>Structure</a></li>
+							<li><a href='index.html#instructors' class="smoothScroll" text-decoration='none'>Instructors</a></li>
+							<li><a href='index.html#coursesection' class="smoothScroll" text-decoration='none'>Courses</a> </li>
+							<li><a href='index.html#students' class="smoothScroll" text-decoration='none'>Student Profile</a></li>
+							<li><a href='index.html#features' class="smoothScroll" text-decoration='none'> Features</a> </li>
+							<li><a href='index.html#apply' class="smoothScroll" text-decoration='none'> Apply</a> </li>
+							<li><a href='news.html' target="blank" class="smoothScroll" text-decoration='none'>News</a> </li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<script> 
+				function dropdown()
+					{
+						if(document.getElementById(window.event.srcElement.id+'menu').style.display=='block'){
+						   document.getElementById(window.event.srcElement.id+'menu').style.display='none';
+						   document.getElementById('arrow').className = 'arrowdown';
+						}
+						else{ 
+						 document.getElementById(window.event.srcElement.id+'menu').style.display='block';
+						 document.getElementById('arrow').className = 'arrowup';
+					 }
+				};
+			</script>
+				
+				
+			<!--icons for social media links-->
+			<div class="mobilecontact">	
+				<a href='https://www.facebook.com/CodeAbode' target="_blank" style="text-decoration:none"> <img src='img/facebook_white4.png' onmouseover="this.src='img/facebook_green2.png'" 
+				onmouseout="this.src='img/facebook_white4.png'" class="smoothScroll" width='30px' alt="CodeAbode facebook page"/> </a> 
+				<a href='https://www.twitter.com/codeabode_chi' target="_blank" style="text-decoration:none"> <img src='img/twitter_white.png' onmouseover="this.src='img/twitter_green2.png'" 
+				onmouseout="this.src='img/twitter_white.png'" class="smoothScroll" width='27px' alt="CodeAbode twitter page"/> </a> 
+				<a href='http://nmhmchicago.org/' target="_blank" style="text-decoration:none"> <img src='img/nmhmc.png' title='NMHM Chicago' class="smoothScroll" padding-left='5px' width='30px' 
+				alt="National Museum of Health and Medicine Chicago"/> </a> 
+
+				 <font color="white"><b>630-235-6282 </b></font>
+				<a href="mailto:scott@codeabode.com?subject=CodeAbode Inquiry" class="smoothScroll" text-color='white' line-height='200px'><img src='img/mail.png' 
+				onmouseover="this.src='img/mail_green.png'" 
+				onmouseout="this.src='img/mail.png'" class="smoothScroll" width='30px' alt="email CodeAbode"/></a> 
+			   
+			
+			</div>
+		</header>
+
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+		  #main section
+		  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<section class="swiper-slide" id='home' data-speed="0" data-type="background" data-offsetY="0%" data-Xposition="0%" >
+			<!--#LEFTCOLUMN-->
+			<div class='leftcolumn'></div>
+			<!--#RIGHTCOLUMN-->
+			<div class='rightcolumn'> 
+				<h2> Error in Registration </h2>
+				<hr /> <!--CLEARFLOAT--><div class='clearfloat'></div>
+				<p class='lead'> Your form was not successfully submitted, please try again! <br />
+					<a href = "javascript:history.back()" class="smoothScroll" >Go Back</a>
+				</p> 
+			</div>
+		</section>
+	</div><!--#page-->
+</body>
+</html>

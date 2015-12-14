@@ -1,0 +1,867 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<title>CodeAbode - Chicago Code School</title>
+	<meta charset="utf-8">
+	<!--<meta http-equiv="X-UA-Compatible" content="chrome=1">-->
+	<meta name="description" content="CodeAbode is a new Chicago-based code academy, designed to turn students into web and mobile app developers.">			
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+	  JQUERY LIBRARY & MODERNIZR
+	 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+	<script src='js/modernizr.js'></script>
+
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+	  Legacy Browser CSS3 Polyfill & CSS
+	 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<script src='js/html5shiv.js'></script>
+	<!--[if lt IE 9]>
+	<script type='text/javascript' src="js/html5shiv.js"></script>
+	<script type='text/javascript' src="js/placeholder_polyfill.jquery.min.js"></script>
+	<link rel='stylesheet' type='text/css' href='css/placeholder_polyfill.min.css' />
+	<![endif]-->
+
+	<script src="cssfx.min.js"></script>
+	<link rel="stylesheet" href='css/main.css' class='cssfx'>
+
+	<!--script for form validation-->
+	<script src="js/registrationFormHandler.js"></script>
+
+	<!--Favicon-->
+	<link link rel="icon" 
+		  type="image/ico" 
+		  href="favicon.ico">
+		  
+	<!--Google Analytics-->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-63298538-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</head>
+
+
+<body>
+<!--This is the main_page with scrolling!-->
+<div id='page'>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  HEADER (fixed left bar)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<header>
+<div class="display">
+	<h1></h1> 
+	<a href='#home' class="smoothScroll"> <img src='img/logo_ca.png' width='90%'alt='CODE ABODE logo' /> </a> 
+	<!-- <a href='#home' class="smoothScroll"> <img src='img/logo_ca.png' height='125'alt='CODE ABODE logo' /> </a> -->
+	<hr2 /> <p id='pronounciation'> <!-- CodeAbode<br /> -->DECODING YOUR FUTURE</p>
+
+	<nav>
+		<br />
+		<div class='normalmenu'>
+			<p id='linkstatement'>
+			<a href='#about' class="smoothScroll">About</a> 
+			<br />
+			<a href='#structure' class="smoothScroll" text-decoration='none'>Structure</a>
+			<br />
+			<a href='#instructors' class="smoothScroll" text-decoration='none'>Instructors</a>
+			<br />
+			<a href='#coursesection' class="smoothScroll" text-decoration='none'>Courses</a> 
+			<br />
+			<a href='#students' class="smoothScroll" text-decoration='none'>Student Profile</a>
+			<br />
+			<a href='#features' class="smoothScroll" text-decoration='none'>Features</a>
+			<br />
+			<a href='#apply' class="smoothScroll" text-decoration='none'>Apply</a>
+			<br />
+			<a href='news.html' target="blank" class="smoothScroll" text-decoration='none'>News</a>
+			</p>
+		</div>
+	</nav>
+
+
+	<div class='contactinfo'>	
+		<a href='https://www.facebook.com/CodeAbode' target="_blank" style="text-decoration:none"> <img src='img/facebook_white4.png' onmouseover="this.src='img/facebook_green2.png'" 
+		onmouseout="this.src='img/facebook_white4.png'" class="smoothScroll" width='30px' alt="CodeAbode facebook page"/> </a> 
+		<a href='https://www.twitter.com/codeabode_chi' target="_blank" style="text-decoration:none"> <img src='img/twitter_white.png' onmouseover="this.src='img/twitter_green2.png'" 
+		onmouseout="this.src='img/twitter_white.png'" class="smoothScroll" width='27px' alt="CodeAbode twitter page"/> </a> 
+		<a href='http://nmhmchicago.org/' target="_blank" style="text-decoration:none"> <img src='img/nmhmc.png' title='NMHM Chicago' class="smoothScroll" padding-left='5px' width='30px' 
+		alt="National Museum of Health and Medicine Chicago"/> </a> 
+		</br>
+		</br>
+		CONTACT US: </br>
+		<a href="mailto:info@codeabode.com?subject=CodeAbode Inquiry" class="smoothScroll" text-color='white' line-height='200px'>scott@codeabode.com</a> 
+		</br>Scott at 630-235-6282
+	</div>
+</div>
+
+
+	<!-- </nav>
+	^replaced id, old = id='headercontact' -->
+
+	<div class="mobilelogo">
+			<a href='#home' class="smoothScroll"> <img src='img/logo_ca.png' width='100px'alt='CODE ABODE logo' /> </a> 
+	</div>
+
+	<div class="mobiledisplay">
+		<ul class="nav">
+		<li><a href='javascript:void()' id='drop' onclick=dropdown()>Menu <div class="arrowdown" id="arrow"></div><!--<img src="img/menu.png" width="15px"/>--></a>
+			<ul id='dropmenu'>
+				<li><a href='#about' class="smoothScroll" text-decoration='none'>About</a> </li>
+				<li><a href='#structure' class="smoothScroll" text-decoration='none'>Structure</a></li>
+				<li><a href='#instructors' class="smoothScroll" text-decoration='none'>Instructors</a></li>
+				<li><a href='#coursesection' class="smoothScroll" text-decoration='none'>Courses</a> </li>
+				<li><a href='#students' class="smoothScroll" text-decoration='none'>Student Profile</a></li>
+				<li><a href='#features' class="smoothScroll" text-decoration='none'> Features</a> </li>
+				<li><a href='#apply' class="smoothScroll" text-decoration='none'> Apply</a> </li>
+				<li><a href='news.html' target="blank" class="smoothScroll" text-decoration='none'>News</a> </li>
+			</ul>
+		</li>
+		</ul>
+	</div>
+
+	<script> 
+	function dropdown()
+	        {
+            	if(document.getElementById(window.event.srcElement.id+'menu').style.display=='block'){
+             	   document.getElementById(window.event.srcElement.id+'menu').style.display='none';
+             	   document.getElementById('arrow').className = 'arrowdown';
+            	}
+            	else{ 
+               	 document.getElementById(window.event.srcElement.id+'menu').style.display='block';
+               	 document.getElementById('arrow').className = 'arrowup';
+           	 }
+        	};
+	</script>
+	
+	
+	<!--icons for social media links-->
+	<div class="mobilecontact">	
+		<a href='https://www.facebook.com/CodeAbode' target="_blank" style="text-decoration:none"> <img src='img/facebook_white4.png' onmouseover="this.src='img/facebook_green2.png'" 
+		onmouseout="this.src='img/facebook_white4.png'" class="smoothScroll" width='30px' alt="CodeAbode facebook page"/> </a> 
+		<a href='https://www.twitter.com/codeabode_chi' target="_blank" style="text-decoration:none"> <img src='img/twitter_white.png' onmouseover="this.src='img/twitter_green2.png'" 
+		onmouseout="this.src='img/twitter_white.png'" class="smoothScroll" width='27px' alt="CodeAbode twitter page"/> </a> 
+		<a href='http://nmhmchicago.org/' target="_blank" style="text-decoration:none"> <img src='img/nmhmc.png' title='NMHM Chicago' class="smoothScroll" padding-left='5px' width='30px' 
+		alt="National Museum of Health and Medicine Chicago"/> </a> 
+
+		 <font color="white"><b>630-235-6282 </b></font>
+		<a href="mailto:scott@codeabode.com?subject=CodeAbode Inquiry" class="smoothScroll" text-color='white' line-height='200px'><img src='img/mail.png' 
+		onmouseover="this.src='img/mail_green.png'" 
+		onmouseout="this.src='img/mail.png'" class="smoothScroll" width='30px' alt="email CodeAbode"/></a> 
+	   
+	
+	</div>
+</header>
+
+
+
+
+	
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  #HOME section
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section class="swiper-slide" id='home' data-speed="0" data-type="background" data-offsetY="0%" data-Xposition="0%" >
+	<!--#LEFTCOLUMN-->
+	<div class='leftcolumn'></div>
+	<!--#RIGHTCOLUMN-->
+	<div class='rightcolumn'> 
+	<p class='leadhome'>
+	</br>
+	<b>Learn to code mobile apps in 14 weeks. </b>
+	</br>
+	Health and Fitness Focus. 
+	</br>
+	Start a company, get a job in health tech, retrain quickly. 
+	</br>
+	Friendly environment, great teachers. 
+	</br>
+	Boot camp (day) and night classes available. 
+	</p> 
+	<p class='leadhome'>
+	<a href='#apply' class="smoothScroll" >APPLY ONLINE</a>
+	<br> <br>
+	
+<!--	<video id="video" preload controls loop>
+	   <source src="ca_promo2.mp4">
+	   <source src="ca_promo2.webm" type="video/webm">
+	   <source src="ca_promo.ogg" type="video/ogg">
+	   Your browser does not support the video tag.
+	</video>-->
+	
+	
+	<iframe src="https://player.vimeo.com/video/130243831" width="500" height="280" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</p> 		
+	
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</div>
+	<!--PARALLAX CIRCLE	-->
+	<div class='icon_first' data-type="sprite" data-Xposition="82%" data-offsetY="100" data-speed="2" >gray chip</div>
+	<div class='icon_second' data-type="sprite" data-Xposition="95%" data-offsetY='40' data-speed="10" >yellow note</div>
+	<div class='icon_third' data-type="sprite" data-Xposition="98%" data-offsetY="550" data-speed=".6" >blue power</div>
+	<div class='icon_fourth' data-type="sprite" data-Xposition="85%" data-offsetY="840" data-speed="1" >yellow medical</div>
+
+
+	<!--CLEARFLOAT--><div class='clearfloat'></div>
+</section>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  #About section
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<section class="swiper-slide" id='about' data-speed="0" data-type="background" data-offsetY="0%" data-Xposition="0%" >
+	<!--#LEFTCOLUMN-->
+	<div class='leftcolumn'></div>
+	<!--#RIGHTCOLUMN-->
+	<div class='rightcolumn'> 
+	<h2> About </h2>
+	<hr /> <!--CLEARFLOAT--><div class='clearfloat'></div>
+	<p class='lead'>We are a new Chicago-based code academy, designed to turn students into web and mobile app developers. 
+	We offer both ‘boot camp’ and part-time options. The bootcamp runs 14 weeks – 7 courses that all build on each other in increments of 2 weeks each. 
+	In the part time program, classes meet twice a week for 10 weeks – about twice as much class time as a university quarter course.</p>
+	</br>
+	<p class='lead'> CodeAbode is a division of the National Museum of Health and Medicine Chicago (NMHM Chicago). 
+	The mission of the National Museum of Health and Medicine Chicago is to promote knowledge of health and medicine and to encourage scientific research and innovation. 
+	We aim to engage the public through cutting-edge technologies and digital exhibitions, and to serve as a locus of education for scholars, innovators, students, educators 
+	and the general public.  As a part of the museum, CodeAbode's niche in the marketplace will be our focus on health, medicine and fitness applications. 
+	Students do not need to have a health or medicine background, but our classroom examples will have that focus. <br />
+	<a href='http://nmhmchicago.org/' class="smoothScroll" target="_blank">Learn more about NMHM Chicago</a>
+	</br>
+	<a href='#apply' class="smoothScroll" >APPLY ONLINE</a>
+	</p> 
+	</div>
+	<!--PARALLAX CIRCLE	-->
+	<div class='icon_first' data-type="sprite" data-Xposition="82%" data-offsetY="100" data-speed="2" >gray chip</div>
+	<div class='icon_second' data-type="sprite" data-Xposition="95%" data-offsetY='40' data-speed="10" >yellow note</div>
+	<div class='icon_third' data-type="sprite" data-Xposition="98%" data-offsetY="550" data-speed=".6" >blue power</div>
+	<div class='icon_fourth' data-type="sprite" data-Xposition="85%" data-offsetY="840" data-speed="1" >yellow medical</div>
+
+	<!--PARALLAX CIRCLE static-->
+	<div class='ipad_first' >gray chip</div>
+	<div class='ipad_second'>yellow note</div>
+	<div class='ipad_third'>blue power</div>
+	<div class='ipad_fourth'>yellow medical</div>
+
+	<!--CLEARFLOAT--><div class='clearfloat'></div>
+</section>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  #Structure section
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<section class="swiper-slide" id='structure' data-speed="0" data-type="background" data-offsetY="0%" data-Xposition="0%">
+	<!--#LEFTCOLUMN-->	
+	<div class='leftcolumn'></div>
+	<!--#RIGHTCOLUMN-->
+	<div class='rightcolumn'> 
+	<h2>Structure</h2>
+	<hr /><!--CLEARFLOAT--><div class='clearfloat'></div>
+	<p class='lead'>At CodeAbode, we believe that you learn by doing, especially when it comes to programming and designing mobile apps. 
+	We will dedicate lots of class time to actually programming – a lab environment if you will. Our instructors are coaches, coaches who are also 
+	developers and have a passion to teach as well. Our bootcamp schedule includes an hour-long midday break, 
+	where students can eat lunch and network. When you are at CodeAbode, we want you to learn by doing.
+	 </p><br />
+	<p class='lead'> Each student can come with an app that you want to build – it can be a game, or a product idea, or a mobile version of software 
+	that you use at work. But we will also have apps that you can build based on our core mission of health and medicine. We have a fitness app for 
+	you to clone, we have biomedical visualization apps, and we also have a mobile analytics app based on data from an EHR system. </p> <br />
+	<p class='lead'> We will put everyone in 4-5 person teams so that you can learn from your fellow students. But everyone will have a different 
+	part to play so that we make sure that everyone is learning the techniques as deeply as possible. </p> <br />
+	<p class='lead'> Every class larger than 20 students will have assistant instructors as well as the lead instructor so that the coaching will 
+	be intense. We have a lot to teach in the 420 course hours, so we want every minute to count.</p> <br />
+	<p class='lead'>All classes will be taught at the National Museum of Health and Medicine Chicago, so at breaks you can mingle in the exhibits, network with the 
+	interns or staff of the Museum, as well as with your fellow classmates at the café, or in the auditorium space. Many students will stay after 
+	class to work on projects or discuss ideas with their classmates. The building is open 24/7, so we encourage you to get immersed. <br />
+	
+	<a href='#apply' class="smoothScroll" >APPLY ONLINE</a>	
+	</p>
+	<br /><br /> 
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	</div>
+	
+</section>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  #Instructors section
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<section class="swiper-slide" id='instructors' data-speed="0" data-type="background" data-offsetY="0%" data-Xposition="0%">
+	<!--#LEFTCOLUMN-->	
+	<div class='leftcolumn'></div>
+	<!--#RIGHTCOLUMN-->
+	<div class='rightcolumn'> 
+	<h2>Instructors</h2>
+	<hr /><!--CLEARFLOAT--><div class='clearfloat'></div>
+	<p class='lead'> <b>Administrators</b>
+	</p> <br />
+	<div class='biopics'><img src='img/Mike_CodeAbode.jpg' width='100%'alt='Mike Doyle' /> </div>
+	<p class='bio'><b>Mike Doyle</b> is the Founder and Chairman of the National Museum of Health + Medicine – Chicago (Parent of CodeAbode). Mike is a serial inventor, 
+	having created and patented key technologies for the internet and for data security. He is also a scientist and expert in both cell biology and biomedical visualization. 
+	He is an active philanthropist and angel investor. He has a Ph.D. from Illinois.
+	 </p><br />
+	<div class='biopics'><img src='img/Scott_CodeAbode.jpg' width='100%'alt='Mike Doyle' /> </div>
+	<p class='bio'> <b>Scott Harper</b> is the Executive Director of CodeAbode. He comes to CodeAbode from a career spent as a serial entrepreneur, an academic, a public servant, 
+	and an IT expert specializing in application software. He is excited that CodeAbode will benefit students by training them for cutting-edge jobs, and will also benefit 
+	the public looking to attain premium jobs. Scott has a Ph.D. from Oxford and an MBA from Chicago. 
+	</p> <br />
+	<p class='lead'> <b>Instructors</b>
+	</p> <br />
+	<div class='biopics'><img src='img/Abraham_CodeAbode.jpg' width='100%'alt='Mike Doyle' /> </div>
+	<p class='bio'> <b>Abraham Avnisan</b> is a poet and artist with a passion for teaching. He is a graduate of the Art and Technology program at the School of the Art Institute of Chicago. 
+	Abe's poetry has been published in literary journals and his art installations have been featured in several galleries and museums. He has developed amazing apps that combine art, 
+	tech and science in novel ways.
+	</p> <br />
+	<div class='biopics'><img src='img/Michael_CodeAbode.jpg' width='100%'alt='Mike Doyle' /> </div>
+	<p class='bio'> <b>Michael Hadley</b> is another multi-talented teacher. An accomplished visual artist with an MFA from the School of the Art Institute in Chicago, Mike also has a 
+	MS in Computational Neuroscience from Berkeley, and has taught experimental game design to middle schoolers. He also loves to teach!
+	</p> <br />
+	</br>
+	<div class='biopics'><img src='img/Ruchi_CodeAbode.jpg' width='100%'alt='Mike Doyle' /> </div>
+	<p class='bio'><b>Ruchi Chhabra</b> is a multi-talented software engineer. She knows the marketplace, having worked for Tata Consultancy and for an Online Testing company. 
+	Ruchi knows a huge number of computer languages and is an expert in Java and Swift. She is working on her masters in Computer Science, and already has her BS in Computer 
+	Science from Indira Gandhi Institute of Technology.
+	</p> <br />
+	<div class='biopics'><img src='img/Kunal_CodeAbode.jpg' width='100%'alt='Mike Doyle' /> </div>
+	<p class='bio'><b>Kunal Khona</b> is already a leading app developer, having created two different sets of apps and the companies that support them. Kunal is an Android and Java expert, 
+	and is currently working on watch and other wearable applications. He is working on his masters in Computer Science at UIC. His BS is from the University of Mumbai.
+	 </p> <br />
+	 </br>
+	 <div class='biopics'><img src='img/Kshitij_CodeAbode.jpg' width='100%'alt='Mike Doyle' /> </div>
+	 <p class='bio'> <b>Kshitij Gautam</b> is a true scientist with a flair for teaching. He is working on his doctorate in Computer Science and has developed some amazing applications, 
+	 including one that automatically creates tests on any subject by combing through Wikipedia and eBooks. Another application auto-flags posts on Zomato for swear words. 
+	 He has also created camera filters and compression algorithms. His BA is from VIT University in Vellore, India.
+	 <br />
+	</p>
+	<p class='lead'>
+	<a href='#apply' class="smoothScroll" >APPLY ONLINE</a>	
+	</p>
+	<br /><br /> 
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	</div>
+	
+	
+	<!--PARALLAX CIRCLES-->
+	<div class='icon_first' data-type="sprite" data-Xposition="99%" data-offsetY='155' data-speed="7" >teal mobile</div>
+	<div class='icon_second' data-type="sprite" data-Xposition="95%" data-offsetY='1700 ' data-speed=".9" >yellow gear</div>
+	<div class='icon_third' data-type="sprite" data-Xposition="83%" data-offsetY='1150 ' data-speed=".9" >gray molecule</div>
+	<div class='icon_fourth' data-type="sprite" data-Xposition="99%" data-offsetY="800" data-speed="3" >yellow imac</div>
+
+	
+	<!--CLEARFLOAT--><div class='clearfloat'></div>
+	
+</section>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ #Courses section
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<section class="swiper-slide" id='coursesection' data-speed="0" data-type="background" data-offsetY="0%" data-Xposition="0%" >
+	<!--#LEFTCOLUMN-->	
+	<div class='leftcolumn'> 
+	</div>
+	<!--#RIGHTCOLUMN-->
+	<div class='rightcolumn'> 
+	<h2>Courses</h2>
+	<hr /><!--CLEARFLOAT--><div class='clearfloat'></div>
+	<p class='lead'>
+	<b> Bootcamp: </b> </br>
+	Session 1: June 1 - September 4 </br> 
+	Session 2: July 6 - October 9 </br>
+	Session 3: August 3 - November 6 </br> 
+	Monday - Friday</br> 
+	10am - 5pm (with an hour-long networking lunch break) </br>
+	$7,000
+	</br>
+	</br>
+	<b> Individual Courses: </b> </br>
+	July 6 - September 11 </br>
+	Two nights a week </br>
+	6 - 9 pm </br>
+	$1,000 per course 
+	</br>
+	</br>
+	</br>
+	<b> Course 1: HTML5 and CSS3</b>
+	</br>
+	Bootcamp or Individual Course starting July 6
+	</br>
+	Here you will learn how to set up a web site using the latest generation of HTML (hypertext markup language) and CSS (cascading style sheets). 
+	These are the foundational authoring tools for the web, supported by all modern web browsers. We will have sample web sites for you to author, and through the class you 
+	will begin to build a portfolio of your work. The basics are quite easy to master, and with our help you will be able to create dynamic web sites to show off your newly-learned skills.
+	<br /> 
+	<br />
+	<b> Course 2: Phone Apps/Introduction to Programming </b> 
+	</br>
+	Bootcamp or Individual Course starting July 6 
+	</br>
+	This course will focus on getting you ready to really program, by teaching the basics of programming using JavaScript. This is a language that much mobile development uses, 
+	especially for accessing databases that you will continue to learn and extend across the sequence. We will also be introducing some tools that allow you to create once, 
+	and publish apps across platforms. In addition to supercharging your portfolio right away and getting you excited about how fast you are creating meaningful apps that work 
+	both on the web and mobile devices, you will expand your understanding of many of the concepts you will master at a deeper level in future courses. At the end of this module, 
+	you’ll be able to publish on the AppStore and GooglePlay.
+	<br /> 
+	<br />
+	<b> Course 3: Server-side Integration  </b>
+	</br>
+	Bootcamp only. The individual course will begin at a later date. 
+	</br>
+	This course is where you will start to focus on where many apps find their real value – integrating with existing data bases and being able to tap into the power of 
+	servers that can be located anywhere in the world. You got a taste of this already in the Mobile Web Apps course, but now we are going to add the dynamics of large data sets. 
+	The most widely used programming language for integrating remote data resources into mobile apps is JavaScript. You will learn how to access and control remote databases, 
+	how to selectively pull and update data, how to use APIs that are built into application software, and how to optimize the use of both proprietary and public databases over 
+	the network. This is a critical skill for working in a corporate IT department, and a powerful tool for building apps that have value in the real world. 
+	<br /> 
+	<br />
+	<b> Course 4: Advanced Programming/Introduction to Object-Oriented Programming</b>
+	</br>
+	Bootcamp only. The individual course will begin at a later date. 
+	</br>
+	This course will extend the second class. Now that we have integrated the server-side, we are ready to teach you dynamic updating of your apps, client-side calculations and 
+	visualizations, extensions to the auto-creation of iOS and Android apps, and much more. In this course we will also introduce you to object-oriented programming concepts 
+	because you will need it to take full advantage of the native languages of the top two phone environments. The language we’ll introduce you to for OOP is Java.
+	</br>
+	</br>
+	<b> Course 5: Phone-specific Programming </b> </br>
+	Note: For the bootcamp, each student can pick either Apple or Android to learn. We want to keep the number of languages you have to learn limited, so we are giving you an 
+	option of one or the other. If you want to learn both, you can take the other one at night. 
+	</br> 
+	<i>Option 1: Native iOS - Swift</i>
+	</br>
+	Bootcamp only. The individual course will begin at a later date. 
+	</br>
+	Having already built some  Apple mobile apps in the Mobile Web Apps course, in this course you will dive in more deeply and learn to build fully-native iPhone 
+	and iPad apps using a new Apple tool called Swift. Swift is an easy-to-learn successor to the C and Objective C languages and generates superfast and efficient code to run on iPhones and iPads. 
+	You will learn to code in Swift and XCode, how they compare to HTML, and how to not only design apps, but also to make them dynamic, even using features of the devices like the accelerometer and sensors. 
+	<br /> 
+	<i>Option 2: Native Android - Java </i>
+	</br>
+	Bootcamp only. The individual course will begin at a later date. </br>
+	Next you are going to learn how to extend your newly-learned native-app skills to the world of Android mobile devices, using the Java,  programming language. 
+	In this course, we will use Java the Android Developer Tools, and the Integrated Development Environment (IDE) to develop native Android apps. You will  build on what you learned in the previous courses, 
+	and the comparisons and contrasts will start coming faster as you do similar things in what will now be your fourth application environment. In this class however, we won’t just be recreating the same app again. 
+	We want to build your portfolio, so we’ll create new apps, and then you may even choose to take the challenge of converting them back to iOS as well.
+	<br /> 
+	<br />
+	<b> Course 6: Advanced Server & Databases  </b>
+	</br>
+	Bootcamp only. The individual course will begin at a later date. 
+	</br>
+	Because server-side applications represent such a critical area for success in building mission-critical systems for health and medicine, this course will continue 
+	you on the path of mastering the server side of the equation. In this course you will learn how to use advanced tools such as Angular/JS, Node/JS, Mongo/DB and a variety of JavaScript add-ons to design, 
+	implement and deploy advanced applications that can leverage powerful server side resources. 
+	<br /> 
+	<br />
+	<b> Course 7: Advanced Health & Medical Apps  </b>
+	</br>
+	Bootcamp only. The individual course will begin at a later date. 
+	</br>
+	Because we focus on health, medicine, and fitness, we want you to be able to deal with unique challenges in this space – privacy, large data sets, huge image files, 
+	constant streaming of fitness data, etc. This course will have you learning advanced techniques to address these challenges.  For example, you will use compression algorithms for large files, manipulate models in 3D space, 
+	assure authorization to only validated users of private data, interact with medical models, and design for the next generation of health and fitness device platforms including the Apple Watch.
+	<br /> 
+	<a href='#apply' class="smoothScroll" >APPLY ONLINE</a> 
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</p>
+	</div>
+	<!--PARALLAX CIRCLES-->
+	<div class='icon_first' data-type="sprite" data-Xposition="99%" data-offsetY='900' data-speed="9" >blue computer</div>
+	<div class='icon_second' data-type="sprite" data-Xposition="87%" data-offsetY='3050 ' data-speed="2.5" >gray medical</div>
+	<div class='icon_third' data-type="sprite" data-Xposition="97%" data-offsetY='3010 ' data-speed="2" >little green design</div>
+	<div class='icon_fourth' data-type="sprite" data-Xposition="87%" data-offsetY="4100" data-speed="1" >green ipad</div>
+	<!--Hack only for larger resolutions they don't look so sparse-->
+	<div class='icon_fourth' data-type="sprite" data-Xposition="99%" data-offsetY="6850" data-speed=".5" >green ipad on top</div>
+	
+	<!--PARALLAX CIRCLES static-->
+	<div class='ipad_first'>teal imac</div>
+	<div class='ipad_second' >gray medical</div>
+	<div class='ipad_third' >yellow chip</div>
+	<div class='ipad_fourth'>yellow mobile</div>
+
+	<!--CLEARFLOAT-->
+	<div class='clearfloat'></div>
+</section>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  #Student profile section
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<section class="swiper-slide" id='students' data-speed="0" data-type="background" data-offsetY="0%" data-Xposition="0%">
+	<!--#LEFTCOLUMN-->	
+	<div class='leftcolumn'></div>
+	<!--#RIGHTCOLUMN-->
+	<div class='rightcolumn'> 
+	<h2>Student Profile</h2>
+	<hr /><!--CLEARFLOAT--><div class='clearfloat'></div>
+	<p class='lead'> <b>High school students </b>- Are you a gamer or an Instagram poster? Are you interested in technology and want to create your own game or application. 
+	Maybe you’d like to learn to design something new for the AppleWatch. Boost your college application or impress your friends. Maybe even start a company in your 
+	garage (or dining room). </p><br />
+	<p class='lead'> <b>College grads </b>– Hey liberal arts, social science and hard science grads. Put your degree to work in a different way. Encapsulate it in an app 
+	that you know will make a difference. Alternatively, you think that coding will be a good place to be professionally (at least until grad school). Get trained and out 
+	there with a practical skill in 14 weeks. </p> <br />
+	<p class='lead'> <b>IT professionals </b>– Perhaps you are a database expert or a SharePoint programmer, or work in C++, but you’d also like to master Java, JavaScript, 
+	Objective C (and Apple’s new Swift), you’ll find a fast path to further mastery at CodeAbode. </p> <br />
+	<p class='lead'> <b>MedTech entrepreneurs </b>– If your idea includes anything in the broad fitness, health, medical education arena, there is no better place than 
+	CodeAbode to learn to program in the relevant languages using the relevant tools. Our instructors have been there, our examples will come from leading existing apps 
+	and innovative apps that we’ve done for the National Museum, and our network will enable you to move from app to start-up company.</p> <br />
+	<p class='lead'> <b>Marketing managers </b>– Are you constantly managing web, social media, or application projects, overseeing vendors (or internal departments) that 
+	help you with the technical work? Would you like to better master the technologies behind web and mobile apps? CodeAbode is for you.</p><br />
+	<p class='lead'> <b>Tech-savvy doctors </b>– If you are the kind of doctor that is constantly tinkering, thinking about how to improve the software in the office, 
+	or thinking about to use an AppleWatch or Fitbit for patient compliance, or an app for patient education, come take a couple courses with us, and prototype your ideas. </p><br />
+	<p class='lead'> <b>Anyone who wants to learn to code </b>– There is no one size fits all at CodeAbode. We want to unlock your potential. 
+	If you’ve always wanted to create a digital footprint, we want to help you do it. Maybe you’ve tried to take an on-line class, but it’s hard with no coach and no colleagues. 
+	Come try our supportive environment. 
+ <br />
+	
+	<a href='#apply' class="smoothScroll" >APPLY ONLINE</a>	
+	</p>
+	<br /><br /> 
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	</div>
+	<!--PARALLAX CIRCLES-->
+	<div class='icon_first' data-type="sprite" data-Xposition="99%" data-offsetY='355' data-speed="7" >blue computer</div>
+	<div class='icon_second' data-type="sprite" data-Xposition="90%" data-offsetY='3200 ' data-speed=".8" >blue medical</div>
+	<div class='icon_third' data-type="sprite" data-Xposition="83%" data-offsetY='2150 ' data-speed=".8" >gray molecule</div>
+	<div class='icon_fourth' data-type="sprite" data-Xposition="97%" data-offsetY="1300" data-speed="2.3" >green plus</div>	
+	
+	<!--PARALLAX CIRCLES static-->
+	<div class='ipad_first'>teal mobile</div>
+	<div class='ipad_second' >yellow gear</div>
+	<div class='ipad_third'>gray molecule</div>
+	<div class='ipad_fourth'>yellow imac</div>	
+	<!--CLEARFLOAT--><div class='clearfloat'></div>
+	
+		<!--PARALLAX CIRCLES-->
+	<div class='icon_first' data-type="sprite" data-Xposition="99%" data-offsetY='155' data-speed="7" >teal mobile</div>
+	<div class='icon_second' data-type="sprite" data-Xposition="95%" data-offsetY='1700 ' data-speed=".9" >yellow gear</div>
+	<div class='icon_third' data-type="sprite" data-Xposition="83%" data-offsetY='1150 ' data-speed=".9" >gray molecule</div>
+	<div class='icon_fourth' data-type="sprite" data-Xposition="99%" data-offsetY="800" data-speed="3" >yellow imac</div>	
+	
+	<!--PARALLAX CIRCLES static-->
+	<div class='ipad_first'>teal mobile</div>
+	<div class='ipad_second' >yellow gear</div>
+	<div class='ipad_third'>gray molecule</div>
+	<div class='ipad_fourth'>yellow imac</div>	
+	<!--CLEARFLOAT--><div class='clearfloat'></div> 
+</section>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ #Features section
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<section class="swiper-slide" id='features' data-speed="0" data-type="background" data-offsetY="0%" data-Xposition="0%" >
+	<!--#LEFTCOLUMN-->	
+	<div class='leftcolumn'> 
+	</div>
+	<!--#RIGHTCOLUMN-->
+	<div class='rightcolumn'>
+	
+	<h2>Features</h2> 
+	
+	<hr /> <!--CLEARFLOAT--><div class='clearfloat'></div>
+	<p class='lead'> <b> 1.	Practice </b>– See previous section. In class, we will focus on group and individual work, and you will be able to work 
+	on your projects while you are learning. Lots of in-class work time will allow you to complete assignments with the expert guidance 
+	of your instructors. That way we can coach you and you’ll emerge from the program with completed apps. <br /> <br />
+	 <b>2.	Health and Medicine focus </b>– Chicago is the Silicon Valley of two related industries – medical equipment and application software for businesses. 
+	Chicago is also strong in hospitals, pharmaceutical companies, and many other health care related companies. Plus you will be working out of the 
+	only satellite of one of the oldest museums in the country (founded in 1865) and it focuses on health and medicine. <br />  <br />
+	 <b>3.	Employers </b>– This means that our partners are the entire medical establishment of Chicago. You will study with some of their employees, 
+	and they are our recruiting partners, as well, if you want a full-time IT position in a prestigious firm. </br>  <br />
+	 <b>4.	Incubator and Funders </b>– We have connections with the premier health informatics incubator, and with multiple venture capital funds. 
+	If your goal is to launch a product or company, CodeAbode is the right place to start. 
+	<br />
+	<a href='#apply' class="smoothScroll" >APPLY ONLINE</a>	
+	<br />
+	<br />
+	</p>
+	</div>
+	<!--PARALLAX CIRCLES-->
+	<div class='icon_first' data-type="sprite" data-Xposition="98%" data-offsetY='1700' data-speed="2" >gray note</div>
+	<div class='icon_second' data-type="sprite" data-Xposition="91%" data-offsetY='450 ' data-speed="7" >green power</div>
+	<div class='icon_third' data-type="sprite" data-Xposition="93%" data-offsetY='4200 ' data-speed=".9" >blue chip</div>
+	<div class='icon_fourth' data-type="sprite" data-Xposition="93%" data-offsetY="4200" data-speed=".8" >blue design</div>
+	
+	<!--PARALLAX CIRCLES static-->
+	<div class='ipad_first' >gray note</div>
+	<div class='ipad_second' >yellow power</div>
+	<div class='ipad_third' >blue chip</div>
+	<div class='ipad_fourth'>yellow molecule</div>
+
+	<!--CLEARFLOAT-->
+	<div class='clearfloat'></div>
+</section>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ #CONTACTUS section
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<section class="swiper-slide" id='apply' data-speed="0" data-type="background" data-offsetY="0%" data-Xposition="0%" >
+	<!--#LEFTCOLUMN-->
+	<div class='leftcolumn'></div>
+	<!--#RIGHTCOLUMN-->
+	<div class='rightcolumn'> 
+	<h2> Apply</h2>
+	<hr /> <!--CLEARFLOAT--><div class='clearfloat'></div>
+	<p class='lead'>
+	To apply, please fill out the form below. The application deadline for courses starting in June 2015 is Monday, May 25. 
+	After applying, you will receive a response within a week about how to register for courses.
+	</br>
+	*Note: Please avoid using the following symbols within the text fields: - _ / :</p>
+	</br>
+	
+	<!--Full tuition reserves your spot in the course. To reserve your place for the boot camp or courses starting June 1, 2015, 
+	use our secure payment processing below. 
+	<br /> 
+	<br />
+	
+	
+	<a href='http://codeabode-store.com/full-time/boot-camp' target="_blank" font color="#25ab6f" >Sign up for Boot Camp</a>  
+	<br />
+	<a href="http://codeabode-store.com/part-time" target="_blank" >Sign up for individual courses </a>   <br /> <br />
+	 <br /> 
+	</p>
+	<p class='lead'> If you're interested, please let us know. We'll get you more information.  </p> <br />
+	
+	-->
+	
+	
+    <div class="container">
+        <!-- form -->
+        <form action="form.php" method="post" id="form" onsubmit="return validateAll('results')">
+			Name <span class="error" id="firstnameErr" >* </span><input type="text" name="firstname" maxlength="25" id="firstname" onKeyUp="updateLength('firstname', 'firstname_length' )"><div id="firstname_length"></div><br />
+
+			Email <span class="error" id="emailErr" >* </span><input type="text" name="email" maxlength="50" id="email" onKeyUp="updateLength('email', 'email_length'); checkEmail('email'); "><div id="email_length"></div><br />
+
+			Phone Number <span class="error" id="phoneNumErr" >* </span><input type="text" name="phoneNum" maxlength="20" id="phoneNum" onKeyUp="updateLength('phoneNum', 'phoneNum_length'); checkPhoneNum('phoneNum'); "><div id="phoneNum_length"></div><br />
+
+			What time do you want to attend classes? <span class="error" id="timeErr" >* </span><br />
+			<select name="time" id="time" onselect="checkTime('time'); ">
+				<option value="0">--Select Option Below--</option>
+				<option value="1">Day </option>
+				<option value="2">Night</option>
+			</select>
+			<br />
+			<br />
+
+			When do you want to start the course? <span class="error" id="monthErr" >* </span><br />
+			<select name="month" id="month" onselect="checkMonth('month'); ">
+				<option value="0">--Select Option Below--</option>
+				<option value="1">June </option>
+				<option value="2">July</option>
+				<option value="3">August </option>
+				<option value="4">September</option>
+				<option value="5">October</option>
+				<option value="6">November</option>
+				<option value="7">December </option>
+				<option value="8">January</option>
+			</select>
+			<br />	
+			<br />		
+
+			Why do you want to learn to code? <span class="error" id="reasonErr" >* </span><br />
+			<select name="reason" id="reason" onselect="checkReason('reason'); ">
+				<option value="0">--Select Option Below--</option>
+				<option value="1">Improve my skills</option>
+				<option value="2">Get a job</option>
+				<option value="3">Start a business</option>
+				<option value="4">Other</option>
+			</select>
+			<p>If you chose other, please explain: <span class="error" id="codeErr" > </span></p> <textarea type="text" name="code" maxlength="180" id="code" onKeyUp="updateLength('code', 'code_length' )"></textarea><div id="code_length"></div><br />
+			
+			
+			What OS do you have on your current device(s)?  (Check all that apply) <span class="error" id="personalOSErr" >* </span>
+			<table>
+				<tbody>
+					<tr style="height:100px; vertical-align:text-top;">
+						<td style="width:150px;">
+							<input type="checkbox" name="personalOS[]" value="Windows"> Windows<br>
+							<input type="checkbox" name="personalOS[]" value="MacOS"> Mac OS<br>
+							<input type="checkbox" name="personalOS[]" value="ChromeOS"> Chrome OS<br>
+							<input type="checkbox" name="personalOS[]" value="Linux"> Linux<br>
+						</td>
+
+						<td style="width:150px;">
+							<input type="checkbox" name="personalOS[]" value="WindowsMobile"> Windows Mobile<br>
+							<input type="checkbox" name="personalOS[]" value="iOS"> iOS<br>
+							<input type="checkbox" name="personalOS[]" value="Android"> Android<br>
+							<input type="checkbox" name="personalOS[]" value="Other"> Other<br>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			
+			
+			<p>Would you like to have a CodeAbode app to work on? <span class="error" id="caappErr" >* </span></p>
+			<table>
+				<tbody>
+					<tr>
+						<td style="width:50px;"><input type="radio" name="caapp"  value="1" ></td>
+						<td style="width:50px;"><input type="radio" name="caapp"  value="2" ></td>
+					</tr>
+					<tr>
+						<td style="width:50px;">Yes</td>
+						<td style="width:50px;">No</td>
+					</tr>
+					<tr style="height:8px;"> <!--add space for formatting-->
+						<td style="width:50px;"></td>
+						<td style="width:50px;"></td>
+					</tr>
+				</tbody>
+			</table> <br>
+			
+			<p>Do you have an app in mind you'd like to develop? <span class="error" id="appErr"></span></p> <textarea type="text" name="app" maxlength="180" id="app" onKeyUp="updateLength('app', 'app_length' )"></textarea><div id="app_length"></div><br />
+			
+			<p>Are you exploring this with other people with whom you would like to team up?<br>If yes, please provide their names. <span class="error" id="yourteamErr" ></span></p> <input type="text" name="yourteam" maxlength="180" id="yourteam" onKeyUp="updateLength('yourteam', 'yourteam_length' )"><div id="yourteam_length"></div><br />
+			<p>Our approach includes intense practice, and we find that a team helps learning. Is there a type of person you would like us to team you up with? <span class="error" id="teamErr" >* </span></p> <textarea type="text" name="team" maxlength="180" id="team" onKeyUp="updateLength('team', 'team_length' )"></textarea><div id="team_length"></div><br />
+			<p>What is your programming/IT background, if any? <span class="error" id="backgroundErr" ></span></p> <textarea type="text" name="background" maxlength="180" id="background" onKeyUp="updateLength('background', 'background_length' )"></textarea><div id="background_length"></div><br />
+			<p>If you'd like to skip the introductory courses, where do you think you should jump in?<br>What courses would you like to take? <span class="error" id="coursesErr" ><?php echo $coursesErr;?></span></p> <textarea type="text" name="courses" maxlength="180" id="courses" onKeyUp="updateLength('courses', 'courses_length' )"></textarea><div id="courses_length"></div><br />
+
+			<font color="red">* Required fields </font> <br> <br>
+
+			<input type="submit" name="submit" value="Register" style="width:65px; display:inline-block;">  <input type="reset" value="Clear" style="width:65px; display:inline-block;"> 
+
+			<h3 id="results"></h3>
+        </form>
+    </div>
+
+
+
+	
+	<br />
+	<br />
+	<br />
+
+	<br />
+	<br />
+	CodeAbode<br /> 
+	175 W. Washington St. <br /> 
+	Chicago, IL 60602 <br /> </p>
+
+	
+	CODEABODE.COM All rights reserved.
+	</p>
+	<br /> <br />
+	<br /> <br />
+	</form>	
+</div>	
+	<!--CLEARFLOAT--><div class='clearfloat'></div>
+</section>
+
+
+</div>	
+<!--#page-->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ #TWITTER section
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!--
+	<h3>Latest Tweets</h3>
+	<p>Name @Name</p>
+	<p> as quunt ad maiorunt exeritas di consecatem eumquia ilia quatum quiberovit, omniet experspis dis res cuption seditib uscientur? Tem quis eium voluptati ut autatatur?
+	Mus eum et venditi isquatur sus mo ventium voluptatum ulleceatur?
+	Acerum</p>
+	<p>
+	<a href=''>Reply</a>
+	<a href=''>Retweet</a>
+	<a href=''>Favorite</a>
+	</p>
+-->
+ 
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ MODERNIZR.load (yep/nope)
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<script src='js/smoothscroll.js'></script>
+<script src='js/smooth.pack.js'></script>
+<script src='js/backstretch.js'></script>
+<script>
+Modernizr.load([
+	{
+	test: Modernizr.touch, 
+	yep:'css/ipadicons.css',
+	nope:'js/script.js',		
+	}	
+]);
+</script>
+<script>
+if (Modernizr.touch){
+
+$('#home,#investors,#contactus').css('background-image','none'); // Hide all the current backgrounds on the sections
+$("#home").backstretch("img/clouds/istock/home.jpg"); // use jQuery Backstretch to fake the backgrounds 
+$("#investors").backstretch("img/clouds/investors.jpg"); // use jQuery Backstretch to fake the backgrounds 
+$("#contactus").backstretch("img/contactus.jpg"); // use jQuery Backstretch to fake the backgrounds 
+}
+
+if (!Modernizr.backgroundsize){
+$('h1 img').css('display','block'); // Show the logo image as an <img> if background size attribute is not supported
+$('h1 a').css('background-image','none'); // Hide the background image if the browser doesn't support background-size
+
+$('.icon_first').hide(); // Hide all the icon circles if the browser doesn't support background-size
+$('.icon_second').hide();
+$('.icon_third').hide();
+$('.icon_fourth').hide();
+
+$('#home,#investors,#contactus').css('background-image','none'); // Hide all the current backgrounds on the sections
+$("#home").backstretch("img/clouds/istock/home.jpg"); // use jQuery Backstretch to fake the backgrounds 
+$("#investors").backstretch("img/clouds/investors.jpg"); // use jQuery Backstretch to fake the backgrounds 
+$("#contactus").backstretch("img/contactus.jpg"); // use jQuery Backstretch to fake the backgrounds 
+$('#home,#investors,#contactus').css('background-attachment','fixed'); // Fixed background position
+}
+
+if (!Modernizr.opacity){
+// $("header").backstretch("img/bgie.gif"); // use jQuery Backstretch to fake the background 
+
+$("header").css("background-color","#06263b"); // 
+}
+</script>
+<script>
+//$(function() {
+//	if(!$.support.placeholder) { 
+//		var active = document.activeElement;
+//		$(':text').focus(function () {
+//			if ($(this).attr('placeholder') != '' && $(this).val() == $(this).attr('placeholder')) {
+//				$(this).val('').removeClass('hasPlaceholder');
+//			}
+//		}).blur(function () {
+//			if ($(this).attr('placeholder') != '' && ($(this).val() == '' || $(this).val() == $(this).attr('placeholder'))) {
+//				$(this).val($(this).attr('placeholder')).addClass('hasPlaceholder');
+//			}
+//		});
+//		$(':text').blur();
+//		$(active).focus();
+//		$('form').submit(function () {
+//			$(this).find('.hasPlaceholder').each(function() { $(this).val(''); });
+//		});
+//	}
+//});
+</script>
+
+	
+
+
+</body>
+</html>

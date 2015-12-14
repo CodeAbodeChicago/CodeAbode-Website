@@ -1,0 +1,30 @@
+/* ==========================================================================
+  iPaxd PARALLAX ICONS minus parallax FOR EACH SECTION
+  ========================================================================== */
+.icon_first, .icon_second, .icon_third, .icon_fourth {display:none;}
+.ipad_first, .ipad_second, .ipad_third, .ipad_fourth {overflow:hidden;background:transparent;z-index:3;text-indent:-9999px;position:absolute;height:100%;width:100%;top:0;left:0;}
+
+/* HOME */
+/* gray chip */ #home div.ipad_first {display:block; background:url('../img/icons/icon00.png') no-repeat;background-position:87% 70px;opacity:.5;-webkit-background-size:8%;-moz-background-size: 8%;-o-background-size: 8%;background-size: 8%; }
+/* yellow note */ #home div.ipad_second {display:block; background:url('../img/icons/icon01.png') no-repeat;background-position:95% 40px; -webkit-background-size:3%;-moz-background-size: 2%;-o-background-size: 3%;background-size: 3%; opacity:.9;}
+/* blue power */ #home div.ipad_third {display:block; background:url('../img/icons/icon02.png') no-repeat;background-position:98% 420px; opacity:.6;-webkit-background-size:13%;-moz-background-size: 13%;-o-background-size: 13%;background-size: 16%; }
+/* yellow medical */ #home div.ipad_fourth {display:block; background:url('../img/icons/icon03.png') no-repeat;background-position:85% 820px;-webkit-background-size:7%;-moz-background-size: 7%;-o-background-size: 7%;background-size: 7%;}
+
+/* INVENTORS */
+/* teal mobile */ #inventors div.ipad_first {display:block; background:url('../img/icons/icon04.png') no-repeat; opacity:.8;background-position:99% 37px;-webkit-background-size:11%;-moz-background-size:11%;-o-background-size: 11%;background-size: 11%;}
+/* gray gear   */ #inventors div.ipad_second {display:block; background:url('../img/icons/icon07.png') no-repeat;background-position:95% 780px;-webkit-background-size:8%;-moz-background-size:8%;-o-background-size: 8%;background-size: 8%;opacity:.3;}
+/* gray molecule*/ #inventors div.ipad_third {display:block; background:url('../img/icons/icon06.png') no-repeat;opacity:.1;background-position:83% 230px;-webkit-background-size:22%;-moz-background-size:22%;-o-background-size: 22%;background-size: 22%;}
+/* yellow imac */ #inventors div.ipad_fourth {display:block; background:url('../img/icons/icon05.png') no-repeat;opacity:;background-position:99% 524px;-webkit-background-size:4%;-moz-background-size:4%;-o-background-size: 4%;background-size: 4%;}
+
+/* INVESTORS */
+/* gray note */ #investors div.ipad_first {display:block; background:url('../img/icons/icon10.png') no-repeat;opacity:.4;background-position:98% 570px;-webkit-background-size:3%;-moz-background-size:3%;-o-background-size: 3%;background-size: 3%;}
+/* yellow power*/ #investors div.ipad_second {display:block; background:url('../img/icons/icon09.png') no-repeat;opacity:;background-position:70% 500px;-webkit-background-size:9%;-moz-background-size:9%;-o-background-size: 9%;background-size: 9%;}
+/* blue chip */ #investors div.ipad_third {display:block; background:url('../img/icons/icon08.png') no-repeat;opacity:.3;background-position:98% 60px;-webkit-background-size:18%;-moz-background-size:18%;-o-background-size: 18%;background-size: 18%;}
+/* yellow molecule */ #investors div.ipad_fourth {display:block; background:url('../img/icons/icon11.png') no-repeat;background-position:90% 700px;-webkit-background-size:6%;-moz-background-size:6%;-o-background-size: 6%;background-size: 6%;}
+
+/* EXPERTISE */
+/* teal imac */ #expertise div.ipad_first {display:block; background:url('../img/icons/icon12.png') no-repeat;opacity:.7;background-position:98% 45px;-webkit-background-size:12%;-moz-background-size:12%;-o-background-size: 12%;background-size: 12%;}
+/* gray medical */ #expertise div.ipad_second {display:block; background:url('../img/icons/icon13.png') no-repeat;opacity:.1;background-position:70% 440px;-webkit-background-size:16%;-moz-background-size:16%;-o-background-size: 16%;background-size: 16%;}
+/* yellow chip */ #expertise div.ipad_third {display:block; background:url('../img/icons/icon14.png') no-repeat;background-position:90% 780px;-webkit-background-size:4%;-moz-background-size:4%;-o-background-size: 4%;background-size: 4%;}
+/* yellow mobile */ #expertise div.ipad_fourth {display:block; background:url('../img/icons/icon15.png') no-repeat;background-position:98% 530px;-webkit-background-size:6%;-moz-background-size:6%;-o-background-size: 6%;background-size: 6%;}
+

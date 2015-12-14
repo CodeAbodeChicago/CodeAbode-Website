@@ -1,0 +1,639 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #000;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*class for form error feedback*/
+.error {color: #FF0000;}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+    padding: 4px;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+/* TOOK OUT
+	textarea {
+    resize: vertical;
+}
+*/
+
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+  GLOBAL & GENERIC
+  ========================================================================== */
+* {margin:0; padding:0;}
+.clearfloat {clear:both;padding: 0;}
+
+/* ==========================================================================
+  TYPOGRAPHY: desktop and mobile
+  ========================================================================== */
+/* font-family: GoodScWeb-Book, sans-serif; font-family: GoodScWeb-Black, sans-serif; */
+
+<!--@font-face {font-family: GoodWeb-Book;src: url("../css/GoodWeb-Book.eot");} /* first for IE 4–8 */
+@font-face {font-family: GoodWeb-Book;src: url("../css/GoodWeb-Book.woff") format("woff");} /* then for WOFF-capable browsers */
+
+<!--@font-face {font-family: GoodWeb-Black;src: url("../css/GoodWeb-Black.eot");} /* first for IE 4–8 */
+@font-face {font-family: GoodWeb-Black;src: url("../css/GoodWeb-Black.woff") format("woff");} /* then for WOFF-capable browsers */
+
+<!--@font-face {font-family: GoodWeb-Light;src: url("../css/GoodWeb-Light.eot");} /* first for IE 4–8 */
+@font-face {font-family: GoodWeb-Light;src: url("../css/GoodWeb-Light.woff") format("woff");} /* then for WOFF-capable browsers */
+
+* {font-family: GoodWeb-Book, sans-serif;line-height:1.2em;}
+body { font-family: GoodWeb-Book, sans-serif;}
+
+/* LOGO or MASTHEAD */
+h1 {display:block;margin:0;width:75%;padding:0;font-size:2.5em;margin-top:40px;}
+h1 a {text-decoration:none; display:block; background:url('../img/logo.png') no-repeat top left;-webkit-background-size:contain;-moz-background-size:contain;-o-background-size: contain;background-size: contain;margin:0;padding:0;text-indent:-99999px;}
+h1 a img {display:none;float:left;width:46%;height:100%;border:none;margin:0;padding:0;}
+
+#logo {img src='img/logo_ca.png' height='125'alt='CODE ABODE logo'}
+
+/* #linkstatement VALUE PROPOSITION */
+#pronounciation {color:#fff;margin:12px 0;font-size:2vmax;margin-left:-2px;/*width:95%;width:90%;*/display:block;}
+#pronounciation em {font-style: italic;}
+#linkstatement {color:#fff/*#888*/;font-size:1.2em;line-height:1.4em;}
+#linkstatement a {color:#fff;/*border-bottom:1px solid #fff;*/text-decoration:none;line-height:2em;}
+#linkstatement a:hover, #linkstatement a:active {color:#25ab6f;text-decoration:none;/*border-bottom:1px solid #fff;*/}
+
+#headercontact {color:#25ab6f;font-size:.8em;line-height:1em;text-decoration:none;border-bottom:1px solid transparent;} /* GET IN TOUCH */
+#headercontact:hover {border-bottom:1px solid #fff;}
+
+/* MAJOR SECTION HEADING */
+h2 {padding:0;margin:0;position:relative;z-index:99;font-size:4.2em;font-family:GoodWeb-Light, sans-serif; font-weight:normal; line-height:1em;margin-top:124px;color:#000;width:90%;}
+/* h2s changed to white*/ p.head {padding:0;margin:0;position:relative;z-index:99;font-size:4.2em;font-family:GoodWeb-Light, sans-serif; font-weight:normal; line-height:1em;margin-top:124px;color:#fff;width:90%;}
+hr {display:block;float:left;border:none;color:black;padding:0;margin:1.5em 0;width:85%;background-color:black;height:1px;position:relative;z-index:10;}
+/* hr to white */ p.bar {display:block;float:left;border:none;color:white;padding:0;margin:1.5em 0;width:55%;min-width:400px;background-color:white;height:1px;position:relative;z-index:10;}
+hr.navRule {display:block;float:left;border:none;color:white;padding:0; margin-left:auto; margin-right:auto; margin-top:0.5em; margin-bottom:1em;width:90%; /*max-width:250px;*/background-color:white;height:1px;position:relative;z-index:5;}
+
+/* BODY COPY & LINKS*/
+header p {color:black;}
+header a, header a:visited {color:white;line-height:250%;text-decoration:none;}
+header a:hover, header a:active {color:#25ab6f; text-decoration:none;}
+#headercontact {position:absolute;bottom:5%;}
+p.lead {color:black;font-family:GoodWeb-Light, sans-serif; font-weight:normal; position:relative;z-index:99;font-size:1.3em;width:85%;margin:0;padding:0;padding-bottom:.5em;line-height:1.4em;}
+ /* p.lead to white */ p.white {color:white;font-family:GoodWeb-Light, sans-serif; font-weight:normal; position:relative;z-index:99;font-size:1.3em;width:85%;margin:0;padding:0;padding-bottom:.5em;line-height:1.4em;}
+p.lead em {font-weight:normal; }
+p.lead a, p.lead a:visited {font-size:1em;text-decoration:none;}
+p.lead a:hover, p.lead a:active {border-bottom:1px solid ##203970;}
+a, a:visited {color:#25ab6f;padding-bottom:2px;}
+a:hover, a:active {color:#203970;text-decoration: none;}
+section a {position:relative; z-index:4;font-size:1em; line-height:3em;text-transform:uppercase;color:#25ab6f;}
+
+/*Home section paragraph */
+p.leadhome {color:black;font-family:GoodWeb-Light, sans-serif; font-weight:normal; position:relative;z-index:99;font-size:2.4em;width:85%;margin:0;padding:0;padding-bottom:.5em;line-height:1.4em;}
+p.leadhome em {font-weight:normal; }
+p.leadhome a, p.leadhome a:visited {font-size:1.5em;text-decoration:none;line-height:1.3em;}
+p.leadhome a:hover, p.leadhome a:active {solid #203970;}
+
+/*bios section*/
+p.bio {color:black;font-family:GoodWeb-Light, sans-serif; font-weight:normal; position:relative;z-index:99;font-size:1.3em;width:65%;margin:0;padding:0; min-height:120px;
+		padding-bottom:.5em;line-height:1.4em;padding-left:20%;}
+div.biopics {float:left;width:15%;max-width:130px;}
+
+div.video {width:400px; height:224px;}
+
+/* New sections in header to try and make responsive */
+div.mobilemenu {display:none;}
+div.contactinfo {position:block; bottom:10px; margin-top:10px; color:white;}
+div.display {display:inline;}
+div.mobiledisplay {display:none;}
+div.mobilelogo {display:none;}
+div.mobilecontact {display:none;}
+
+/*iframe css*/
+#newsviewer {width:100%;height:400px;}
+
+p#copyright {padding:0;margin:2px;line-height:1em;font-size:.8em;width:99%;color:#fff;}
+#address {color:white;}
+
+/* ==========================================================================
+  LAYOUT: html > body > section > leftcolumn > rightcolumn    background:transparent url('img/blueleft.png');
+  ========================================================================== */
+html,body {height:100%;width:100%;position:relative;padding:0;margin:0;-webkit-background-size: 1200px 1900px;} 
+#page {position:relative;height:100%;width:100%;margin:0;padding:0;} 
+header {border-right:7px solid #25ab6f;position:fixed;padding:0% 1% 0 2%;margin:0 auto;width:18%;min-height:100%;height:auto;z-index:3;}
+section {padding:0;margin:0;overflow-x: hidden;position:relative;min-height:100%;height:auto;display:block;width:100%;z-index:1;}
+div.leftcolumn {float:left;z-index:4;min-height:100%;height:100%;width:21%;position:absolute;top:0;margin:0;background-color:#000000;text-decoration:none;
+-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80); filter: alpha(opacity=80);-moz-opacity:.8;-webkit-opacity:.8;opacity:.8;}
+div.rightcolumn {min-height:100%;height:auto;float:left;padding:0;width:72%;padding-left:4%;margin-left:21%;z-index:4;} 
+
+/* ==========================================================================
+  PARALLAX BACKGROUNDS FOR EACH SECTION 
+  ========================================================================== */
+#home {background-color:#d0daf1/*5771a9*/;}
+#about {background:url('../img/shl.png') fixed;} 
+#structure {background: url('../img/clouds//investors.jpg') left top no-repeat fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+#instructors {background:url('../img/tiny_grid.png') fixed;}
+#coursesection {background:url('../img/students_learning_to_code2.jpg') left top no-repeat fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover; }
+#students {background:url('../img/shl.png') fixed;}
+#features {background:url('../img/clouds//istock//home.jpg') left top no-repeat fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+#apply {background:url('../img/tiny_grid.png') fixed;}
+#news {background-color:white;background:none;}
+/* ==========================================================================
+  FORM STYLING FOR CONTACT US
+  ========================================================================== */
+form {display:block;margin:0;padding:0;width:85%;}
+form label {color:white; line-height:2em;}
+input {font-size:.8em;display:block;text-indent:.5em;opacity:.9;border:none;margin:.8% 0;padding:.6em 0;}
+input[type="text"],input[type='tel'], input[type="email"],input[type="url"] {width:100%;color:#888;}
+input[type='checkbox'] {display:inline;}
+button {width:150px;font-size:1em;background:#25ab6f;border:none;color:black;display:block;height:47px;margin-bottom:4px;}
+textarea {color:#888;margin:0;width:100%;text-indent:.5em;border:none;font-size:.8em;line-height:2em;display:block;resize:vertical;opacity:.7;} 
+.fieldsize {size:20;resize:none;}
+.field {resize:none;}
+/*.field2 {resize:vertical;size:100%}
+.fieldsize2 {size:100%}*/
+
+/* ==========================================================================
+  PARALLAX ICONS AND CIRCLES FOR EACH SECTION
+  ========================================================================== */
+.icon_first, .icon_second, .icon_third, .icon_fourth {overflow:hidden;background:transparent;z-index:1;text-indent:-9999px;position:absolute;height:100%;width:100%;top:0;left:0;}
+.ipad_first, .ipad_second, .ipad_third, .ipad_fourth {display:none;} /* so iPad icons don't show up on a non iPad page */
+.icon_second {z-index:2;}
+.icon_third {z-index:3;}
+.icon_fourth {z-index:4;}
+
+
+/* HOME */
+/* gray chip */ #home div.icon_first {background:url('../img/icons/icon00.png') no-repeat;background-position:82% 100px;opacity:.6;-webkit-background-size:8%;-moz-background-size: 8%;-o-background-size: 8%;background-size: 8%; }
+/* yellow note */ #home div.icon_second {background:url('../img/icons/icon01.png') no-repeat;background-position:95% 40px; -webkit-background-size:3%;-moz-background-size: 2%;-o-background-size: 3%;background-size: 3%; opacity:.9;}
+/* blue power */ #home div.icon_third {background:url('../img/icons/icon02.png') no-repeat;background-position:98% 550px; opacity:.6;-webkit-background-size:13%;-moz-background-size: 13%;-o-background-size: 13%;background-size: 16%; }
+/* yellow medical */ #home div.icon_fourth {background:url('../img/icons/icon03.png') no-repeat;background-position:85% 840px;-webkit-background-size:7%;-moz-background-size: 7%;-o-background-size: 7%;background-size: 7%;}
+
+/* INVENTORS */
+/* teal mobile */ #about div.icon_first {background:url('../img/icons/icon04.png') no-repeat; opacity:.8;background-position:-9999px -9999px;-webkit-background-size:11%;-moz-background-size:11%;-o-background-size: 11%;background-size: 11%;}
+/* gray gear   */ #about div.icon_second {background:url('../img/icons/icon07.png') no-repeat;background-position:-9999px -9999px;-webkit-background-size:8%;-moz-background-size:8%;-o-background-size: 8%;background-size: 8%;opacity:.3;}
+/* gray molecule*/ #about div.icon_third {background:url('../img/icons/icon06.png') no-repeat;opacity:.1;background-position:-9999px -9999px;-webkit-background-size:22%;-moz-background-size:22%;-o-background-size: 22%;background-size: 22%;}
+/* yellow imac */ #about div.icon_fourth {background:url('../img/icons/icon05.png') no-repeat;opacity:;background-position:-9999px -9999px;-webkit-background-size:4%;-moz-background-size:4%;-o-background-size: 4%;background-size: 4%;}
+
+/* STUDENTS */
+/* blue computer */ #instructors  div.icon_first {background:url('../img/icons/icon12.png') no-repeat;background-position:-9999px -9999px;opacity:.6;-webkit-background-size:8%;-moz-background-size: 8%;-o-background-size: 8%;background-size: 8%; }
+/* blue medical */ #instructors  div.icon_second {background:url('../img/icons/icon16.png') no-repeat;background-position:-9999px -9999px; -webkit-background-size:3%;-moz-background-size: 2%;-o-background-size: 3%;background-size: 3%; opacity:.3;}
+/* green signal */ #instructors  div.icon_third {background:url('../img/icons/icon01.png') no-repeat;background-position:-9999px -9999px;opacity:.3;-webkit-background-size:13%;-moz-background-size: 13%;-o-background-size: 13%;background-size: 16%; }
+/* green plus sign */ #instructors  div.icon_fourth {background:url('../img/icons/icon10.png') no-repeat;background-position:85% 840px;-webkit-background-size:7%;-moz-background-size: 7%;-o-background-size: 7%;background-size: 7%;}
+
+/* INVESTORS */
+/* gray note */ #instructors div.icon_first {background:url('../img/icons/icon10.png') no-repeat;opacity:.4;background-position:-9999px -9999px;-webkit-background-size:3%;-moz-background-size:3%;-o-background-size: 3%;background-size: 3%;}
+/* yellow power*/ #instructors div.icon_second {background:url('../img/icons/icon09.png') no-repeat;opacity:;background-position:-9999px -9999px;-webkit-background-size:9%;-moz-background-size:9%;-o-background-size: 9%;background-size: 9%;}
+/* blue chip */ #instructors div.icon_third {background:url('../img/icons/icon08.png') no-repeat;opacity:.3;background-position:-9999px -9999px;-webkit-background-size:18%;-moz-background-size:18%;-o-background-size: 18%;background-size: 18%;}
+/* yellow molecule */ #instructors div.icon_fourth {background:url('../img/icons/icon06.png') no-repeat;background-position:-9999px -9999px;-webkit-background-size:6%;-moz-background-size:6%;-o-background-size: 6%;background-size: 6%;opacity:.9;}
+
+/* EXPERTISE */
+/* teal imac */ #students div.icon_first {background:url('../img/icons/icon12.png') no-repeat;opacity:.7;background-position:-9999px -9999px;-webkit-background-size:12%;-moz-background-size:12%;-o-background-size: 12%;background-size: 12%;}
+/* gray medical */ #students div.icon_second {background:url('../img/icons/icon13.png') no-repeat;opacity:.3;background-position:-9999px -9999px;-webkit-background-size:16%;-moz-background-size:16%;-o-background-size: 16%;background-size: 16%;}
+/* yellow chip */ #students div.icon_third {background:url('../img/icons/icon14.png') no-repeat;background-position:-9999px -9999px;-webkit-background-size:4%;-moz-background-size:4%;-o-background-size: 4%;background-size: 4%;}
+/* yellow mobile */ #students div.icon_fourth {background:url('../img/icons/icon15.png') no-repeat;background-position:-9999px -9999px;-webkit-background-size:6%;-moz-background-size:6%;-o-background-size: 6%;background-size: 6%;opacity:.6;}
+
+/* ==========================================================================
+  MOBILE LAYOUT OVERRIDES
+  ========================================================================== */
+@media screen and (max-width:1080px) {
+	div.icon_first {display:none;}
+	div.icon_second {display:none;} 
+	.icon_third {display:none;}
+	.icon_fourth {display:none;}
+	.ipad_first {display:none;}
+	.ipad_second {display:none;}
+	.ipad_third, {display:none;}
+	.ipad_fourth {display:none;}
+	}
+
+@media screen and (max-width:950px){
+	div.normalmenu {font-size:0.9em;}
+	header a, header a:visited {color:white;line-height:100%;}
+	/* div.normalmenu {display:none;}
+	div.mobilemenu {display:inline;}
+	div.contactinfo a{font-size:.75em;}*/
+	div.contactinfo {position:block; bottom:5px;font-size:.75em;}
+/*	#linkstatement a {line-height:1.4em;}*/
+	#linkstatement a {line-height: 1.0em;}
+	
+}
+
+@media screen and (max-height:750px){
+	header a, header a:visited {color:white;line-height:100%;}
+	#linkstatement a {line-height:1.4em;}
+	div.normalmenu {font-size:0.9em;}
+}
+
+
+@media screen and (max-width:657px) {
+	html, body {width:100%;overflow-x:none;}
+	#page {width:100%:}
+	/*h1 {margin-top:10px;margin-bottom:.5em;height='25'}
+	header {width:22%}
+	div.leftcolumn {display:none;}
+	div.rightcolumn {width:100%; padding:10%;}*/
+	
+	/*Added for new mobile override*/
+	header {display:block; border-left:none; position:fixed; background-color:black;top:0px; padding:0%;margin:0%;width:100%;min-height:45px;height:60px;z-index:3;}
+	section {padding:0;margin:0;overflow-x: hidden;position:relative;min-height:80%;height:auto;display:block;width:100%;z-index:1;}
+	div.normalmenu {display:none;}
+	div.contactinfo {display:none;}
+	#logo {height:50px;}
+	div.leftcolumn {display:none;}
+	div.rightcolumn {min-height:50%;height:auto;float:left;padding:10px;width:100%;padding-left:10px;margin:0%;margin-left:0px;z-index:4;margin-bottom:40px;margin-top:60px;} 
+
+	div.display {display:none;}
+	div.mobiledisplay {display:block;background-color:black;float:right; padding-right:10px;padding-top:10px;}
+	div.mobilelogo {display:block;float:left;padding-left:10px;}
+	div.mobilecontact {display:block;position:fixed;bottom:0px;width:100%;height:40px;min-height:40px;background-color:black;padding:2px;margin:0%;z-index:3;}
+	div.mobilecontact a {text-decoration:none;text-color:white;}
+	div.mobilecontact p {color:white;font-size:1.3em;}
+	img {padding: 4px; padding-right:0px;}
+	
+	
+	
+	nav{width:200px;background:#444;}
+	.nav a{padding:10px;padding-top:5px;padding-right:5px;display:block;color:#fff;}
+	.nav a:hover{background:#222;}
+	.nav ul{ display:none;/*HIDE ALL INNER UL */background:#000;list-style-type: none;}
+	.nav li {list-style-type: none;padding-top:5px;text-align:right;}
+	.nav li:select > ul{/* display:block; SHOW INNER UL ON LI PARENT HOVER */list-style-type: none;}
+	div.arrowdown {width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-top:10px solid #fff;float:right;vertical-align:bottom;margin-left:10px;margin-top:3px;}
+	div.arrowup {width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-bottom:10px solid #fff;float:right;vertical-align:bottom;margin-left:10px;margin-top:3px;}
+	/* End new mobile override*/
+
+
+	#pronounciation {font-size:.6em;margin:0 2%;width:85%;padding:10px 0;}
+	#linkstatement {/*display:none;*/font-size:.85em;}
+	#headercontact {position:absolute;bottom:5%;font-size:.8em;}
+	
+	
+	h2 {margin-top:28px;font-size:1.6em;}
+	hr {width:90%;min-width:55%;margin:.5em 0;}
+	p.lead {font-size:1.1em;font-weight:lighter;width:95%;}
+	p.lead a {font-size:1em;line-height:1em;width:85%;}
+	#whysubmit {line-height:2em;font-size:1em;border:none;}
+	#whysubmit:hover {border:none;}
+	#tooltip {bottom:2em;left:-8px;}
+	
+	p.leadhome {font-size:1.3em;}
+	p.leadhome a, p.leadhome a:visited {font-size:1.2em;}
+	
+	p.bio {font-size:1.1em;font-weight:lighter;width:75%;}
+	p.bio a {font-size:.7em;line-height:1em;width:85%;}
+
+	form label {font-size:1em;line-height:1em;}
+	input {display:block;padding:.7em 0;margin:.3em 0;} 
+	button {display:block;margin:1em 0;}
+
+	
+	
+	p.table {width:95%;}
+	table {width:95%;}
+
+}
+
+
+/*Added to make mobile responsive when turned to side*/
+/*max-height:540px*/
+@media screen and (max-height:540px) {
+	html, body {width:100%;overflow-x:none;}
+	#page {width:100%:}
+	/*h1 {margin-top:10px;margin-bottom:.5em;height='25'}
+	header {width:22%}
+	div.leftcolumn {display:none;}
+	div.rightcolumn {width:100%; padding:10%;}*/
+	
+	/*Added for new mobile override*/
+	header {display:block; border-left:none; position:fixed; background-color:black;top:0px; padding:0%;margin:0%;width:100%;min-height:45px;height:60px;z-index:3;}
+	section {padding:0;margin-top:0px;overflow-x: hidden;position:relative;min-height:80%;height:auto;display:block;width:100%;z-index:1;}
+	div.normalmenu {display:none;}
+	div.contactinfo {display:none;}
+	#logo {height:50px;}
+	div.leftcolumn {display:none;}
+	div.rightcolumn {min-height:50%;height:auto;float:left;padding:10px;width:100%;padding-left:10px;margin:0%;z-index:4;margin-left:0px;margin-bottom:40px;margin-top:60px;} 
+
+	div.display {display:none;}
+	div.mobiledisplay {display:block;background-color:black;float:right; padding-right:10px;padding-top:10px;}
+	div.mobilelogo {display:block;float:left;padding-left:10px;}
+	div.mobilecontact {display:block;position:fixed;bottom:0px;width:100%;height:40px;min-height:40px;background-color:black;padding:2px;margin:0%;z-index:3;}
+	div.mobilecontact a {text-decoration:none;text-color:white;}
+	div.mobilecontact p {color:white;font-size:1.3em;}
+	img {padding: 4px; padding-right:0px;}
+	
+	
+	
+	nav{width:200px;background:#444;}
+	.nav a{padding:10px;padding-top:5px;padding-right:5px;display:block;color:#fff;}
+	.nav a:hover{background:#222;}
+	.nav ul{ display:none;/*HIDE ALL INNER UL */background:#000;list-style-type: none;}
+	.nav li {list-style-type: none;padding-top:5px;text-align:right;}
+	.nav li:select > ul{/* display:block; SHOW INNER UL ON LI PARENT HOVER */list-style-type: none;}
+	
+	
+/*	nav{display: flex; table-layout: fixed; width:150px; background:#444; flex-wrap:wrap;}
+	nav ul{display:table-row;}
+	nav ul li {text-align:center; display:table-cell; }
+	nav ul li a{display:block;color:#fff;}
+	nav ul li a:hover{background:#222;}*/
+	div.arrowdown {width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-top:10px solid #fff;float:right;vertical-align:bottom;margin-left:10px;margin-top:3px;}
+	div.arrowup {width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-bottom:10px solid #fff;float:right;vertical-align:bottom;margin-left:10px;margin-top:3px;}
+	/* End new mobile override*/
+
+
+
+	#pronounciation {font-size:.6em;margin:0 2%;width:85%;padding:10px 0;}
+	#linkstatement {/*display:none;*/font-size:.85em;}
+	#headercontact {position:absolute;bottom:5%;font-size:.8em;}
+	
+	h2 {margin-top:28px;font-size:1.6em;}
+	hr {width:90%;min-width:55%;margin:.5em 0;}
+	hr.navBar {width:60%; margin:.5em 0; color:white;}
+	p.lead {font-size:1.1em;font-weight:lighter;width:95%;}
+	p.lead a {font-size:.7em;line-height:1em;width:85%;}
+	#whysubmit {line-height:2em;font-size:1em;border:none;}
+	#whysubmit:hover {border:none;}
+	#tooltip {bottom:2em;left:-8px;}
+	
+	p.leadhome {font-size:1.3em;}
+	p.leadhome a, p.leadhome a:visited {font-size:1.2em;}
+	
+	p.bio {font-size:1.1em;font-weight:lighter;width:75%;padding-left: 95px;}
+	p.bio a {font-size:.7em;line-height:1em;width:85%;}
+	div.biopics {max-width:75px;}
+
+
+	form label {font-size:1em;line-height:1em;}
+	input {display:block;padding:.7em 0;margin:.3em 0;} 
+	button {display:block;margin:1em 0;}
+
+	
+	p.table {width:95%;}
+	table {width:95%;}
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+
+.courseTable p.table {color:black;font-family:GoodWeb-Light, sans-serif; font-weight:normal; position:relative;z-index:99;width:85%;font-size:1.1em;}
+.courseTable td {padding: 8px; font-size:3;border:1px solid gray}
+.courseTable {padding-right:none;width:85%;border:1px solid gray}
