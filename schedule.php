@@ -103,7 +103,7 @@
 
                   <div class="single_structure_archive wow fadeInUp">
                     
-                    <!-- <div class=""> -->
+                    <!-- <div class=""> 
                       
                         <h3>January Web Programmer Bootcamp</h3>
                         
@@ -116,7 +116,7 @@
                             <i class="fa fa-calendar"></i>January 11, 2016 and run through April 21, 2016<br>
                             Cost: $4000</p> 
 
-                        <!-- <h3>January Full Bootcamp</h3>
+                         <h3>January Full Bootcamp</h3>
                         
                           <h4>HTML/CSS</h4>
                           <h4>Intro to Javascript</h4>
@@ -128,18 +128,23 @@
                           <br>
                           <p><i class="fa fa-calendar"></i>Classes begin January 11, 2016 and run through April 21, 2016<br>
                             Bootcamp classes run:<br><i class="fa fa-clock-o"></i> Monday - Thursday  •  10:00am - 3:00pm<br>
-                            Cost: $7000</p>  -->
+                            Cost: $7000</p>  
                     <h5>* Courses will run provided that minimum enrollment requirements are met.</h5>                          
                     <br>
+                    -->
 
       <!-- NEXT IS INPUTTING THE MORAINE VALLEY BOOTCAMP -->
                     <h3>Bootcamp at Moraine Valley*</h3>
 
-                    <p>
-                      Moraine Valley Community College and CodeAbode are collaborating to offer a revolutionary approach to learning to program computers. This 14-week immersive course (11-4 Mon-Thurs) teaches programming through learning to develop interactive web sites and phone and tablet applications.<br><br>
+                    <p> Moraine Valley Community College and CodeAbode are collaborating to offer a revolutionary approach to learning to program computers. 
+                    This 14-week immersive course teaches programming through learning to develop interactive websites and web applications. 
+                    Students learn the JavaScript “stack” (both front-end and back-end programming), while building out their portfolios with projects like a real-time chat app.  
+                    These skills are in high demand in industry, and developing applications for the web is one of the hottest parts of the Information Technology marketplace. 
+						<br><br>
+					Prerequisite: High School diploma or GED. No computer programming experience required, but being a skilled computer user is a plus. 
+					Please bring a laptop to the class. Arrangements can be made for loaner laptops, but students will benefit from having their own computer.
                     
-                    
-                      High School diploma or GED. No computer programming experience required, but being a skilled computer user is a plus. Please bring a laptop to the class. Arrangements can be made for loaner laptops, but students will benefit from having their own computer.<br><br>
+                     <br><br>
                       <h4>HTML/CSS</h4>
                           <h4>Intro to Javascript</h4>
                           <h4>Advanced Javascript</h4>
@@ -168,18 +173,18 @@
     
                   <div class="single_structure_archive wow fadeInUp">
                     
-                    <h3>January Web Programmer Mini-Bootcamp</h3>
+                    <h3>February Night Courses</h3>
                         
-                          <h4>HTML/CSS</h4>
-                          <h4>Intro to Javascript</h4>
-                          <h4>Advanced Javascript</h4>
-                          <h4>Server-Side Integration</h4>
-                          <h4>Java</h4>
-                          <h4>Android</h4>
-                          <br>
-                          <p>Bootcamp classes run:<br><i class="fa fa-clock-o"></i> Monday - Thursday  •  11:00am - 4:00pm<br>
-                            <i class="fa fa-calendar"></i>January 11, 2016 - March 18, 2016<br>
-                            Cost: $3600</p>
+                        
+                        <h4> HTML (Mon/Wed)</h4>
+                          <h4>Javascript (Tues/Thurs)</h4>
+                          <h4>Advanced Javascript (Mon/Wed)</h4>
+                        </br>
+                        <p> February night courses begin on February 1st and run through April 8. Classes are held either Monday/Wednesdays, or Tuesday/Thursdays, from 6:00pm - 9:00pm at 175 W. Washington St. </p>
+                          
+ 						</br> 
+ 						</br>
+ 							<h5>* Courses will run provided that minimum enrollment requirements are met.</h5>  
 
                   </div>
                 

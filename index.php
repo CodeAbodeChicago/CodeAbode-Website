@@ -80,6 +80,7 @@
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="slider_area">
+           
             <!-- Start super slider -->
             <div id="slides">
               <ul class="slides-container">                          
@@ -90,7 +91,9 @@
                     <p>CodeAbode is the first non-profit code school focused on teaching the skills necessary to build innovative websites and applications for the healthcare industry. 
 
                     </p>
-                    <a class="slider_btn" href="http://www.fox32chicago.com/news/2323984-story" target="blank">CodeAbode News</a>
+                    <p> Donate now to our crowdfunding campaign for scholarships! 
+                    </br>Support a student today!</p>
+                    <a class="slider_btn" href="http://codeabodescholarships.mydagsite.com/" target="blank">Donate</a>
                   </div>
                   </li>
 
@@ -98,15 +101,15 @@
                 <li>
                   <img src="img/slider/2.jpg" alt="img">
                    <div class="slider_caption">
-                    <h2>Announcing January Night Classes</h2>
+                    <h2>Announcing February Night Classes</h2>
                     <h3>
-                      STARTING JANUARY 11th
+                      STARTING FEBRUARY 1st
                     </h3>
                     <p>
-                      HTML/CSS
-                      <br>Introduction to Javascript
+                      HTML
+                      <br>Javascript
                       <br>Advanced Javascript
-                      <br>Server Side(Node.js)
+                
 
 
                     </p>
