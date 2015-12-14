@@ -6,17 +6,17 @@ Newest version should go on the master branch, with a proper readme and descript
 Previous Versions
 =================
 
-[Version 1 Branch](https://github.com/CodeAbodeChicago/CodeAbode-Website/tree/original-site-v1)
+Version 1 \[[download zip](https://github.com/CodeAbodeChicago/CodeAbode-Website/archive/original-site-v1.zip)] \[[branch link](https://github.com/CodeAbodeChicago/CodeAbode-Website/tree/original-site-v1)\]
 
 -	Authors: Rex Twedt, Lauren Kalinowski
 -	Tools: HTML5 Boilerplate
 
-[Version 2 Branch](https://github.com/CodeAbodeChicago/CodeAbode-Website/tree/ruchi-v2)
+Version 2 \[[download zip](https://github.com/CodeAbodeChicago/CodeAbode-Website/tree/ruchi-v2)] \[[branch link](https://github.com/CodeAbodeChicago/CodeAbode-Website/tree/ruchi-v2)\]
 
 -	Authors: Ruchi Chhabra
 -	Tools: Bootstrap [Agency](http://startbootstrap.com/template-overviews/agency/) Theme
 
-[Version 3 Branch](https://github.com/CodeAbodeChicago/CodeAbode-Website/tree/landon-v3)
+Version 3 \[[download zip](https://github.com/CodeAbodeChicago/CodeAbode-Website/tree/landon-v3)] \[[branch link](https://github.com/CodeAbodeChicago/CodeAbode-Website/tree/landon-v3)\]
 
 -	Authors: Landon Blackburn, Aileen Rangel
 -	Tools: Bootstrap ["WpF Degree"](http://www.wpfreeware.com/wpf-degree-free-wordpress-education-theme-bootstrap-education-website-template/) Template
