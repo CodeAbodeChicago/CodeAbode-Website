@@ -1,3 +1,6 @@
+<?php /** CodeAbode.com, all rights reserved **/
+$activePage = "Apply";
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -70,75 +73,9 @@
 <!--=========== BEGIN HEADER SECTION ================-->
     <header id="header">
       <!-- BEGIN MENU -->
-      <div class="menu_area">
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">  <div class="container">
-            <div class="navbar-header">
-              <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <!-- LOGO -->           
-              <!-- IMG BASED LOGO  -->
-               <a class="navbar-brand navbar-logo" href="index.html"><img src="./img/logos/CA_logo.png" alt="CodeAbode"></a>             
-                     
-            </div>
-
-                     <!-- ===================MENU TABS================== -->
-
-                            
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-
-                              <!-- HOME -->
-                <li class="active"><a href="index.html">Home</a></li>
-
-
-                              <!-- ABOUT US -->
-                <li class="dropdown">
-                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About Us<span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="./index.html#aboutUs">About CodeAbode</a></li>
-                    <li><a href="./index.html#ourTutors">Our Family</a></li>
-                    <li><a href="./index.html#studentsTestimonial">Our Students</a></li>
-                  </ul>
-                </li> 
-
-
-
-                            <!-- COURSES -->
-                <li class="dropdown">
-                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Courses<span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="./index.html#whyUs">Our Curriculum</a></li>
-                    <li><a href="./index.html#ourCourses">Our Courses</a></li>
-                    <li><a href="./structure.html">Our Schedule</a></li>
-                    <!-- <li><a href="./january_courses.html">Moraine Valley Community College Bootcamp</a></li> -->
-                    <!-- <li><a href="./night.html">Night Classes</a></li> -->
-                  </ul>
-                </li>    
-
-
-                                <!-- EVENTS -->
-                <!-- <li><a href="./events-archive.html">Events</a></li>                
-                <li><a href="./blog-archive.html">Blogs</a></li> -->
-
-
-                              <!-- APPLY -->
-                <li><a href="./apply.html">Apply</a></li>
-
-
-                              <!-- CONTACT US -->
-                <li class="active"><a href="#footer">Contact Us</a>
-                </li>
-
-              </ul><!-- id top-menu -->     
-            </div> <!--/.nav-collapse -->
-          </div>     
-        </nav>  
-      </div>
+<?php
+  include($_SERVER['DOCUMENT_ROOT'] . "/menu.php");
+?>
       <!-- END MENU -->    
     </header>
     <!--=========== END HEADER SECTION ================--> 
@@ -171,28 +108,28 @@
 
                 <div>
                   <label for="email">Email*</label>
-                  <input type="email" name="email"class="wp-form-control wpcf7-email" placeholder="Email address" name="email" required data-validation-required-message="Please enter your email address.">
+                  <input type="email" class="wp-form-control wpcf7-email" placeholder="Email address" name="email" required data-validation-required-message="Please enter your email address.">
                 </div>
 
                 <div>
                   <label for="phone">Phone Number*</label>
-                  <input type="tel" class="wp-form-control wpcf7-text" placeholder="Phone Number" name="phone">
+                  <input type="tel" class="wp-form-control wpcf7-text" placeholder="Phone Number" name="phone" required data-validation-required-message="Please enter your phone number.">
                 </div>
 
                 <div class="form-group">
-                  <label>Are you Interested in Bootcamp or Night Classes?
+                  <label>Are you Interestesd in Bootcamp or Night Classes?
                   </label>
                   <br>
                   <select name="classes">
-                    <option value="october">October Fullstack Bootcamp</option>
-                    <option value="night">October Night Classes</option>
-                    <!-- <option value="january">January  Moraine Valley Community College Bootcamp</option> -->
+                    <option value="january">January Fullstack Bootcamp</option>
+                    <option value="january_night">January Night Classes</option>
+                    <option value="MVCC">January Moraine Valley Community College Bootcamp</option>
                     </select>
                 </div>
                 <textarea class="wp-form-control wpcf7-textarea" cols="30" rows="10" placeholder="Do you have any questions?" name="questions"></textarea>
 
                 <div>
-                  <label for="How did you hear about us?">Could you please let us know how you heard about us?</label>
+                  <label for="How did you hear about us?">Could you Please let us know how you heard about us?</label>
                   <input type="text" class="wp-form-control wpcf7-text" placeholder="How you heard about us" name="marketing" >
                 </div>
 
@@ -245,81 +182,9 @@
 <!--=========== BEGIN FOOTER SECTION ================-->
     <footer id="footer">
       <!-- Start footer top area -->
-      <div class="footer_top">
-        <div class="container">
-          <div class="row">
-
-                  <!-- FIRST COLUMN -->
-            <div class="col-ld-3  col-md-3 col-sm-3">
-              <div class="single_footer_widget">
-                <img src="img/logos/CA_horizontal_small.png">
-                <h5>Decoding Your Future</h5><br>
-  
-                  <!-- <ul class="footer_widget_nav">
-                      COMMENTING OUT DONATE BUTTON FOR NOW
-                  <li><a href="./index.html">Donate</a></li>
-                </ul> -->
-
-                </div>  <!-- class single_footer_widget -->
-            </div> <!-- class col-ld-3  col-md-3 col-sm-3 -->
-
-
-                <!-- <ul class="footer_social"> -->
-<!--                   <li><a data-toggle="tooltip" data-placement="top" title="Facebook" class="soc_tooltip" href="https://www.facebook.com/CodeAbode?fref=ts"><i class="fa fa-facebook"></i></a></li> -->
-<!--                   <li><a data-toggle="tooltip" data-placement="top" title="Twitter" class="soc_tooltip"  href="https://twitter.com/codeabode_chi"><i class="fa fa-twitter"></i></a></li> -->
-<!--                   <li><a data-toggle="tooltip" data-placement="top" title="Google+" class="soc_tooltip"  href="#"><i class="fa fa-google-plus"></i></a></li> -->
-<!--                   <li ><a data-toggle="tooptip" data-placement="top" title="Vimeo" class="soc_tooltip icon" href="https://vimeo.com/user40609946"><img src="./img/logos/vimeo-square-icon.png"><i class="fa fa-vimeo"></i></a></li> -->
-<!--                   <li ><a data-toggle="tooltip" data-placement="top" title="NMNHC" class="soc_tooltip icon" href="http://nmhmchicago.org/index.php/home-sm"><img src="./img/logos/nmhm_logo.png"><i class="fa fa-nmhmc"></i></a></li> -->
-                <!-- </ul> -->
-              
-
-
-                    <!-- SECOND COLUMN -->
-            <div class="col-lg-5 col-md-5 col-sm-5">
-              <div class="single_footer_widget">
-                <h4 class="footer_center">Contact Us:</h4>
-                <p class="footer_center">175 W Washington St - Chicago, IL 60602, USA<br>312.854.8327 - info@codeabode.com</p>
-              </div>  <!-- class single_footer_widget_contact -->
-            </div>   <!-- class col-ld-3  col-md-3 col-sm-3 -->
-
-
-
-
-                    <!-- THIRD COLUMN -->
-
-            <div class="col-ld-4  col-md-4 col-sm-4">
-              <div class="single_footer_widget_museum">
-                  <h4>A division of:</h4>
-                  <p><a id="nmhm" href="http://nmhmchicago.org/"><img src="./img/logos/nmhm_logo.png">The National Museum of Health and Medicine Chicago (NMHM Chicago)</a></p>            
-              </div>  <!--  class single_footer_widget -->
-            </div>   <!--  class col-ld-3  col-md-3 col-sm-3 -->
-          
-
-
-
-          </div> <!-- class row -->
-        </div>   <!-- class container -->
-      </div> <!-- class footer_top -->
-      <!-- End footer top area -->
-<!-- *==================* -->
-<!-- *==================* -->
-      <!-- Start footer bottom area -->
-      <div class="footer_bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-              <div class="footer_bootomLeft">
-                <p> Copyright &copy; All Rights Reserved</p>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
-              <div class="footer_bootomRight">
-                <p>Site being designed by <a href="http://facebook.com/aileen.rangel" rel="nofollow">Aileen Rangel</a> and <a href="http://facebook.com/landon.blackburn">Landon Blackburn</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php
+  include($_SERVER['DOCUMENT_ROOT'] . "/footer.php");
+?>
       <!-- End footer bottom area -->
     </footer>
     <!--=========== END FOOTER SECTION ================-->
@@ -349,6 +214,8 @@
     <script src="js/custom.js"></script>
     <!-- Parsley Form Validation -->
     <script src="js/parsley.min.js"></script>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 
     <!--=============================================== 
     Template Design By WpFreeware Team.

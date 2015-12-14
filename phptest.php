@@ -1,3 +1,4 @@
+<?php /** CodeAbode.com, all rights reserved **/?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -49,16 +50,6 @@
     <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'> 
 
 <!-- ========================Google Ad Tracking================== -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-63298538-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 <!-- ==================End Google Ad Tracking==================== -->
   </head>
   <body>    
@@ -70,75 +61,9 @@
 <!--=========== BEGIN HEADER SECTION ================-->
     <header id="header">
       <!-- BEGIN MENU -->
-      <div class="menu_area">
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">  <div class="container">
-            <div class="navbar-header">
-              <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <!-- LOGO -->           
-              <!-- IMG BASED LOGO  -->
-               <a class="navbar-brand navbar-logo" href="index.html"><img src="./img/logos/CA_logo.png" alt="CodeAbode"></a>             
-                     
-            </div>
-
-                     <!-- ===================MENU TABS================== -->
-
-                            
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-
-                              <!-- HOME -->
-                <li class="active"><a href="index.html">Home</a></li>
-
-
-                              <!-- ABOUT US -->
-                <li class="dropdown">
-                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About Us<span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="./index.html#aboutUs">About CodeAbode</a></li>
-                    <li><a href="./index.html#ourTutors">Our Family</a></li>
-                    <li><a href="./index.html#studentsTestimonial">Our Students</a></li>
-                  </ul>
-                </li> 
-
-
-
-                            <!-- COURSES -->
-                <li class="dropdown">
-                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Courses<span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="./index.html#whyUs">Our Curriculum</a></li>
-                    <li><a href="./index.html#ourCourses">Our Courses</a></li>
-                    <li><a href="./structure.html">Our Schedule</a></li>
-                    <!-- <li><a href="./january_courses.html">Moraine Valley Community College Bootcamp</a></li> -->
-                    <!-- <li><a href="./night.html">Night Classes</a></li> -->
-                  </ul>
-                </li>    
-
-
-                                <!-- EVENTS -->
-                <!-- <li><a href="./events-archive.html">Events</a></li>                
-                <li><a href="./blog-archive.html">Blogs</a></li> -->
-
-
-                              <!-- APPLY -->
-                <li><a href="./apply.html">Apply</a></li>
-
-
-                              <!-- CONTACT US -->
-                <li class="active"><a href="#footer">Contact Us</a>
-                </li>
-
-              </ul><!-- id top-menu -->     
-            </div> <!--/.nav-collapse -->
-          </div>     
-        </nav>  
-      </div>
+      <?php
+  include($_SERVER['DOCUMENT_ROOT'] . "/menu.php");
+?>
       <!-- END MENU -->    
     </header>
     <!--=========== END HEADER SECTION ================--> 
@@ -180,7 +105,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label>Are you Interested in Bootcamp or Night Classes?
+                  <label>Are you Interestesd in Bootcamp or Night Classes?
                   </label>
                   <br>
                   <select name="classes">

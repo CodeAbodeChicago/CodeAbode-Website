@@ -39,7 +39,7 @@ $marketing = $_POST['marketing'];
 $to = 'info@codeabode.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 
 $email_subject = "CodeAbode Application: " . $name;
-$email_body = "Name: " . $name . "\nPhone: " . $phone . "\nWhich session are you interested in: " . $classes . "\nAny additional questions: " . $questions . "\nHow did you hear about us: " . $marketing;
+$email_body = "Name: " . $name . "\nEmail: " . $email_address . "\nPhone: " . $phone . "\nWhich session are you interested in: " . $classes . "\nAny additional questions: " . $questions . "\nHow did you hear about us: " . $marketing;
 $headers = "From: noreply@codeAbode.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";	// Added '.' to make this a string concatenation operation
 $result = mail($to, $email_subject, $email_body, $headers);
@@ -50,7 +50,7 @@ $result = mail($to, $email_subject, $email_body, $headers);
 //mail is sent; just reaching server
 if($result == 1) {
 	// redirect page to thankYou.html if form was successfully submitted
-	header('Location: ../thankYou.html');
+	header('Location: ../thankYou.php');
    // echo "Application successfully submitted.";
    // return 1;
 } else {

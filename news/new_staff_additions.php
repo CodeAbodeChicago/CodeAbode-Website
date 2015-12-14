@@ -1,3 +1,4 @@
+<?php /** CodeAbode.com, all rights reserved **/?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -65,50 +66,9 @@
     <!--=========== BEGIN HEADER SECTION ================-->
     <header id="header">
       <!-- BEGIN MENU -->
-      <div class="menu_area">
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">  <div class="container">
-            <div class="navbar-header">
-              <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <!-- LOGO -->           
-              <!-- IMG BASED LOGO  -->
-               <a class="navbar-brand navbar-logo" href="index.html"><img src="../img/logos/CA_horizontal_small.png" alt="CodeAbode"></a>             
-                     
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-                <li class="active"><a href="../index.html">Home</a></li>
-
-                <li class="dropdown">
-                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Courses<span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="../courses.html">Full Class List</a></li>
-                    <li><a href="../bootcamp.html">Fall Fullstack Classes</a></li>
-                    <li><a href="../january_courses.html">Moraine Valley Community College Bootcamp</a></li>
-                    <li><a href="../night.html">Night Classes</a></li>
-                  </ul>
-                </li>    
-<!--                 <li><a href="../events-archive.html">Events</a></li>                
-                <li><a href="../blog-archive.html">Blogs</a></li> -->
-                <li class="dropdown">
-                  <a href="#aboutUs" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About Us<span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="http://nmhmchicago.org/">National Museum of Health + Medicine Chicago</a></li>
-<!--                     <li><a href="../mission.html">Our Mission</a></li>
-                    <li><a href="../family.html">Our Family</a></li> -->
-                  </ul>
-                </li> 
-                <li><a href="../apply.html">Apply</a></li>
-      </ul>           
-            </div><!--/.nav-collapse -->
-          </div>     
-        </nav>  
-      </div>
+      <?php
+  include($_SERVER['DOCUMENT_ROOT'] . "/menu.php");
+?>
       <!-- END MENU -->    
     </header>
     <!--=========== END HEADER SECTION ================--> 
@@ -263,82 +223,9 @@
  <!--=========== BEGIN FOOTER SECTION ================-->
     <footer id="footer">
       <!-- Start footer top area -->
-      <div class="footer_top">
-        <div class="container">
-          <div class="row">
-            <div class="col-ld-3  col-md-3 col-sm-3">
-              <div class="single_footer_widget">
-                <img src="../img/logos/CA_logo.png">
-                <h3>DECODING YOUR FUTURE</h3>
-                <ul class="footer_social">
-<!--                   <li><a data-toggle="tooltip" data-placement="top" title="Facebook" class="soc_tooltip" href="https://www.facebook.com/CodeAbode?fref=ts"><i class="fa fa-facebook"></i></a></li> -->
-<!--                   <li><a data-toggle="tooltip" data-placement="top" title="Twitter" class="soc_tooltip"  href="https://twitter.com/codeabode_chi"><i class="fa fa-twitter"></i></a></li> -->
-<!--                   <li><a data-toggle="tooltip" data-placement="top" title="Google+" class="soc_tooltip"  href="#"><i class="fa fa-google-plus"></i></a></li> -->
-                  <li ><a data-toggle="tooptip" data-placement="top" title="Vimeo" class="soc_tooltip icon" href="https://vimeo.com/user40609946"><img src="../img/logos/vimeo-square-icon.png"><i class="fa fa-vimeo"></i></a></li>
-                  <li ><a data-toggle="tooltip" data-placement="top" title="NMNHC" class="soc_tooltip icon" href="http://nmhmchicago.org/index.php/home-sm"><img src="../img/logos/nmhm_logo.png"><i class="fa fa-nmhmc"></i></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-ld-3  col-md-3 col-sm-3">
-              <div class="single_footer_widget">
-                <h3>CodeAbode</h3>
-                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> -->
-                <ul class="footer_widget_nav">
-                  <li><a href="../index.html">Home</a></li>
-                  <li><a href="../index.html#aboutUs">About Us</a></li>
-<!--                   <li><a href="#">Donate</a></li> -->
-                  <li><a href="../events-archive.html">Events</a></li>
-<!--                   <li><a href="./news.html">News &amp; Media</a> -->
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-ld-3  col-md-3 col-sm-3">
-              <div class="single_footer_widget">
-                <h3>Getting Started</h3>
-                <ul class="footer_widget_nav">
-                  <li><a href="../apply.html">Apply</a></li>
-                  <li><a href="../courses.html">Courses</a></li>
-                </ul>
-              </div>             
-             
-            </div>
-            <div class="col-ld-3  col-md-3 col-sm-3">
-              <div class="single_footer_widget">
-<!--                 <h4>In Partnership with:</h4><br> -->
-                <img src="../img/logos/nmhm_logo.png" href="http://nmhmchicago.org/index.php/home-sm"><p>National Museum of Health and Medicine Chicago</p></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-12 col-md-12 col-sm-12">
-            <div class="single_footer_widget_contact">
-              <h3 class="footer_center">Contact Us:</h3>
-
-              <p class="footer_center">175 W Washington St - Chicago, IL 60602, USA<br>312.854.8327 - info@codeabode.com</p>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <!-- End footer top area -->
-
-      <!-- Start footer bottom area -->
-      <div class="footer_bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-              <div class="footer_bootomLeft">
-                <p> Copyright &copy; All Rights Reserved</p>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
-              <div class="footer_bootomRight">
-                <p>Designed by <a href="http://facebook.com/landon.blackburn" rel="nofollow">Landon Blackburn</a> with help from <a href="https://www.facebook.com/aileen.rangel">Aileen Rangel</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php
+  include($_SERVER['DOCUMENT_ROOT'] . "/footer.php");
+?>
       <!-- End footer bottom area -->
     </footer>
     <!--=========== END FOOTER SECTION ================--> 
