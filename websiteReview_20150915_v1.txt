@@ -1,0 +1,73 @@
+
+priority list:
+
+	sitemap? -> good practice to make sure you stay organized, have all of the necessary information
+
+
+	high:
+		Fix typos
+			typo - jills quote "didn't"
+			typos - semicolon on apply page
+			typos - Mike "f"ounded -> lowercase f (in about us)
+		We need an explanation of the bootcamp vs. the night classes in addition to the course list
+		Simplify "courses" page
+			1 courses page
+			doesn't need a submenu in nav bar
+			courses feel like indivudual products but no clue what a bootcamp is
+			lowercase text on these pages
+			view course slider shouldn't exist
+			remove prices from individual course info
+		Add contact form
+		Page order
+			"about us" comes before courses on the home page
+			"why us" is never referenced in the nav bar
+			"our family" is not the same as "about us"...?
+
+			remove home?
+			why us
+			program
+			curriculum
+			about us
+			apply
+
+
+	med:
+		simplify "about us" page
+			1 about us page
+			lowercase text on this pages
+			no transition on profile hover and inconsistent coloring
+			staff slider is confusing in how it wraps
+			basement kennel thing for rex
+		"why us" section, first and last elements are the same
+			green text is hard to read!
+		decrease width of news section on homepage
+		layout of "apply now" page
+		if we are not writing news stories, we should make the home page "CodeAbode in the News" and just link to external pages
+
+
+	low:
+		Update Images
+			Photos blurry and lack depth of focus
+			stretched images everywhere
+			unprofessional images on courses
+		Headers are busy/hard to read easily
+		"why us" padding, center images
+		open in new tab for external links
+		simplify footer
+			don't need to reiterate links
+			contact, social media, maybe a short bio, other important info?
+			nmhmc logo?
+		headers should match name of page/link that brings you to the page
+		misaligned elements in footer and header
+		year in copyright notice
+		images stretch and squash on resize
+		links to facebook pages are unprofessional
+			use personal portfolio site (or linkedin)
+
+
+** From Elise
+In a couple places, it mentions our "501.3c" status.  Should be 501c3
+On one of the pages that scrolls on the front page, it says "to help the disabled learn..."  should we change this to "to help people with disabilities learn..."  so that it is 'people first language'?
+Under the "WHY US" part, under "Health Focused" - 'insdusty' should be 'industry'
+Under "Our Family", after I'm listed, it wraps around and lists the first 4 people again
+Under the HTML/CSS course header is info for the capstone course - might be intentional?
