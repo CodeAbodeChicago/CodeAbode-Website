@@ -56,6 +56,7 @@ var autoprefixer = require("gulp-autoprefixer");
 // var uglify = require("gulp-uglify");
 var sourcemaps = require("gulp-sourcemaps");
 var liveReload = require("gulp-livereload");
+var merge = require("merge-stream");
 
 // Other modules
 var express = require("express");
@@ -133,7 +134,8 @@ gulp.task("watch", function () {
 // Default task is run when "gulp" is run from terminal
 gulp.task("default", [
 	"icons",
-	"sass", 
+	"sass",
+	"copy-js",
 	"express-server",
 	"watch"
 ]);
@@ -159,4 +161,14 @@ gulp.task("default", [
 // 		.pipe(uglify())
 // 		.pipe(gulp.dest("public/js"))
 // });
+
+
+// copy bootstrap and jquery js files into public/js folder
+gulp.task("copy-js", function() {
+	var jquery = gulp.src("bower_components/jquery/dist/jquery.min.js")
+		.pipe(gulp.dest("public/js"));
+	var bootstrap = gulp.src("bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js")
+		.pipe(gulp.dest("public/js"));
+	return merge(jquery, bootstrap);
+});
 
