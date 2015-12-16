@@ -1,12 +1,4 @@
-// $navbar-default-bg: rgba(37, 172, 111, 0.9);
-// $navbar-default-color: rgba(255, 255, 255, 1);
-// $navbar-default-link-color: rgba(255, 255, 255, 1);
-// $navbar-default-link-active-color: rgba(255, 255, 255, 1);
-// $navbar-default-link-hover-color: rgba(255, 255, 255, 1);
-// $navbar-default-link-active-bg: rgba(0, 0, 0, 0);
-// $navbar-default-link-active-bg: rgba(0, 0, 0, 0);
-// $navbar-height: 80px;
-
+// Navbar
 $navbar-default-bg: rgba(0, 0, 0, 1);
 $navbar-default-color: #25ac6f;
 $navbar-default-link-color: #25ac6f;
@@ -14,3 +6,12 @@ $navbar-default-link-active-color: #25ac6f;
 $navbar-default-link-hover-color: #25ac6f;
 $navbar-default-link-active-bg: rgba(0, 0, 0, 0);
 $navbar-height: 80px;
+
+// Typography
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+@import url(https://fonts.googleapis.com/css?family=Hind:300,400);
+$font-family-sans-serif: "Open Sans", sans-serif;
+$headings-font-family: "Hind", sans-serif;
+$headings-font-weight: 300;
+$text-color: rgb(84,84,84);
+$font-size-base: 16px;
