@@ -19,10 +19,6 @@ body {
 	height: 700px;
 }
 
-// .navbar .container-fluid {
-// 	width: 960px;
-// }
-
 .navbar-brand img {
 	height: 100%;
 }
@@ -34,3 +30,111 @@ body {
 .navbar {
 	font-size: 16px; 
 }
+
+
+
+/*
+	This is some sass styling for the footer
+	(and this comment should only show up in the sass file!)
+
+	Just trying out a couple of sass concepts (if possible)...
+	 - nesting
+	 - variables
+	 - mixins
+*/
+
+// Footer styling
+footer {
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+
+	.footer-links a {
+		display: block;
+	  text-decoration: none;
+	  display: block;
+	  padding: 6px 10px;
+	  color: #fff;
+
+	  &:hover {
+			color: #9F9F9F;
+	  }
+  }
+
+  form {
+	  text-align: left;
+	  margin: 0px;
+	  width: 100%;
+
+	  label {
+	  	display: block;
+	  }
+
+		input[type="email"] {
+		  width: 80%;
+		  margin: 4px auto;
+		  line-height: 1.4em;
+		}
+
+		input[type="submit"] {
+		  outline: none;
+		  font-size: 0.8em;
+		  height: 2.4em;
+		  width: 20%;
+		  line-height: 1.4em;
+		  background-color: #2A2A2D;
+		  color: white;
+		  border: none;
+		  margin: 2px auto;
+		  float: right;
+		  cursor: pointer;
+
+		  // Rounded corners
+		  border-radius: 4px;
+		  -webkit-border-radius: 4px;
+		  -moz-border-radius: 4px;
+		  -o-border-radius: 4px;
+
+		  // Drop Shadow
+		  box-shadow: 2px 2px 4px #000000;
+		  -webkit-box-shadow: 2px 2px 4px #000000;
+		  -moz-box-shadow: 2px 2px 4px #000000;
+		  -o-box-shadow: 2px 2px 4px #000000;
+
+			&:hover {
+			  color: #C3C3C3;
+			}
+
+			&:active {
+			  color: #94939E;
+			  background-color: #3D3D41;
+			  border: none;
+			}
+		}
+  }
+
+
+	.social-links {
+	  min-width: 110px;
+	  width: 90%;
+	  margin: 18px auto;
+
+		a {
+		  display: inline-block;
+		  vertical-align: top;
+
+			&:hover {
+			  opacity: 0.5;
+			}
+
+			img {
+			  width: 36px;
+			  height: 36px;
+			}
+		}
+	}
+}
+
+
+
