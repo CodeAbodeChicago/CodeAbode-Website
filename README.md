@@ -1,7 +1,44 @@
 CodeAbode Website
 =================
 
-Newest version should go on the master branch, with a proper readme and description of tools/workflow.
+The newest version of the website uses a set of modern tools for web development:
+
+-	[Bootstrap](http://getbootstrap.com/) - responsive HTML/CSS/JS framework
+-	[Bower](http://bower.io/) - a package manager for client-side libraries
+-	[SASS](http://sass-lang.com/) - "CSS with superpowers", a more powerful way to write CSS
+-	[Gulp](http://gulpjs.com/) - an automation tool written in [nodejs](https://nodejs.org/en/)
+-	LiveReload browser [extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) - a chrome extension that allows the page to automatically refresh when changes to the website are made.
+
+Directory Structure
+-------------------
+
+```
+.
+├── public/          # The built website - this is what gets posted online
+	├── js/
+	├── css/
+	├── fonts/
+	├── images/
+	└── index.html
+├── source/          # The pre-built website - SASS files mainly at the moment.
+	└── scss/
+├── bower.json       # The information on how client-side packages are needed
+├── package.json     # The information on how node packages are needed
+└── README.md
+```
+
+Installation
+------------
+
+1.	Download and install [node](https://nodejs.org/en/) - I recommend the long-term support version (currently 4.2.3).
+2.	Open terminal, install gulp using: `npm install -g gulp`. (On macs: `sudo npm install -g gulp`).
+3.	In terminal again, install bower using: `npm install -g bower`. (On macs: `sudo npm install -g bower`).
+4.	Download/clone this repository.
+5.	Open terminal and navigate to the repository folder.
+6.	Let bower install bootstrap, fontawesome and other client-side libraries: `bower install`. (On macs: `sudo bower install`).
+7.	Let the node package manager install required dependencies for the gulp automation process: `npm install`. (On macs: `sudo npm install`).
+8.	Start the build by running: `gulp`. You can open your browser to "http://localhost:8080/" to see the site running.
+9.	(Optional: install the [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) chrome extension. When the site is open, press the LiveReload icon to start LiveReload running.)
 
 Previous Versions
 =================
