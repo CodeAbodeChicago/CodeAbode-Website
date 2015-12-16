@@ -51,12 +51,10 @@ var gulp = require("gulp");
 var bower = require("gulp-bower");
 var sass = require("gulp-sass");
 var autoprefixer = require("gulp-autoprefixer");
-// var jshint = require("gulp-jshint");
-// var concat = require("gulp-concat");
-// var uglify = require("gulp-uglify");
 var sourcemaps = require("gulp-sourcemaps");
 var liveReload = require("gulp-livereload");
 var merge = require("merge-stream");
+var ghPages = require("gulp-gh-pages");
 
 // Other modules
 var express = require("express");
@@ -117,6 +115,15 @@ gulp.task("reload-html", function () {
 		.pipe(liveReload());
 });
 
+// copy bootstrap and jquery js files into public/js folder
+gulp.task("copy-js", function() {
+	var jquery = gulp.src("bower_components/jquery/dist/jquery.min.js")
+		.pipe(gulp.dest("public/js"));
+	var bootstrap = gulp.src("bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js")
+		.pipe(gulp.dest("public/js"));
+	return merge(jquery, bootstrap);
+});
+
 // Start an express server that serves public/ to localhost:8080
 gulp.task("express-server", function () {
 	var app = express();
@@ -131,6 +138,14 @@ gulp.task("watch", function () {
 	gulp.watch("public/**/*.html", ["reload-html"]);
 });
 
+// Deploy the public/ folder to gh-pages
+gulp.task("deploy", function() {
+  return gulp.src("./public/**/*")
+    .pipe(ghPages({
+    	remoteUrl: "https://github.com/CodeAbodeChicago/CodeAbode-Website.git"
+    }));
+});
+
 // Default task is run when "gulp" is run from terminal
 gulp.task("default", [
 	"icons",
@@ -140,6 +155,14 @@ gulp.task("default", [
 	"watch"
 ]);
 
+
+
+// _____________________________________________________________________________
+// Not implemented...yet
+
+// var jshint = require("gulp-jshint");
+// var concat = require("gulp-concat");
+// var uglify = require("gulp-uglify");
 
 // // Copy html from source to public 
 // gulp.task("copy-html", function () {
@@ -161,14 +184,3 @@ gulp.task("default", [
 // 		.pipe(uglify())
 // 		.pipe(gulp.dest("public/js"))
 // });
-
-
-// copy bootstrap and jquery js files into public/js folder
-gulp.task("copy-js", function() {
-	var jquery = gulp.src("bower_components/jquery/dist/jquery.min.js")
-		.pipe(gulp.dest("public/js"));
-	var bootstrap = gulp.src("bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js")
-		.pipe(gulp.dest("public/js"));
-	return merge(jquery, bootstrap);
-});
-

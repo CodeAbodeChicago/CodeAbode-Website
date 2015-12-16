@@ -1,2 +1,6 @@
+# Client and server-side dependencies
 node_modules
 bower_components
+
+# Directory created by the deploy pushes to gh-pages
+.publish

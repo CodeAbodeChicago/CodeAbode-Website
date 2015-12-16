@@ -40,6 +40,12 @@ Installation
 8.	Start the build by running: `gulp`. You can open your browser to "http://localhost:8080/" to see the site running.
 9.	(Optional: install the [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) chrome extension. When the site is open, press the LiveReload icon to start LiveReload running.)
 
+Gulp Automation
+---------------
+
+1.	`gulp` - runs the default build command which creates the public/ files, watches them for changes and sets up LiveReload.
+2.	`gulp deploy` - takes the current files in the public/ folder and pushes them to the gh-pages branch. (TODO: this task should build the site before deploying.)
+
 Previous Versions
 =================
 
