@@ -44,7 +44,7 @@ Gulp Automation
 ---------------
 
 1.	`gulp` - runs the default build command which creates the public/ files, watches them for changes and sets up LiveReload.
-2.	`gulp deploy` - takes the current files in the public/ folder and pushes them to the gh-pages branch. (TODO: this task should build the site before deploying.)
+2.	`gulp deploy` - takes the current files in the public/ folder and pushes them to the gh-pages branch. (TODO: this task should build the site before deploying.) **NOTE: this needs to be run from a terminal that is set up for git!**
 
 Previous Versions
 =================
