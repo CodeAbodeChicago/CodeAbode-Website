@@ -91,8 +91,8 @@ gulp.task("sass", function () {
 		.pipe(sourcemaps.init())
 			.pipe(sassStream)
 			.pipe(autoprefixer({
-	            browsers: [
-	            	// https://github.com/twbs/bootstrap-sass#sass-autoprefixer
+				browsers: [
+					// https://github.com/twbs/bootstrap-sass#sass-autoprefixer
 					"Android 2.3",
 					"Android >= 4",
 					"Chrome >= 20",
@@ -102,8 +102,8 @@ gulp.task("sass", function () {
 					"Opera >= 12",
 					"Safari >= 6"
 				],
-	            cascade: true
-	        }))
+				cascade: true
+			}))
 		.pipe(sourcemaps.write("maps"))
 		.pipe(gulp.dest("public/css"))
 		.pipe(liveReload());
@@ -141,9 +141,9 @@ gulp.task("watch", function () {
 // Deploy the public/ folder to gh-pages
 gulp.task("deploy", function() {
   return gulp.src("./public/**/*")
-    .pipe(ghPages({
-    	remoteUrl: "https://github.com/CodeAbodeChicago/CodeAbode-Website.git"
-    }));
+	.pipe(ghPages({
+		remoteUrl: "https://github.com/CodeAbodeChicago/CodeAbode-Website.git"
+	}));
 });
 
 // Default task is run when "gulp" is run from terminal
