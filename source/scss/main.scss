@@ -33,17 +33,17 @@ body {
 
 
 
-/*
-	This is some sass styling for the footer
-	(and this comment should only show up in the sass file!)
 
-	Just trying out a couple of sass concepts (if possible)...
-	 - nesting
-	 - variables
-	 - mixins
-*/
+//	This is some sass styling for the footer
+//	(and this comment should only show up in the sass file!)
+//
+//	Just trying out a couple of sass concepts (if possible)...
+//	 - nesting
+//	 - variables
+//	 - mixins
 
-// Footer styling
+
+/* Footer styling */
 footer {
 	width: 100%;
 	background-color: black;
@@ -90,13 +90,13 @@ footer {
 		  float: right;
 		  cursor: pointer;
 
-		  // Rounded corners
+		  /* Rounded corners */
 		  border-radius: 4px;
 		  -webkit-border-radius: 4px;
 		  -moz-border-radius: 4px;
 		  -o-border-radius: 4px;
 
-		  // Drop Shadow
+		  /* Drop Shadow */
 		  box-shadow: 2px 2px 4px #000000;
 		  -webkit-box-shadow: 2px 2px 4px #000000;
 		  -moz-box-shadow: 2px 2px 4px #000000;
