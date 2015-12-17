@@ -10590,12 +10590,14 @@ footer .footer-links a {
   display: block;
   text-decoration: none;
   display: block;
-  padding: 6px 10px;
+  padding: 4px 10px;
+  /* color: #fff; */
   color: #fff;
 }
 
 footer .footer-links a:hover {
-  color: #9F9F9F;
+  /* color: #9F9F9F; */
+  color: #bfbfbf;
 }
 
 footer form {
