@@ -1,27 +1,14 @@
-
-@import "_helper-classes";
-@import "_custom-bootstrap-variables";
-
+@import "constants";
+@import "helper-classes";
+@import "custom-bootstrap-variables";
 @import "bootstrap";
 @import "font-awesome";
 
 
 
-body {
-	padding-top: 80px; // To account for the fixed header 
-}
-
-#banner {
-	background-image: url("../images/students/1.jpg");
-	background-image: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	height: 700px;
-}
-
-// .navbar .container-fluid {
-// 	width: 960px;
-// }
+/*
+	NAVBAR
+*/
 
 .navbar-brand img {
 	height: 100%;
@@ -33,4 +20,53 @@ body {
 }
 .navbar {
 	font-size: 16px; 
+}
+
+/*
+	BANNER
+*/
+
+#banner {
+	background-image: url("../images/students/1.jpg");
+	background-image: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 750px;
+	overflow: auto; // Prevent margin collapsing on the first child element
+	color: white;
+	position: relative;
+	.banner-content {
+		padding-top: 80px;
+		width: 75%;
+		@include absolute-center-at(50%, 50%);
+		text-align: center; // Center inline elements
+		text-shadow: 2px 2px 5px rgba(0,0,0,0.35);
+		.banner-title {
+			margin-top: 0; // To make the centering work
+			padding-bottom: 40px;
+			font-family: Raleway;
+			font-size: 80px;
+			font-weight: 300;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+		.btn {
+			outline: none;
+			font-size: 35px;
+			font-family: Raleway;
+			font-weight: 300;
+		}
+		.banner-subtitle {
+			margin-bottom: 0; // To make the centering work
+			padding-top: 10px;
+			font-family: Raleway;
+			font-size: 40px;
+			font-weight: 300;
+		}
+		.highlight {
+			color: $codeabode-green;
+			border-bottom: 5px solid $codeabode-green;
+			font-weight: 800;
+		}
+	}
 }
