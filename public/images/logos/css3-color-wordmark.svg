@@ -1,20 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="298px" height="420px" viewBox="0 0 298 420" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <title>Slice 1</title>
-    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
-    <defs></defs>
-    <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Layer_1">
-            <path d="M233.164,15.681 L208.476,15.681 L234.15,43.54 L234.15,56.801 L181.268,56.801 L181.268,41.275 L206.937,41.275 L181.268,13.415 L181.268,0.135 L233.164,0.135 L233.164,15.681 L233.164,15.681 Z M170.786,15.681 L146.098,15.681 L171.771,43.54 L171.771,56.801 L118.889,56.801 L118.889,41.275 L144.561,41.275 L118.889,13.415 L118.889,0.135 L170.786,0.135 L170.786,15.681 L170.786,15.681 Z M109.018,16.312 L82.378,16.312 L82.378,40.625 L109.018,40.625 L109.018,56.801 L63.444,56.801 L63.444,0.135 L109.018,0.135 L109.018,16.312 L109.018,16.312 Z M109.018,16.312" id="Shape" fill="#131313"></path>
-            <path d="M27.142,386.29 L0.071,82.67 L297.521,82.67 L270.425,386.241 L148.614,420.011 L27.142,386.29 Z M27.142,386.29" id="Shape" fill="#1572B6"></path>
-            <path d="M148.798,394.199 L247.225,366.911 L270.382,107.496 L148.798,107.496 L148.798,394.199 Z M148.798,394.199" id="Shape" fill="#33A9DC"></path>
-            <g id="Group" transform="translate(55.000000, 142.000000)">
-                <path d="M93.797,75.496 L143.072,75.496 L146.475,37.364 L93.797,37.364 L93.797,0.125 L93.926,0.125 L187.172,0.125 L186.279,10.116 L177.127,112.732 L93.797,112.732 L93.797,75.496 Z M93.797,75.496" id="Shape" fill="#FFFFFF"></path>
-                <path d="M94.02,172.204 L93.857,172.25 L52.385,161.051 L49.733,131.353 L29.582,131.353 L12.354,131.353 L17.57,189.82 L93.848,210.996 L94.02,210.948 L94.02,172.204 Z M94.02,172.204" id="Shape" fill="#EBEBEB"></path>
-                <path d="M139.907,111.156 L135.423,161.026 L93.891,172.236 L93.891,210.978 L170.23,189.82 L170.79,183.53 L177.268,111.156 L139.907,111.156 Z M139.907,111.156" id="Shape" fill="#FFFFFF"></path>
-                <path d="M93.926,0.125 L93.926,23.253 L93.926,37.272 L93.926,37.364 L4.098,37.364 L3.979,37.364 L3.232,28.994 L1.535,10.116 L0.645,0.125 L93.926,0.125 Z M93.926,0.125" id="Shape" fill="#EBEBEB"></path>
-                <path d="M93.797,75.5 L93.797,98.629 L93.797,112.646 L93.797,112.738 L52.969,112.738 L52.85,112.738 L52.104,104.369 L50.406,85.491 L49.516,75.5 L93.797,75.5 Z M93.797,75.5" id="Shape" fill="#EBEBEB"></path>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#1572B6;}
+	.st1{fill:#33A9DC;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#EBEBEB;}
+</style>
+<title>HTML5 Logo</title>
+<g id="Page_1">
+	<g id="Layer_1_1_">
+		<path id="Shape" d="M358.2,19h-30l31.2,33.8v16.1h-64.2V50.1h31.2l-31.2-33.8V0.1h63V19L358.2,19z M282.5,19h-30l31.2,33.8v16.1
+			h-64.2V50.1h31.2l-31.2-33.8V0.1h63V19L282.5,19z M207.5,19.8h-32.4v29.5h32.4v19.6h-55.3V0.1h55.3V19.8L207.5,19.8z"/>
+		<path id="Shape_1_" class="st0" d="M108.1,469.1L75.2,100.4h361.2L403.5,469l-147.9,41L108.1,469.1z"/>
+		<path id="Shape_2_" class="st1" d="M255.8,478.7l119.5-33.1l28.1-315H255.8V478.7z"/>
+		<g id="Group" transform="translate(55.000000, 142.000000)">
+			<path id="Shape_3_" class="st2" d="M200.8,122.1h59.8l4.1-46.3h-64V30.6h0.2h113.2l-1.1,12.1L302,167.3H200.8V122.1z"/>
+			<path id="Shape_4_" class="st3" d="M201.1,239.5l-0.2,0.1L150.5,226l-3.2-36.1h-24.5h-20.9l6.3,71l92.6,25.7l0.2-0.1V239.5z"/>
+			<path id="Shape_5_" class="st2" d="M256.8,165.4l-5.4,60.6l-50.4,13.6v47l92.7-25.7l0.7-7.6l7.9-87.9H256.8z"/>
+			<path id="Shape_6_" class="st3" d="M201,30.6v28.1v17v0.1H91.9h-0.1l-0.9-10.2l-2.1-22.9l-1.1-12.1H201z"/>
+			<path id="Shape_7_" class="st3" d="M200.8,122.1v28.1v17v0.1h-49.6h-0.1l-0.9-10.2l-2.1-22.9l-1.1-12.1H200.8z"/>
+		</g>
+	</g>
+</g>
 </svg>

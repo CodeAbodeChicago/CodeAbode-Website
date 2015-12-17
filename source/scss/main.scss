@@ -23,6 +23,16 @@
 
 
 /*
+	ALL SECTIONS
+*/
+
+.section-title {
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+
+/*
 	BANNER
 */
 
@@ -68,6 +78,25 @@
 			border-bottom: 5px solid $codeabode-green;
 			font-weight: 800;
 		}
+	}
+}
+
+
+/*
+	TECHNOLOGY
+*/
+
+#technology {
+	.row {
+		margin-bottom: 20px;
+	}
+	div {
+		height: 150px;	
+	}
+	div img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
 	}
 }
 
