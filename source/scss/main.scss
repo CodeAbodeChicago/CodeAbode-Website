@@ -54,11 +54,14 @@ footer {
 		display: block;
 	  text-decoration: none;
 	  display: block;
-	  padding: 6px 10px;
-	  color: #fff;
+	  padding: 4px 10px;
+	  /* color: #fff; */
+	  $link-color: #fff;
+	  color: $link-color;
 
 	  &:hover {
-			color: #9F9F9F;
+			/* color: #9F9F9F; */
+			color: darken($link-color, 25%);
 	  }
   }
 
