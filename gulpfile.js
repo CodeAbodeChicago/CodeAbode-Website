@@ -55,6 +55,7 @@ var sourcemaps = require("gulp-sourcemaps");
 var liveReload = require("gulp-livereload");
 var merge = require("merge-stream");
 var ghPages = require("gulp-gh-pages");
+var open = require('gulp-open');
 
 // Other modules
 var express = require("express");
@@ -63,6 +64,11 @@ var path = require("path");
 
 // _____________________________________________________________________________
 // Gulp tasks
+
+gulp.task("open", function() {
+	return gulp.src(__filename)
+		.pipe(open({ uri: "http://127.0.0.1:8080" }));
+});
 
 gulp.task("bower", function () {
 	return bower()
@@ -152,7 +158,8 @@ gulp.task("default", [
 	"sass",
 	"copy-js",
 	"express-server",
-	"watch"
+	"watch",
+	"open"
 ]);
 
 
