@@ -6,3 +6,12 @@
 		padding-bottom: $i * 10px;
 	}
 }
+
+// Center an element over a particular point, e.g. move the center of an element
+// to (x, y)
+@mixin absolute-center-at($x: 50%, $y: 50%) {
+	position: absolute;
+	left: $x;
+	top: $y;
+	transform: translate(-50%, -50%);
+}
