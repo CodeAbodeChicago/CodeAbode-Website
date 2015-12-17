@@ -1,15 +1,16 @@
+// Color palette
+$brand-primary: $codeabode-green;
+
 // Navbar
-$navbar-default-bg: rgba(0, 0, 0, 1);
-$navbar-default-color: #25ac6f;
-$navbar-default-link-color: #25ac6f;
-$navbar-default-link-active-color: #25ac6f;
-$navbar-default-link-hover-color: #25ac6f;
+$navbar-default-bg: rgba(0,0,0,0.8);
+$navbar-default-color: $codeabode-green;
+$navbar-default-link-color: $codeabode-green;
+$navbar-default-link-active-color: $codeabode-green;
+$navbar-default-link-hover-color: $codeabode-green;
 $navbar-default-link-active-bg: rgba(0, 0, 0, 0);
 $navbar-height: 80px;
 
 // Typography
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
-@import url(https://fonts.googleapis.com/css?family=Hind:300,400);
 $font-family-sans-serif: "Open Sans", sans-serif;
 $headings-font-family: "Hind", sans-serif;
 $headings-font-weight: 300;
