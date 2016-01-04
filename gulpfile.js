@@ -1,17 +1,5 @@
 /*
 
-	Project Structure
-	=================
-
-	Linting
-	=======
-
-	Default task
-	============
-
-	Watch
-	=====
-
 	Source Maps
 	===========
 	
@@ -168,33 +156,3 @@ gulp.task("default", [
 	"watch",
 	"open"
 ]);
-
-
-
-// _____________________________________________________________________________
-// Not implemented...yet
-
-// var jshint = require("gulp-jshint");
-// var concat = require("gulp-concat");
-// var uglify = require("gulp-uglify");
-
-// // Copy html from source to public 
-// gulp.task("copy-html", function () {
-// 	return gulp.src("source/**/*.html")
-// 		.pipe(gulp.dest("public"));
-// });
-
-// // "Lint" the JavaScript to check for any issues
-// gulp.task("lint", function () {
-// 	return gulp.src("source/js/*.js")
-// 		.pipe(jshint())
-// 		.pipe(jshint.reporter("jshint-stylish"));
-// });
-
-// // Combine all JS scripts into one file and minimize them
-// gulp.task("combine-uglify-scripts", function () {
-// 	return gulp.src("source/js/*.js")
-// 		.pipe(concat("all.js"))
-// 		.pipe(uglify())
-// 		.pipe(gulp.dest("public/js"))
-// });
