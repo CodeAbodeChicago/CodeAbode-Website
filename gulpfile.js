@@ -48,7 +48,6 @@
 
 // Gulp & gulp plugins
 var gulp = require("gulp");
-var bower = require("gulp-bower");
 var sass = require("gulp-sass");
 var autoprefixer = require("gulp-autoprefixer");
 var sourcemaps = require("gulp-sourcemaps");
@@ -70,11 +69,6 @@ var fs = require("fs");
 gulp.task("open", function() {
 	return gulp.src(__filename)
 		.pipe(open({ uri: "http://127.0.0.1:8080" }));
-});
-
-gulp.task("bower", function () {
-	return bower()
-		.pipe(gulp.dest("bower_components"));
 });
 
 gulp.task("icons", function () {
