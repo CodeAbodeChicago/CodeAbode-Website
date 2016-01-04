@@ -10620,6 +10620,17 @@ button.close {
      object-fit: cover;
 }
 
+#schedule-section .course-offering .course-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+#schedule-section .course-offering .course-description {
+  font-size: 20px;
+  line-height: 150%;
+}
+
 /*
 	NAVBAR
 */
