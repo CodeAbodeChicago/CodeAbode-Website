@@ -1,6 +1,6 @@
 // Create classes for easily adding vertical padding, e.g.:
 // 	"vertical-padding-10" for 10px of top and bottom padding
-@for $i from 1 through 5 {
+@for $i from 1 through 10 {
 	.vertical-padder-#{$i * 10} { 
 		padding-top: $i * 10px;
 		padding-bottom: $i * 10px;

@@ -1,0 +1,36 @@
+#profile-section {
+	.profile {	
+		padding-bottom: 5px;
+		img {
+			width: 100%;
+			border-radius: 50%;
+		}
+		.name, .title {
+			font-size: 20px;
+			text-align: center;
+		}
+		.name {
+			margin-top: 10px;
+			margin-bottom: 0;
+			font-weight: bold;
+		}
+		.title {
+			margin-top: 0;
+		}
+	}
+}
+
+#visit-section {
+	.row {
+		height: 242px;
+	}
+	#map iframe {
+		width: 100%;
+		height: 400px;
+	}
+	#outside img {
+		width: 100%;
+		height: 400px;
+		object-fit: cover;
+	}
+}

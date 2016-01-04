@@ -4,6 +4,12 @@
 @import "bootstrap";
 @import "font-awesome";
 
+/*
+	PAGE SPECIFIC PARTIAL SCSS
+*/
+
+@import "about";
+
 
 /*
 	NAVBAR
@@ -25,10 +31,13 @@
 /*
 	ALL SECTIONS
 */
-
+.no-navbar-overlap {
+	margin-top: $navbar-height
+}
 .section-title {
 	margin-top: 0;
 	margin-bottom: 30px;
+	font-size: 60px;
 }
 
 

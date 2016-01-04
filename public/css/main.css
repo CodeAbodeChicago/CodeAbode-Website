@@ -27,6 +27,31 @@
   padding-bottom: 50px;
 }
 
+.vertical-padder-60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.vertical-padder-70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.vertical-padder-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.vertical-padder-90 {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.vertical-padder-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -2001,7 +2026,7 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 990px;
   }
 }
 
@@ -10553,6 +10578,49 @@ button.close {
 }
 
 /*
+	PAGE SPECIFIC PARTIAL SCSS
+*/
+#profile-section .profile {
+  padding-bottom: 5px;
+}
+
+#profile-section .profile img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+#profile-section .profile .name, #profile-section .profile .title {
+  font-size: 20px;
+  text-align: center;
+}
+
+#profile-section .profile .name {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+#profile-section .profile .title {
+  margin-top: 0;
+}
+
+#visit-section .row {
+  height: 242px;
+}
+
+#visit-section #map iframe {
+  width: 100%;
+  height: 400px;
+}
+
+#visit-section #outside img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*
 	NAVBAR
 */
 .navbar-brand img {
@@ -10572,9 +10640,14 @@ button.close {
 /*
 	ALL SECTIONS
 */
+.no-navbar-overlap {
+  margin-top: 80px;
+}
+
 .section-title {
   margin-top: 0;
   margin-bottom: 30px;
+  font-size: 60px;
 }
 
 /*
