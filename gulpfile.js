@@ -56,10 +56,12 @@ var liveReload = require("gulp-livereload");
 var merge = require("merge-stream");
 var ghPages = require("gulp-gh-pages");
 var open = require('gulp-open');
+var wrapper = require("gulp-wrapper");
 
 // Other modules
 var express = require("express");
 var path = require("path");
+var fs = require("fs");
 
 
 // _____________________________________________________________________________
@@ -79,6 +81,17 @@ gulp.task("icons", function () {
 	return gulp.src("bower_components/font-awesome/fonts/**.*")
 		.pipe(gulp.dest("public/fonts"));
 });
+
+gulp.task("html-template", function () {
+	var header = fs.readFileSync("source/html/header.html", "utf8");
+	var footer = fs.readFileSync("source/html/footer.html", "utf8");
+	return gulp.src("source/html/pages/*.html")
+		.pipe(wrapper({
+			header: header,
+			footer: footer
+		}))
+		.pipe(gulp.dest("public"));
+})
 
 // Convert from sass to css adding vendor prefixes along the way and generating
 // a source map to allow for easier debugging in chrome.
@@ -116,7 +129,6 @@ gulp.task("sass", function () {
 });
 
 gulp.task("reload-html", function () {
-	console.log("hi")
 	gulp.src("public/**/*.html")
 		.pipe(liveReload());
 });
@@ -141,7 +153,7 @@ gulp.task("express-server", function () {
 gulp.task("watch", function () {
 	liveReload.listen();
 	gulp.watch("source/scss/**/*.scss", ["sass"]);
-	gulp.watch("public/**/*.html", ["reload-html"]);
+	gulp.watch("source/html/**/*.html", ["html-template", "reload-html"]);
 });
 
 // Deploy the public/ folder to gh-pages
@@ -155,6 +167,7 @@ gulp.task("deploy", function() {
 // Default task is run when "gulp" is run from terminal
 gulp.task("default", [
 	"icons",
+	"html-template",
 	"sass",
 	"copy-js",
 	"express-server",
