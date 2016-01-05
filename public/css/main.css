@@ -2026,7 +2026,7 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    width: 990px;
+    width: 1030px;
   }
 }
 
@@ -10620,15 +10620,46 @@ button.close {
      object-fit: cover;
 }
 
-#schedule-section .course-offering .course-title {
+.schedule-section .course-offering .course-image {
+  padding-top: 3px;
+}
+
+.schedule-section .course-offering .course-title {
   font-size: 30px;
   font-weight: bold;
   margin-top: 0;
 }
 
-#schedule-section .course-offering .course-description {
+.schedule-section .course-offering .course-description {
   font-size: 20px;
   line-height: 150%;
+}
+
+.schedule-section .course-offering .course-details {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.schedule-section .course-offering .course-details .row {
+  padding-bottom: 10px;
+}
+
+.schedule-section .course-offering .course-details .icon {
+  padding-right: 0;
+}
+
+.schedule-section .course-offering .course-details .details {
+  padding-left: 0;
+}
+
+.schedule-section .course-offering .course-details .btn {
+  font-size: 22px;
+}
+
+.schedule-section .course-separator {
+  border-bottom: 1px solid #BCBCBC;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 /*
