@@ -20,8 +20,5 @@ $font-size-base: 16px;
 // Container Sizing
 $grid-gutter-width: 30px;
 $container-tablet: (720px + $grid-gutter-width);
-$container-sm: $container-tablet;
 $container-desktop: (940px + $grid-gutter-width);
-$container-md: $container-desktop;
-$container-large-desktop: (960px + $grid-gutter-width);
-$container-lg: $container-large-desktop;
+$container-large-desktop: (1000px + $grid-gutter-width);
