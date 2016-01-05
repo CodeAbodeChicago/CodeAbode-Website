@@ -1,5 +1,9 @@
-#schedule-section {
-	.course-offering {	
+.schedule-section {
+	.course-offering {
+		.course-image {
+			// Making top of the images align with the rest of the row
+			padding-top: 3px;
+		}
 		.course-title {
 			font-size: 30px;
 			font-weight: bold;
@@ -9,5 +13,28 @@
 			font-size: 20px;
 			line-height: 150%;
 		}
+		.course-details {
+			font-size: 20px;
+			line-height: 25px;
+			.row {
+				// Add spacing between rows
+				padding-bottom: 10px;
+			}
+			// Move the icon and details closer together
+			.icon {
+				padding-right: 0;
+			}
+			.details {
+				padding-left: 0;
+			}
+			.btn {
+				font-size: 22px;
+			}
+		}
+	}
+	.course-separator {
+		border-bottom: 1px solid #BCBCBC;
+		margin-top: 60px;
+		margin-bottom: 60px;
 	}
 }
