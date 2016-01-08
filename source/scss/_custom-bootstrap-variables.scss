@@ -12,13 +12,21 @@ $navbar-height: 80px;
 
 // Typography
 $font-family-sans-serif: "Open Sans", sans-serif;
-$headings-font-family: "Hind", sans-serif;
-$headings-font-weight: 300;
+$headings-font-family: "Raleway", sans-serif;
+$headings-font-weight: 500;
+$font-family-base: $font-family-sans-serif;
+
 $text-color: rgb(84,84,84);
-$font-size-base: 16px;
+$font-size-base: 22px;
+$font-size-h1: floor(($font-size-base * 2.074));
+$font-size-h2: floor(($font-size-base * 1.728));
+$font-size-h3: ceil(($font-size-base * 1.44));
+$font-size-h4: ceil(($font-size-base * 1.2));
+$font-size-h5: $font-size-base;
+$font-size-h6: ceil(($font-size-base * 0.833));
 
 // Container Sizing
-$grid-gutter-width: 30px;
-$container-tablet: (720px + $grid-gutter-width);
-$container-desktop: (940px + $grid-gutter-width);
-$container-large-desktop: (1000px + $grid-gutter-width);
+// $grid-gutter-width: 30px;
+// $container-tablet: (720px + $grid-gutter-width);
+// $container-desktop: (940px + $grid-gutter-width);
+// $container-large-desktop: (960px + $grid-gutter-width);
