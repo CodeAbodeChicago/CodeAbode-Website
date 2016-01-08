@@ -38,7 +38,6 @@
 .section-title {
 	margin-top: 0;
 	margin-bottom: 30px;
-	font-size: 60px;
 }
 
 
@@ -49,43 +48,43 @@
 #banner {
 	background-image: url("../images/students/1.jpg");
 	background-image: no-repeat;
-	background-position: center center;
+	background-position: 60% 0%;
 	background-size: cover;
-	height: 750px;
+	height: 700px;
 	overflow: auto; // Prevent margin collapsing on the first child element
 	color: white;
 	position: relative;
 	.banner-content {
-		padding-top: 80px;
+		padding-top: $navbar-height; 
 		width: 75%;
 		@include absolute-center-at(50%, 50%);
 		text-align: center; // Center inline elements
 		text-shadow: 2px 2px 5px rgba(0,0,0,0.35);
 		.banner-title {
-			margin-top: 0; // To make the centering work
-			padding-bottom: 40px;
+			margin: 0 0 50px 0; // To make the centering work
+			padding: 0;
 			font-family: Raleway;
-			font-size: 80px;
+			font-size: 90px;
 			font-weight: 300;
 			text-transform: uppercase;
 			letter-spacing: 2px;
 		}
-		.btn {
-			outline: none;
-			font-size: 35px;
+		.banner-subtitle {
+			margin: 0; // To make the centering work
 			font-family: Raleway;
+			font-size: 33px;
 			font-weight: 300;
 		}
-		.banner-subtitle {
-			margin-bottom: 0; // To make the centering work
-			padding-top: 10px;
+		.btn {
+			margin: 35px 0; // To make the centering work
+			outline: none;
+			font-size: 30px;
 			font-family: Raleway;
-			font-size: 40px;
 			font-weight: 300;
 		}
 		.highlight {
 			color: $codeabode-green;
-			border-bottom: 5px solid $codeabode-green;
+			border-bottom: 5px solid white;
 			font-weight: 800;
 		}
 	}
