@@ -5455,8 +5455,8 @@ tbody.collapse.in {
 }
 
 .navbar-default {
-  background-color: rgba(0, 0, 0, 0.8);
-  border-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.75);
+  border-color: rgba(0, 0, 0, 0.75);
 }
 
 .navbar-default .navbar-brand {
@@ -5505,7 +5505,7 @@ tbody.collapse.in {
 
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: rgba(0, 0, 0, 0.8);
+  border-color: rgba(0, 0, 0, 0.75);
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
@@ -10887,6 +10887,17 @@ button.close {
 
 .navbar {
   font-size: 16px;
+  border: none;
+}
+
+.navbar-transition {
+  -webkit-transition: all 0.25s ease 0.05s;
+  -o-transition: all 0.25s ease 0.05s;
+  transition: all 0.25s ease 0.05s;
+}
+
+.navbar-past-banner {
+  background-color: black;
 }
 
 /*
