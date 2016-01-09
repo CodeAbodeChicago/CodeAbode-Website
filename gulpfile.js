@@ -44,6 +44,8 @@ var merge = require("merge-stream");
 var ghPages = require("gulp-gh-pages");
 var open = require('gulp-open');
 var wrapper = require("gulp-wrapper");
+var concat = require("gulp-concat");
+var uglify = require("gulp-uglify");
 
 // Other modules
 var express = require("express");
@@ -52,12 +54,7 @@ var fs = require("fs");
 
 
 // _____________________________________________________________________________
-// Gulp tasks
-
-gulp.task("open", function() {
-	return gulp.src(__filename)
-		.pipe(open({ uri: "http://127.0.0.1:8080" }));
-});
+// Build Tasks
 
 gulp.task("icons", function () {
 	return gulp.src("bower_components/font-awesome/fonts/**.*")
@@ -72,7 +69,8 @@ gulp.task("html-template", function () {
 			header: header,
 			footer: footer
 		}))
-		.pipe(gulp.dest("public"));
+		.pipe(gulp.dest("public"))
+		.pipe(liveReload());
 })
 
 // Convert from sass to css adding vendor prefixes along the way and generating
@@ -110,18 +108,44 @@ gulp.task("sass", function () {
 		.pipe(liveReload());
 });
 
-gulp.task("reload-html", function () {
-	gulp.src("public/**/*.html")
-		.pipe(liveReload());
-});
-
-// copy bootstrap and jquery js files into public/js folder
-gulp.task("copy-js", function() {
+// Copy bootstrap and jquery vendor libraries files into public/js folder
+gulp.task("vendor-js", function() {
 	var jquery = gulp.src("bower_components/jquery/dist/jquery.min.js")
 		.pipe(gulp.dest("public/js"));
 	var bootstrap = gulp.src("bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js")
 		.pipe(gulp.dest("public/js"));
 	return merge(jquery, bootstrap);
+});
+
+// Combine, uglify and sourcemap custom JS for the project into public/js/all.js
+gulp.task("js", function() {
+	return gulp.src("source/js/**/*.js")
+		.pipe(sourcemaps.init())
+			.pipe(concat("all.js"))
+			.pipe(uglify())
+		.pipe(sourcemaps.write("maps"))
+		.pipe(gulp.dest("public/js"))
+		.pipe(liveReload());
+});
+
+gulp.task("build", [
+	"icons",
+	"html-template",
+	"sass",
+	"vendor-js",
+	"js"
+]);
+
+
+// _____________________________________________________________________________
+// Running Tasks
+
+// Watch for changes to HTML/SASS files and start a liveReload server
+gulp.task("watch", function () {
+	liveReload.listen();
+	gulp.watch("source/js/**/*.js", ["js"]);
+	gulp.watch("source/scss/**/*.scss", ["sass"]);
+	gulp.watch("source/html/**/*.html", ["html-template"]);
 });
 
 // Start an express server that serves public/ to localhost:8080
@@ -131,28 +155,35 @@ gulp.task("express-server", function () {
 	app.listen(8080);
 });
 
-// Watch for changes to HTML/SASS files and start a liveReload server
-gulp.task("watch", function () {
-	liveReload.listen();
-	gulp.watch("source/scss/**/*.scss", ["sass"]);
-	gulp.watch("source/html/**/*.html", ["html-template", "reload-html"]);
+gulp.task("open", function() {
+	return gulp.src(__filename)
+		.pipe(open({ uri: "http://127.0.0.1:8080" }));
 });
 
-// Deploy the public/ folder to gh-pages
-gulp.task("deploy", function() {
+gulp.task("run", [
+	"watch",
+	"express-server",
+	"open"
+]);
+
+
+// _____________________________________________________________________________
+// Deploying Tasks
+
+// Build & deploy the public/ folder to gh-pages
+gulp.task("deploy", ["build"], function () {
   return gulp.src("./public/**/*")
 	.pipe(ghPages({
 		remoteUrl: "https://github.com/CodeAbodeChicago/CodeAbode-Website.git"
 	}));
 });
 
+
+// _____________________________________________________________________________
+// Deploying Tasks
+
 // Default task is run when "gulp" is run from terminal
 gulp.task("default", [
-	"icons",
-	"html-template",
-	"sass",
-	"copy-js",
-	"express-server",
-	"watch",
-	"open"
+	"build",
+	"run"
 ]);
