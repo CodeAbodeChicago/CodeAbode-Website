@@ -1,0 +1,33 @@
+// Create classes for easily adding padding & margins, e.g.:
+// 	"vertical-padding-10" for 10px of top and bottom padding
+@for $i from 1 through 10 {
+	.top-padding-#{$i * 10} { 
+		padding-top: $i * 10px;
+	}
+	.top-margin-#{$i * 10} { 
+		margin-top: $i * 10px;
+	}
+	.bottom-padding-#{$i * 10} { 
+		padding-bottom: $i * 10px;
+	}
+	.bottom-margin-#{$i * 10} { 
+		margin-bottom: $i * 10px;
+	}
+	.vertical-padding-#{$i * 10} { 
+		padding-top: $i * 10px;
+		padding-bottom: $i * 10px;
+	}
+	.vertical-margin-#{$i * 10} { 
+		margin-top: $i * 10px;
+		margin-bottom: $i * 10px;
+	}
+}
+
+// Center an element over a particular point, e.g. move the center of an element
+// to (x, y)
+@mixin absolute-center-at($x: 50%, $y: 50%) {
+	position: absolute;
+	left: $x;
+	top: $y;
+	transform: translate(-50%, -50%);
+}

@@ -1,0 +1,34 @@
+{
+  "name": "codeabode-website",
+  "version": "1.0.0",
+  "description": "CodeAbode Website\r =================",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-livereload": "^3.8.1",
+    "gulp-open": "^1.0.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-wrapper": "^1.0.0",
+    "merge-stream": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeAbodeChicago/CodeAbode-Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeAbodeChicago/CodeAbode-Website/issues"
+  },
+  "homepage": "https://github.com/CodeAbodeChicago/CodeAbode-Website#readme"
+}
