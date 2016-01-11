@@ -8,6 +8,7 @@
 	PAGE SPECIFIC PARTIAL SCSS
 */
 
+@import "home";
 @import "about";
 @import "admissions";
 
@@ -24,7 +25,7 @@
 	height: 80px;
 }
 .navbar {
-	font-size: 16px; 
+	font-size: 20px; 
 	border: none;
 }
 .navbar-transition {
@@ -32,6 +33,30 @@
 }
 .navbar-past-banner {
 	background-color: black;
+}
+
+
+/*
+	FOOTER
+*/
+
+footer {	
+	background-color: black;
+	font-size: 20px;
+	line-height: 22px;
+	text-align: center;
+	color: white;
+	.links {
+		a {
+			padding: 0 10px;
+		}
+		margin-bottom: 18px;
+	}
+	.contact {
+	}
+	.address {
+		margin-bottom: 18px;
+	}
 }
 
 
@@ -45,7 +70,22 @@
 	margin-top: 0;
 	margin-bottom: 30px;
 }
+.stripped-section {
+	background-image: url("../images/backgrounds/congruent-subtle-pattern.png");
+	background-image: repeat;
+	color: white;
+}
 
+/*
+	GRID
+*/
+
+// Must be applied to all columns in a row & whitespace has to be removed
+.vertical-center {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 
 /*
 	BANNER
@@ -92,130 +132,6 @@
 			color: $codeabode-green;
 			border-bottom: 5px solid white;
 			font-weight: 800;
-		}
-	}
-}
-
-
-/*
-	TECHNOLOGY
-*/
-
-#technology {
-	.row {
-		margin-bottom: 20px;
-	}
-	div {
-		height: 150px;	
-	}
-	div img {
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
-	}
-}
-
-
-//	This is some sass styling for the footer
-//	(and this comment should only show up in the sass file!)
-//
-//	Just trying out a couple of sass concepts (if possible)...
-//	 - nesting
-//	 - variables
-//	 - mixins
-
-/* Footer styling */
-footer {
-	width: 100%;
-	background-color: black;
-	color: white;
-	text-align: center;
-
-	.footer-links a {
-		display: block;
-	  text-decoration: none;
-	  display: block;
-	  padding: 4px 10px;
-	  /* color: #fff; */
-	  $link-color: #fff;
-	  color: $link-color;
-
-	  &:hover {
-			/* color: #9F9F9F; */
-			color: darken($link-color, 25%);
-	  }
-  }
-
-  form {
-	  text-align: left;
-	  margin: 0px;
-	  width: 100%;
-
-	  label {
-	  	display: block;
-	  }
-
-		input[type="email"] {
-		  width: 80%;
-		  margin: 4px auto;
-		  line-height: 1.4em;
-		}
-
-		input[type="submit"] {
-		  outline: none;
-		  font-size: 0.8em;
-		  height: 2.4em;
-		  width: 20%;
-		  line-height: 1.4em;
-		  background-color: #2A2A2D;
-		  color: white;
-		  border: none;
-		  margin: 2px auto;
-		  float: right;
-		  cursor: pointer;
-
-		  /* Rounded corners */
-		  border-radius: 4px;
-		  -webkit-border-radius: 4px;
-		  -moz-border-radius: 4px;
-		  -o-border-radius: 4px;
-
-		  /* Drop Shadow */
-		  box-shadow: 2px 2px 4px #000000;
-		  -webkit-box-shadow: 2px 2px 4px #000000;
-		  -moz-box-shadow: 2px 2px 4px #000000;
-		  -o-box-shadow: 2px 2px 4px #000000;
-
-			&:hover {
-			  color: #C3C3C3;
-			}
-
-			&:active {
-			  color: #94939E;
-			  background-color: #3D3D41;
-			  border: none;
-			}
-		}
-  }
-
-
-	.social-links {
-	  min-width: 110px;
-	  width: 90%;
-	  margin: 18px auto;
-
-		a {
-		  display: inline-block;
-		  vertical-align: top;
-
-			&:hover {
-			  opacity: 0.5;
-			}
-
-			img {
-			  width: 36px;
-			  height: 36px;
-			}
 		}
 	}
 }
