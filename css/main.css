@@ -10790,9 +10790,27 @@ button.close {
 /*
 	PAGE SPECIFIC PARTIAL SCSS
 */
-/*
-	TECHNOLOGY
-*/
+#home-banner {
+  background-image: url("../images/backgrounds/alieen-computer-dark.jpg");
+  background-position: 50% 25%;
+}
+
+#home-banner .banner-title {
+  margin: 0 0 50px 0;
+  font-size: 90px;
+  letter-spacing: 2px;
+}
+
+#home-banner .banner-subtitle {
+  margin: 0;
+  font-size: 33px;
+}
+
+#home-banner .btn {
+  margin: 35px 0 0 0;
+  font-size: 30px;
+}
+
 #curriculum img {
   height: 100%;
 }
@@ -10806,6 +10824,17 @@ button.close {
   margin-top: 10px;
   font-size: 18px;
   text-transform: uppercase;
+}
+
+#curriculum-banner {
+  background-image: url("../images/backgrounds/faith-computer-dark.jpg");
+  background-position: 50% 25%;
+  height: 500px;
+}
+
+#curriculum-banner .banner-title {
+  font-size: 90px;
+  letter-spacing: 2px;
 }
 
 #profile-section .profile {
@@ -10971,19 +11000,17 @@ footer .address {
 /*
 	BANNER
 */
-#banner {
-  background-image: url("../images/students/1.jpg");
+.banner {
+  height: 650px;
   background-image: no-repeat;
-  background-position: 60% 0%;
   -webkit-background-size: cover;
           background-size: cover;
-  height: 700px;
   overflow: auto;
   color: white;
   position: relative;
 }
 
-#banner .banner-content {
+.banner .banner-content {
   padding-top: 80px;
   width: 75%;
   position: absolute;
@@ -10995,34 +11022,27 @@ footer .address {
           transform: translate(-50%, -50%);
   text-align: center;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+  font-family: "Raleway", sans-serif;
 }
 
-#banner .banner-content .banner-title {
-  margin: 0 0 50px 0;
-  padding: 0;
-  font-family: Raleway;
-  font-size: 90px;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-#banner .banner-content .banner-subtitle {
+.banner .banner-content .banner-title {
   margin: 0;
-  font-family: Raleway;
-  font-size: 33px;
+  text-transform: uppercase;
   font-weight: 300;
 }
 
-#banner .banner-content .btn {
-  margin: 35px 0;
+.banner .banner-content .banner-subtitle {
+  margin: 0;
+  font-weight: 300;
+}
+
+.banner .banner-content .btn {
+  margin: 0;
   outline: none;
-  font-size: 30px;
-  font-family: Raleway;
   font-weight: 300;
 }
 
-#banner .banner-content .highlight {
+.banner .banner-content .highlight {
   color: #25ac6f;
   border-bottom: 5px solid white;
   font-weight: 800;
