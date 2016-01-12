@@ -10888,6 +10888,17 @@ button.close {
      object-fit: cover;
 }
 
+#schedule-banner {
+  background-image: url("../images/backgrounds/laptops-dark.jpg");
+  background-position: 50% 25%;
+  height: 500px;
+}
+
+#schedule-banner .banner-title {
+  font-size: 90px;
+  letter-spacing: 2px;
+}
+
 .schedule-section .course-offering .course-image {
   padding-top: 3px;
 }
