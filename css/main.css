@@ -10919,6 +10919,17 @@ button.close {
   margin-bottom: 60px;
 }
 
+#apply-banner {
+  background-image: url("../images/backgrounds/cohort-dark.jpg");
+  background-position: 50% 40%;
+  height: 500px;
+}
+
+#apply-banner .banner-title {
+  font-size: 90px;
+  letter-spacing: 2px;
+}
+
 /*
 	NAVBAR
 */
