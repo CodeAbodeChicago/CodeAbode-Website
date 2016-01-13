@@ -11054,17 +11054,18 @@ footer .address {
        -o-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
   font-family: "Raleway", sans-serif;
 }
 
 .banner .banner-content .banner-title {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
   margin: 0;
   text-transform: uppercase;
   font-weight: 300;
 }
 
 .banner .banner-content .banner-subtitle {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
   margin: 0;
   font-weight: 300;
 }
