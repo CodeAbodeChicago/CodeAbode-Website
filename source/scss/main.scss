@@ -102,14 +102,15 @@ footer {
 		width: 75%;
 		@include absolute-center-at(50%, 50%);
 		text-align: center; // Center inline elements
-		text-shadow: 2px 2px 5px rgba(0,0,0,0.35);
 		font-family: $headings-font-family;
 		.banner-title {
+			text-shadow: 2px 2px 5px rgba(0,0,0,0.35);
 			margin: 0;
 			text-transform: uppercase;
 			font-weight: 300;
 		}
 		.banner-subtitle {
+			text-shadow: 2px 2px 5px rgba(0,0,0,0.35);
 			margin: 0;
 			font-weight: 300;
 		}
