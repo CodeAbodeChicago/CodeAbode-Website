@@ -56,25 +56,24 @@
 
 <div class="container vertical-margin-50">
   <h1 class="section-title">Apply</h1>
-  <form>
-
+  <form role="form" id="apply-form">
     <h3>Basic Information</h3>
     <div class="row">
-        <div class="form-group col-lg-6">    
+        <div class="form-group col-sm-6">    
             <label for="first-name" class="control-label">First Name</label>
             <input type="text" class="form-control" id="first-name" placeholder="">
         </div>
-        <div class="form-group col-lg-6">    
+        <div class="form-group col-sm-6">    
             <label for="last-name" class="control-label">Last Name</label>
             <input type="text" class="form-control" id="last-name" placeholder="">
         </div> 
     </div>
     <div class="row">
-        <div class="form-group col-lg-6">    
+        <div class="form-group col-sm-6">    
             <label for="phone-number" class="control-label">Phone Number</label>
             <input type="tel" class="form-control" id="phone-number" placeholder="">
         </div>
-        <div class="form-group col-lg-6">    
+        <div class="form-group col-sm-6">    
             <label for="email" class="control-label">Email</label>
             <input type="email" class="form-control" id="email" placeholder="">
         </div> 
@@ -82,21 +81,21 @@
 
     <h3>Classes you are applying for:</h3>
     <h4>Part Time Night Classes</h4>
-    <div class="checkbox">
-        <label>
-            <input type="checkbox" value="">
+    <div class="checkbox checkbox-primary">
+        <input type="checkbox" id="checkbox-course-1" value="">
+        <label for="checkbox-course-1">
             Introduction to Modern Web Design, Feb 1st, $1000
         </label>
     </div>  
-    <div class="checkbox">
-        <label>
-            <input type="checkbox" value="">
+    <div class="checkbox checkbox-primary">
+        <input type="checkbox" id="checkbox-course-2" value="">
+        <label for="checkbox-course-2">
             Introduction to JavaScript, Feb 1st, $1000
         </label>
     </div>  
-    <div class="checkbox">
-        <label>
-            <input type="checkbox" value="">
+    <div class="checkbox checkbox-primary">
+        <input type="checkbox" id="checkbox-course-3" value="">
+        <label for="checkbox-course-3">
             Advanced JavaScript, Feb 1st, $1000
         </label>
     </div>
