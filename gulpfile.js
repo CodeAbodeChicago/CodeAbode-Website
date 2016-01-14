@@ -82,6 +82,7 @@ gulp.task("sass", function () {
 		includePaths: [
 			"bower_components/bootstrap-sass/assets/stylesheets",
 			"bower_components/font-awesome/scss",
+			"bower_components/awesome-bootstrap-checkbox",
 		]
 	});
 	sassStream.on("error", sass.logError);

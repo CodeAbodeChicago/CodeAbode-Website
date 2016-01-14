@@ -7,3 +7,12 @@
 		letter-spacing: 2px;
 	}
 }
+
+#apply-form {
+	// Fix for vertically centering awesome-bootstrap-checkbox
+	.checkbox label::before, .checkbox label::after {
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+}
