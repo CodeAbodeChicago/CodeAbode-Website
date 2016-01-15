@@ -11119,11 +11119,11 @@ input[type="radio"] .styled:checked + label::after {
 #curriculum-banner {
   background-image: url("../images/backgrounds/faith-computer-dark.jpg");
   background-position: 50% 25%;
-  height: 500px;
+  height: 400px;
 }
 
 #curriculum-banner .banner-title {
-  font-size: 90px;
+  font-size: 80px;
   letter-spacing: 2px;
 }
 
@@ -11164,11 +11164,11 @@ input[type="radio"] .styled:checked + label::after {
 #about-banner {
   background-image: url("../images/backgrounds/exhibit-centerpiece.jpg");
   background-position: 50% 40%;
-  height: 500px;
+  height: 400px;
 }
 
 #about-banner .banner-title {
-  font-size: 90px;
+  font-size: 80px;
   letter-spacing: 2px;
 }
 
@@ -11215,11 +11215,11 @@ input[type="radio"] .styled:checked + label::after {
 #schedule-banner {
   background-image: url("../images/backgrounds/laptops-dark.jpg");
   background-position: 50% 25%;
-  height: 500px;
+  height: 400px;
 }
 
 #schedule-banner .banner-title {
-  font-size: 90px;
+  font-size: 80px;
   letter-spacing: 2px;
 }
 
