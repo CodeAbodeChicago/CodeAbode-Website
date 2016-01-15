@@ -1,9 +1,24 @@
 #apply-banner {	
-	background-image: url("../images/backgrounds/cohort-dark.jpg");
+	background-image: url("../images/backgrounds/timeline_bg_v3.jpg");
 	background-position: 50% 40%;
-	height: 500px;
+	height: 400px;
+	.banner-content {
+		width: 100%;
+	}
 	.banner-title {
-		font-size: 90px;
+		font-size: 80px;
 		letter-spacing: 2px;
 	}
+}
+#timeline {
+	text-align: center;
+	h1, h3, p {
+		text-align: left;
+	}
+}
+#apply, #apply-active, #instructor-call, #instructor-call-active, #reserve-seat, #reserve-seat-active, #first-day, #first-day-active {
+	cursor: pointer;
+}
+#timeline-info {
+	height: 70px;
 }
