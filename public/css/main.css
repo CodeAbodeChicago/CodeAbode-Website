@@ -11127,6 +11127,40 @@ input[type="radio"] .styled:checked + label::after {
   letter-spacing: 2px;
 }
 
+#course-sequence .section-title {
+  margin-bottom: 60px;
+}
+
+#course-sequence .course {
+  margin-top: 50px;
+  border-bottom: 1px solid #BCBCBC;
+  padding-bottom: 40px;
+}
+
+#course-sequence .course:last-child {
+  border: none;
+}
+
+#course-sequence .course .course-image {
+  padding-top: 7px;
+}
+
+#course-sequence .course .course-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+
+#course-sequence .course .course-subtitle {
+  font-size: 25px;
+  margin: 5px 0 15px 0;
+}
+
+#course-sequence .course .course-description {
+  font-size: 25px;
+  line-height: 150%;
+}
+
 #about-banner {
   background-image: url("../images/backgrounds/exhibit-centerpiece.jpg");
   background-position: 50% 40%;
