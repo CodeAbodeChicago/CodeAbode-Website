@@ -11119,22 +11119,56 @@ input[type="radio"] .styled:checked + label::after {
 #curriculum-banner {
   background-image: url("../images/backgrounds/faith-computer-dark.jpg");
   background-position: 50% 25%;
-  height: 500px;
+  height: 400px;
 }
 
 #curriculum-banner .banner-title {
-  font-size: 90px;
+  font-size: 80px;
   letter-spacing: 2px;
+}
+
+#course-sequence .section-title {
+  margin-bottom: 60px;
+}
+
+#course-sequence .course {
+  margin-top: 50px;
+  border-bottom: 1px solid #BCBCBC;
+  padding-bottom: 40px;
+}
+
+#course-sequence .course:last-child {
+  border: none;
+}
+
+#course-sequence .course .course-image {
+  padding-top: 7px;
+}
+
+#course-sequence .course .course-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+
+#course-sequence .course .course-subtitle {
+  font-size: 25px;
+  margin: 5px 0 15px 0;
+}
+
+#course-sequence .course .course-description {
+  font-size: 25px;
+  line-height: 150%;
 }
 
 #about-banner {
   background-image: url("../images/backgrounds/exhibit-centerpiece.jpg");
   background-position: 50% 40%;
-  height: 500px;
+  height: 400px;
 }
 
 #about-banner .banner-title {
-  font-size: 90px;
+  font-size: 80px;
   letter-spacing: 2px;
 }
 
@@ -11181,11 +11215,11 @@ input[type="radio"] .styled:checked + label::after {
 #schedule-banner {
   background-image: url("../images/backgrounds/laptops-dark.jpg");
   background-position: 50% 25%;
-  height: 500px;
+  height: 400px;
 }
 
 #schedule-banner .banner-title {
-  font-size: 90px;
+  font-size: 80px;
   letter-spacing: 2px;
 }
 
@@ -11237,14 +11271,34 @@ input[type="radio"] .styled:checked + label::after {
 }
 
 #apply-banner {
-  background-image: url("../images/backgrounds/cohort-dark.jpg");
+  background-image: url("../images/backgrounds/timeline_bg_v3.jpg");
   background-position: 50% 40%;
-  height: 500px;
+  height: 400px;
+}
+
+#apply-banner .banner-content {
+  width: 100%;
 }
 
 #apply-banner .banner-title {
-  font-size: 90px;
+  font-size: 80px;
   letter-spacing: 2px;
+}
+
+#timeline {
+  text-align: center;
+}
+
+#timeline h1, #timeline h3, #timeline p {
+  text-align: left;
+}
+
+#apply, #apply-active, #instructor-call, #instructor-call-active, #reserve-seat, #reserve-seat-active, #first-day, #first-day-active {
+  cursor: pointer;
+}
+
+#timeline-info {
+  height: 70px;
 }
 
 #apply-form .checkbox label::before, #apply-form .checkbox label::after {
