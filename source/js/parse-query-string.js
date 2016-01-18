@@ -12,5 +12,16 @@ $(document).ready(function (){
     var keyVal = keyValPairs[i].split("=");
     queryObject[keyVal[0]] = keyVal[1];
   };
+
+  var course = queryObject["course"];
+  if (course) {
+    // If there is a course in the query string, check the matching checkbox
+    var courseCheckbox = document.getElementById(course);
+    courseCheckbox.checked = true;
+    // Scroll smoothly to the apply form
+    $('html, body').animate({
+        scrollTop: $("#apply-section").offset().top - 80
+    }, 750);
+  }
     
 });
