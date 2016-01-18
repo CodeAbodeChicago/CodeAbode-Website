@@ -12,7 +12,7 @@
 	.course-offering {
 		.course-image {
 			// Making top of the images align with the rest of the row
-			padding-top: 3px;
+			padding-top: 6px;
 		}
 		.course-title {
 			font-size: 30px;
@@ -23,11 +23,11 @@
 			font-size: 20px;
 			margin: 5px 0 15px 0;
 		}
-		.course-description {
+		.course-details {
 			font-size: 20px;
 			line-height: 150%;
 		}
-		.course-details {
+		.course-logistics {
 			font-size: 20px;
 			line-height: 25px;
 			.row {
@@ -48,7 +48,7 @@
 	}
 	.course-separator {
 		border-bottom: 1px solid #BCBCBC;
-		margin-top: 60px;
-		margin-bottom: 60px;
+		margin-top: 35px;
+		margin-bottom: 40px;
 	}
 }

@@ -6,6 +6,7 @@ $(document).ready(function (){
   // If no banner on the page, exit early & style the navbar
   if (!banner.length) {
     navbar.addClass("navbar-past-banner");
+    return;
   } 
 
   // Banner is present, enable transition
