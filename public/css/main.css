@@ -11131,16 +11131,6 @@ input[type="radio"] .styled:checked + label::after {
   margin-bottom: 60px;
 }
 
-#course-sequence .course {
-  margin-top: 50px;
-  border-bottom: 1px solid #BCBCBC;
-  padding-bottom: 40px;
-}
-
-#course-sequence .course:last-child {
-  border: none;
-}
-
 #course-sequence .course .course-image {
   padding-top: 7px;
 }
@@ -11159,6 +11149,12 @@ input[type="radio"] .styled:checked + label::after {
 #course-sequence .course .course-description {
   font-size: 25px;
   line-height: 150%;
+}
+
+#course-sequence .course-separator {
+  border-bottom: 1px solid #BCBCBC;
+  margin-top: 36px;
+  margin-bottom: 50px;
 }
 
 #about-banner {
@@ -11224,7 +11220,7 @@ input[type="radio"] .styled:checked + label::after {
 }
 
 .schedule-section .course-offering .course-image {
-  padding-top: 3px;
+  padding-top: 6px;
 }
 
 .schedule-section .course-offering .course-title {
@@ -11238,36 +11234,36 @@ input[type="radio"] .styled:checked + label::after {
   margin: 5px 0 15px 0;
 }
 
-.schedule-section .course-offering .course-description {
+.schedule-section .course-offering .course-details {
   font-size: 20px;
   line-height: 150%;
 }
 
-.schedule-section .course-offering .course-details {
+.schedule-section .course-offering .course-logistics {
   font-size: 20px;
   line-height: 25px;
 }
 
-.schedule-section .course-offering .course-details .row {
+.schedule-section .course-offering .course-logistics .row {
   padding-bottom: 10px;
 }
 
-.schedule-section .course-offering .course-details .icon {
+.schedule-section .course-offering .course-logistics .icon {
   padding-right: 0;
 }
 
-.schedule-section .course-offering .course-details .details {
+.schedule-section .course-offering .course-logistics .details {
   padding-left: 0;
 }
 
-.schedule-section .course-offering .course-details .btn {
+.schedule-section .course-offering .course-logistics .btn {
   font-size: 22px;
 }
 
 .schedule-section .course-separator {
   border-bottom: 1px solid #BCBCBC;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 35px;
+  margin-bottom: 40px;
 }
 
 #apply-banner {
