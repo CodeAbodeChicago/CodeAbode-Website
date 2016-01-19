@@ -47,6 +47,7 @@ var wrapper = require("gulp-wrapper");
 var concat = require("gulp-concat");
 var uglify = require("gulp-uglify");
 var nunjucksRender = require("gulp-nunjucks-render");
+var newer = require("gulp-newer");
 
 // Other modules
 var express = require("express");
@@ -60,6 +61,12 @@ var fs = require("fs");
 gulp.task("icons", function () {
 	return gulp.src("bower_components/font-awesome/fonts/**.*")
 		.pipe(gulp.dest("public/fonts"));
+});
+
+gulp.task("images", function () {
+	return gulp.src("source/images/**/*.*")
+		.pipe(newer("public/images"))
+		.pipe(gulp.dest("public/images"));
 });
 
 gulp.task("nunjucks", function () {
@@ -128,6 +135,7 @@ gulp.task("js", function() {
 
 gulp.task("build", [
 	"icons",
+	"images",
 	"nunjucks",
 	"sass",
 	"vendor-js",
