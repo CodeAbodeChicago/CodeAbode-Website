@@ -11,7 +11,7 @@ $(document).ready(function (){
   for (var i = keyValPairs.length - 1; i >= 0; i--) {
     var keyVal = keyValPairs[i].split("=");
     queryObject[keyVal[0]] = keyVal[1];
-  };
+  }
 
   var course = queryObject["course"];
   if (course) {

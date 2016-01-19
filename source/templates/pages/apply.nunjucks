@@ -211,5 +211,5 @@
 
 {% block scripts %}
   <script src="js/timeline.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/parse-query-string.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/apply-autofill.js" type="text/javascript" charset="utf-8"></script>
 {% endblock %}
