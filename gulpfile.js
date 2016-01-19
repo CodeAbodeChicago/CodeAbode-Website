@@ -46,6 +46,7 @@ var open = require('gulp-open');
 var wrapper = require("gulp-wrapper");
 var concat = require("gulp-concat");
 var uglify = require("gulp-uglify");
+var nunjucksRender = require("gulp-nunjucks-render");
 
 // Other modules
 var express = require("express");
@@ -61,17 +62,13 @@ gulp.task("icons", function () {
 		.pipe(gulp.dest("public/fonts"));
 });
 
-gulp.task("html-template", function () {
-	var header = fs.readFileSync("source/html/header.html", "utf8");
-	var footer = fs.readFileSync("source/html/footer.html", "utf8");
-	return gulp.src("source/html/pages/*.html")
-		.pipe(wrapper({
-			header: header,
-			footer: footer
-		}))
+gulp.task("nunjucks", function () {
+	nunjucksRender.nunjucks.configure(["source/templates/layouts", "source/templates/partials"], {watch: false});
+	return gulp.src("source/templates/pages/**/*.nunjucks")
+		.pipe(nunjucksRender())
 		.pipe(gulp.dest("public"))
 		.pipe(liveReload());
-})
+});
 
 // Convert from sass to css adding vendor prefixes along the way and generating
 // a source map to allow for easier debugging in chrome.
@@ -118,11 +115,11 @@ gulp.task("vendor-js", function() {
 	return merge(jquery, bootstrap);
 });
 
-// Combine, uglify and sourcemap custom JS for the project into public/js/all.js
+// Uglify and sourcemap custom JS for the project into public/js/all.js
 gulp.task("js", function() {
 	return gulp.src("source/js/**/*.js")
 		.pipe(sourcemaps.init())
-			.pipe(concat("all.js"))
+			// .pipe(concat("all.js")) Disabling so separate pages can have separate JS!
 			.pipe(uglify())
 		.pipe(sourcemaps.write("maps"))
 		.pipe(gulp.dest("public/js"))
@@ -131,7 +128,7 @@ gulp.task("js", function() {
 
 gulp.task("build", [
 	"icons",
-	"html-template",
+	"nunjucks",
 	"sass",
 	"vendor-js",
 	"js"
@@ -146,7 +143,7 @@ gulp.task("watch", function () {
 	liveReload.listen();
 	gulp.watch("source/js/**/*.js", ["js"]);
 	gulp.watch("source/scss/**/*.scss", ["sass"]);
-	gulp.watch("source/html/**/*.html", ["html-template"]);
+	gulp.watch("source/templates/**/*.nunjucks", ["nunjucks"]);
 });
 
 // Start an express server that serves public/ to localhost:8080
