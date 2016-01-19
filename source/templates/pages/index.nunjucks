@@ -1,0 +1,56 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div id="home-banner" class="jumbotron banner">
+    <div class="banner-content">
+      <h1 class="banner-title">A code school<br />for <span class="highlight">everyone</em></h1>
+      <h2 class="banner-subtitle">Learn web development in hands-on classes<br />with personal attention &amp; guidance.</h2>
+      <a href="./schedule.html" class="btn btn-primary">Find a course</a>
+    </div>
+  </div>
+
+  <div class="container vertical-margin-40 vertical-padding-50">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="section-title">Non-profit Web Development School</h1>
+        <p>CodeAbode is the first non-profit code academy designed with the ever evolving needs of the health industry in mind. As a division of <a href="http://nmhmchicago.org/">the National Museum of Health &amp; Medicine Chicago</a>, we provide students with the skills they need to become successful web app developers both inside and outside the healthcare industry.</p>
+        <p>We are dedicated to making learning web development accessible and affordable. Our curriculum doesn&rsquo;t assume any prior knowledge, so if you&rsquo;ve been trying to figure out how to get started in web development, apply for one of our upcoming courses!</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="curriculum" class="fluid-container stripped-section vertical-margin-40">
+    <div class="container vertical-padding-50">
+      <div class="row">
+        <div class="col-md-9 vertical-center">
+          <h1 class="section-title">Full Stack Curriculum</h1>
+          <p>We teach &ldquo;full stack&rdquo; development &ndash; front-end HTML/CSS &amp; JavaScript as well as server-side programming in JavaScript (node.js). Our flexible, hands-on curriculum can be taken in full-time, intensive bootcamp classes or as part-time, evening classes.</p>
+        </div><!-- 
+         --><div class="col-md-3 vertical-center">
+          <img src="images/logos/logo-grid-white-font.svg">
+        </div>    
+      </div>  
+    </div>  
+  </div>
+
+  <div id="testimonials" class="container vertical-margin-40 vertical-padding-50">
+    <div class="row vertical-padding-20">
+      <div class="student-profile col-md-3 vertical-center">
+        <img src="images/students/aileen.jpg">
+      </div><!-- 
+       --><div class="col-md-9 vertical-center">
+        <div class="quote">&ldquo;This program gave me a set of fundamental skills in multiple coding languages. I didn’t just learn code, or how to code, I learned how to teach myself. It’s a great resource for my future.&rdquo;</div>
+        <div class="attribution">&mdash; Aileen Rangel, Bootcamp Graduate</div>
+      </div>
+    </div>
+    <div class="row vertical-padding-20">
+      <div class="col-md-9 vertical-center">
+        <div class="quote">&ldquo;CodeAbode has been a great resource for me to expand my potential to an area I've always been interested in. It has given me a great platform to continue furthering my knowledge.&rdquo;</div>
+        <div class="attribution">&mdash; Landon Blackburn, Bootcamp Graduate</div>
+      </div><!-- 
+       --><div class="student-profile col-md-3 vertical-center">
+        <img src="images/students/landon.jpg">
+      </div>
+    </div>
+  </div>
+{% endblock %}
