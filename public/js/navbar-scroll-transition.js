@@ -1,0 +1,2 @@
+$(document).ready(function(){var a=$(".banner"),n=$(".navbar");if(!a.length)return void n.addClass("navbar-past-banner");n.addClass("navbar-transition");var r=a.offset().top+a.outerHeight(!1),t=r-n.outerHeight(!1);$(document).scroll(function(){var a=$(this).scrollTop();a>=t?n.addClass("navbar-past-banner"):n.removeClass("navbar-past-banner")})});
+//# sourceMappingURL=maps/navbar-scroll-transition.js.map
