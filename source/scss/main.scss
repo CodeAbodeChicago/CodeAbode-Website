@@ -25,19 +25,21 @@
 */
 
 @media (max-width: $screen-md-min) {
-	@include set-header-sizes(20px);
+	@include set-header-sizes(24px);
 }
 
 @media (max-width: $screen-sm-min) {
-	@include set-header-sizes(18px);
-}
-
-@media (max-width: $screen-xs-min) {
+	@include set-header-sizes(22px);	
 	// Add horizontal space around containers on phone screens
 	.container {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+}
+
+@media (max-width: $screen-xs-min) {
+	@include set-header-sizes(16px);
+
 }
 
 

@@ -28,22 +28,27 @@
 		}
 	}
 	@media (max-width: $screen-sm-min) {
+		height: 600px;	
 		.banner-title {
 			font-size: 50px;
+			margin: 0 0 45px 0;
 		}
 		.banner-subtitle {
 			font-size: 26px;
 		}
 		.btn {
+			margin: 35px 0 0 0;
 			font-size: 24px;
 		}
 	}
 	@media (max-width: $screen-xs-min) {
+		height: 450px;	
 		.banner-title {
-			font-size: 30px;
+			font-size: 40px;
+			margin: 0 0 10px 0;
 		}
 		.banner-subtitle {
-			font-size: 20px;
+			display: none;
 		}
 		.btn {
 			font-size: 18px;
