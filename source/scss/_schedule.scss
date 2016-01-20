@@ -5,6 +5,17 @@
 	.banner-title {
 		font-size: 80px;
 		letter-spacing: 2px;
+
+	  // Media queries 
+		@media (max-width: $screen-md-min) {
+			font-size: 60px;
+		}
+		@media (max-width: $screen-sm-min) {
+			font-size: 50px;
+		}
+		@media (max-width: $screen-xs-min) {
+			font-size: 40px;
+		}
 	}
 }
 
@@ -13,6 +24,13 @@
 		.course-image {
 			// Making top of the images align with the rest of the row
 			padding-top: 6px;
+			img {
+			  // Media queries 
+				@media (max-width: $screen-sm-min) {
+					width: 106px;
+					margin-bottom: 16px;
+				}
+			}
 		}
 		.course-title {
 			font-size: 30px;
@@ -51,6 +69,10 @@
 		margin-top: 35px;
 		margin-bottom: 40px;
 	}
+	  // Media queries 
+	@media (max-width: $screen-sm-min) {
+		text-align: center;
+	}
 }
 
 #comparison-section {
@@ -87,6 +109,12 @@
 		}
 		.cost {
 			margin-bottom: -1px;
+		}
+	}
+	// Media query to style the comparison section in a mobile layout
+	@media (max-width: $screen-sm-min) {
+		.container .row .col-sm-6:nth-child(2) {
+			margin-top: 80px;
 		}
 	}
 }
