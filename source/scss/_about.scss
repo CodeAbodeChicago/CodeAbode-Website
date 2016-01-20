@@ -5,16 +5,33 @@
 	.banner-title {
 		font-size: 80px;
 		letter-spacing: 2px;
+
+	  // Media queries 
+		@media (max-width: $screen-md-min) {
+			font-size: 60px;
+		}
+		@media (max-width: $screen-sm-min) {
+			font-size: 50px;
+		}
+		@media (max-width: $screen-xs-min) {
+			font-size: 40px;
+		}
 	}
 }
 
 #profile-section {
 	.profile {	
 		padding-bottom: 5px;
+		text-align: center;
 		img {
 			width: 100%;
+			max-width: 212px;
 			border-radius: 50%;
 			box-shadow: 2px 2px 5px rgba(0,0,0,0.35);
+		  // Media queries 
+			@media (max-width: $screen-sm-min) {
+				margin-bottom: 16px;
+			}
 		}
 		.name, .title {
 			text-align: center;
