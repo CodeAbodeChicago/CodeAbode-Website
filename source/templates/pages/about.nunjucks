@@ -1,7 +1,7 @@
 {% extends "layout.nunjucks" %}
 
 {% block content %}
-  <div id="about-banner" class="jumbotron banner">
+  <div id="about-banner" class="jumbotron banner-small">
     <div class="banner-content">
       <h1 class="banner-title">NMHMC &amp;<br />CodeAbode</h1>
     </div>

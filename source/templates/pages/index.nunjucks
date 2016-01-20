@@ -1,7 +1,7 @@
 {% extends "layout.nunjucks" %}
 
 {% block content %}
-  <div id="home-banner" class="jumbotron banner">
+  <div id="home-banner" class="jumbotron banner-large">
     <div class="banner-content">
       <h1 class="banner-title">A code school<br />for <span class="highlight">everyone</em></h1>
       <h2 class="banner-subtitle">Learn web development in hands-on classes<br class="visible-md-block visible-lg-block" /> with personal attention &amp; guidance.</h2>

@@ -1,7 +1,7 @@
 {% extends "layout.nunjucks" %}
 
 {% block content %}
-  <div id="apply-banner" class="jumbotron banner">
+  <div id="apply-banner" class="jumbotron banner-small">
     <div class="banner-content">
       <h1 class="banner-title">Apply &amp; Join<br />the next cohort</h1>
     </div>

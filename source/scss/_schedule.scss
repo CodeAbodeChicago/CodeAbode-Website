@@ -1,22 +1,6 @@
 #schedule-banner {	
 	background-image: url("../images/backgrounds/laptops-dark.jpg");
 	background-position: 50% 25%;
-	height: 400px;
-	.banner-title {
-		font-size: 80px;
-		letter-spacing: 2px;
-
-	  // Media queries 
-		@media (max-width: $screen-md-min) {
-			font-size: 60px;
-		}
-		@media (max-width: $screen-sm-min) {
-			font-size: 50px;
-		}
-		@media (max-width: $screen-xs-min) {
-			font-size: 40px;
-		}
-	}
 }
 
 .schedule-section {
