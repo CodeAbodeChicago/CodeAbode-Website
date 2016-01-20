@@ -31,3 +31,20 @@
 	top: $y;
 	transform: translate(-50%, -50%);
 }
+
+// Define font sizes for headers given a base size
+@mixin set-header-sizes($base-size) {
+	$font-size-h1: floor(($base-size * 2.074));
+	$font-size-h2: floor(($base-size * 1.728));
+	$font-size-h3: ceil(($base-size * 1.44));
+	$font-size-h4: ceil(($base-size * 1.2));
+	$font-size-h5: $base-size;
+	$font-size-h6: ceil(($base-size * 0.833));
+	h1 { font-size: $font-size-h1; }
+	h2 { font-size: $font-size-h2; }
+	h3 { font-size: $font-size-h3; }
+	h4 { font-size: $font-size-h4; }
+	h5 { font-size: $font-size-h5; }
+	h6 { font-size: $font-size-h6; }
+	p { font-size: $base-size; }
+}

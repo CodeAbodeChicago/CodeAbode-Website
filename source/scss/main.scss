@@ -20,6 +20,15 @@
 @import "apply";
 
 
+/* 
+	GENERAL MEDIA QUERIES
+*/
+
+@media (max-width: $screen-md-min) {
+	@include set-header-sizes(20px);
+}
+
+
 /*
 	FOOTER
 */
