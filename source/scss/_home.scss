@@ -14,6 +14,43 @@
 		margin: 35px 0 0 0;
 		font-size: 30px;
 	}
+
+  // Media queries 
+	@media (max-width: $screen-md-min) {
+		.banner-title {
+			font-size: 70px;
+		}
+		.banner-subtitle {
+			font-size: 30px;
+		}
+		.btn {
+			font-size: 28px;
+		}
+	}
+	@media (max-width: $screen-sm-min) {
+		.banner-title {
+			font-size: 50px;
+		}
+		.banner-subtitle {
+			font-size: 26px;
+		}
+		.btn {
+			font-size: 24px;
+		}
+	}
+	@media (max-width: $screen-xs-min) {
+		.banner-title {
+			font-size: 30px;
+		}
+		.banner-subtitle {
+			font-size: 20px;
+		}
+		.btn {
+			font-size: 18px;
+		}
+	}
+
+
 }
 
 #curriculum {
@@ -23,16 +60,24 @@
 }
 
 #testimonials {
-	.student-profile img {
-		width: 100%;
-		border-radius: 50%;
-	}
-	.quote {
-		
+	.student-profile {
+		text-align: center;
+		img {
+			// width: 100%;
+			max-width: 212px;
+			border-radius: 50%;
+		  // Media queries 
+			@media (max-width: $screen-md-min) {
+				margin-bottom: 16px;
+			}
+		}
 	}
 	.attribution {
 		margin-top: 10px;
 		font-size: 18px;
 		text-transform: uppercase;
+	}
+	.row:nth-child(2) img {
+		margin-top: 20px;
 	}
 }
