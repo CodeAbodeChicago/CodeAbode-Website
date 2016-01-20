@@ -11080,6 +11080,45 @@ input[type="radio"] .styled:checked + label::after {
 /*
 	PAGE SPECIFIC PARTIAL SCSS
 */
+.navbar {
+  border: none;
+  font-size: 20px;
+}
+
+.navbar .navbar-brand {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 80px;
+}
+
+.navbar .navbar-brand img {
+  height: 100%;
+}
+
+.navbar .navbar-transition {
+  -webkit-transition: all 0.25s ease 0.05s;
+  -o-transition: all 0.25s ease 0.05s;
+  transition: all 0.25s ease 0.05s;
+}
+
+.navbar .navbar-past-banner {
+  background-color: black;
+}
+
+.navbar .navbar-header .icon-bar {
+  background-color: #25ac6f;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    font-size: 18px;
+  }
+  .navbar .navbar-brand {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
 #home-banner {
   background-image: url("../images/backgrounds/alieen-computer-dark.jpg");
   background-position: 50% 25%;
@@ -11357,34 +11396,6 @@ input[type="radio"] .styled:checked + label::after {
       -ms-transform: translate(0, -50%);
        -o-transform: translate(0, -50%);
           transform: translate(0, -50%);
-}
-
-/*
-	NAVBAR
-*/
-.navbar-brand img {
-  height: 100%;
-}
-
-.navbar-brand {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  height: 80px;
-}
-
-.navbar {
-  font-size: 20px;
-  border: none;
-}
-
-.navbar-transition {
-  -webkit-transition: all 0.25s ease 0.05s;
-  -o-transition: all 0.25s ease 0.05s;
-  transition: all 0.25s ease 0.05s;
-}
-
-.navbar-past-banner {
-  background-color: black;
 }
 
 /*
