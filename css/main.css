@@ -11175,21 +11175,26 @@ input[type="radio"] .styled:checked + label::after {
 #profile-section .profile img {
   width: 100%;
   border-radius: 50%;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
 }
 
 #profile-section .profile .name, #profile-section .profile .title {
-  font-size: 20px;
   text-align: center;
 }
 
 #profile-section .profile .name {
-  margin-top: 10px;
+  font-size: 20px;
+  margin-top: 12px;
   margin-bottom: 0;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 #profile-section .profile .title {
-  margin-top: 0;
+  font-size: 16px;
+  margin-top: 4px;
+  font-weight: 300;
+  font-style: italic;
 }
 
 #visit-section .row {
@@ -11199,6 +11204,7 @@ input[type="radio"] .styled:checked + label::after {
 #visit-section #map iframe {
   width: 100%;
   height: 400px;
+  margin-top: 20px;
 }
 
 #visit-section #outside img {
@@ -11206,6 +11212,7 @@ input[type="radio"] .styled:checked + label::after {
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-top: 20px;
 }
 
 #schedule-banner {
@@ -11264,6 +11271,51 @@ input[type="radio"] .styled:checked + label::after {
   border-bottom: 1px solid #BCBCBC;
   margin-top: 35px;
   margin-bottom: 40px;
+}
+
+#comparison-section {
+  text-align: center;
+}
+
+#comparison-section .title {
+  margin: 0;
+}
+
+#comparison-section .subtitle {
+  line-height: 125%;
+  margin: 5px 0 -15px 0;
+  font-size: 22px;
+  font-style: italic;
+  padding: 0 40px;
+}
+
+#comparison-section .comparison {
+  margin-top: 40px;
+  line-height: 125%;
+}
+
+#comparison-section .comparison .icon {
+  font-size: 50px;
+}
+
+#comparison-section .comparison .time {
+  margin-bottom: -5px;
+}
+
+#comparison-section .comparison .time .fa {
+  font-size: 55px;
+}
+
+#comparison-section .comparison .calendar {
+  margin-bottom: -1px;
+}
+
+#comparison-section .comparison .graduation {
+  margin-bottom: -5px;
+}
+
+#comparison-section .comparison .cost {
+  margin-bottom: -1px;
 }
 
 #apply-banner {
