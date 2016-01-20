@@ -11316,7 +11316,8 @@ input[type="radio"] .styled:checked + label::after {
 
 @media (max-width: 768px) {
   #profile-section .profile img {
-    margin-bottom: 16px;
+    margin-bottom: -5px;
+    width: 80%;
   }
 }
 
@@ -11336,10 +11337,6 @@ input[type="radio"] .styled:checked + label::after {
   margin-top: 4px;
   font-weight: 300;
   font-style: italic;
-}
-
-#visit-section .row {
-  height: 242px;
 }
 
 #visit-section #map iframe {
