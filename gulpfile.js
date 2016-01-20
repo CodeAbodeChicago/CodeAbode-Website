@@ -43,7 +43,6 @@ var liveReload = require("gulp-livereload");
 var merge = require("merge-stream");
 var ghPages = require("gulp-gh-pages");
 var open = require('gulp-open');
-var wrapper = require("gulp-wrapper");
 var concat = require("gulp-concat");
 var uglify = require("gulp-uglify");
 var nunjucksRender = require("gulp-nunjucks-render");
