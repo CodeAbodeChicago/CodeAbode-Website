@@ -12,10 +12,10 @@
   }
 
   // Classes for dynamically changing navbar with JS 
-  .navbar-transition {
-   transition: all 0.25s ease 0.05s;   
+  &.navbar-transition {
+   transition: background-color 0.25s ease 0.05s;   
   }  
-  .navbar-past-banner {
+  &.navbar-past-banner {
     background-color: black;
   }
 

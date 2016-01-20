@@ -1,6 +1,6 @@
 $(document).ready(function (){    
 
-  var banner = $(".banner");
+  var banner = $(".banner-large, .banner-small");
   var navbar = $(".navbar");
 
   // If no banner on the page, exit early & style the navbar
