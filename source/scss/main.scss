@@ -12,34 +12,13 @@
 	PAGE SPECIFIC PARTIAL SCSS
 */
 
+@import "navbar";
 @import "home";
 @import "curriculum";
 @import "about";
 @import "schedule";
 @import "apply";
 
-
-/*
-	NAVBAR
-*/
-.navbar-brand img {
-	height: 100%;
-}
-.navbar-brand {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	height: 80px;
-}
-.navbar {
-	font-size: 20px; 
-	border: none;
-}
-.navbar-transition {
-	transition: all 0.25s ease 0.05s;	
-}
-.navbar-past-banner {
-	background-color: black;
-}
 
 /*
 	FOOTER

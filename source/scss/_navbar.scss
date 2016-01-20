@@ -1,0 +1,38 @@
+.navbar {
+  // Basic styling of text & image
+  border: none;
+  font-size: 20px; 
+  .navbar-brand {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 80px;
+    img {
+        height: 100%;
+    }
+  }
+
+  // Classes for dynamically changing navbar with JS 
+  .navbar-transition {
+   transition: all 0.25s ease 0.05s;   
+  }  
+  .navbar-past-banner {
+    background-color: black;
+  }
+
+  // Navbar collapse button
+  .navbar-header {
+    .icon-bar {
+      background-color: $codeabode-green;
+    }
+  }
+
+  // Media queries 
+  @media (max-width: $screen-md-min) {
+    font-size: 18px;
+    .navbar-brand {      
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }  
+}
+
