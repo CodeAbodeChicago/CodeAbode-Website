@@ -1,10 +1,10 @@
 $(document).ready(function (){    
 
-  var banner = $(".banner-large, .banner-small");
+  var bannerTitle = $(".banner-title");
   var navbar = $(".navbar");
 
   // If no banner on the page, exit early & style the navbar
-  if (!banner.length) {
+  if (!bannerTitle.length) {
     navbar.addClass("navbar-past-banner");
     return;
   } 
@@ -12,13 +12,11 @@ $(document).ready(function (){
   // Banner is present, enable transition
   navbar.addClass("navbar-transition");
 
-  // Calculate the scroll position where the bottom of the navbar leaves the 
-  // the bottom of the banner.
-  //   transition = bottom of banner - height of nav bar 
-  // (For calculating heights, include padding & border but not margin)
-  var bottomBanner = banner.offset().top + banner.outerHeight(false);
-  var scrollTransition = bottomBanner - navbar.outerHeight(false);
- 
+  // Calculate the scroll position where the bottom of the navbar
+  // is halfway to the top of the title.
+  var titleTop = bannerTitle.offset().top;
+  var scrollTransition = (titleTop - navbar.outerHeight(false))/2;
+
   // Scroll event to toggle .navbar-past-banner
   $(document).scroll(function () { 
     var scrollPos = $(this).scrollTop();
