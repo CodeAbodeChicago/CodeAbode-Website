@@ -11128,9 +11128,9 @@ input[type="radio"] .styled:checked + label::after {
 }
 
 .navbar.navbar-transition {
-  -webkit-transition: background-color 0.25s ease 0.05s;
-  -o-transition: background-color 0.25s ease 0.05s;
-  transition: background-color 0.25s ease 0.05s;
+  -webkit-transition: background-color 0.4s ease 0.05s;
+  -o-transition: background-color 0.4s ease 0.05s;
+  transition: background-color 0.4s ease 0.05s;
 }
 
 .navbar.navbar-past-banner {
