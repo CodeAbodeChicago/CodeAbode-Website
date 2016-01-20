@@ -9,10 +9,8 @@
 
   <div class="container vertical-margin-40 top-padding-50">
     <h1 class="section-title">Non-profit coding school, for everyone.</h1>
-    <p>CodeAbode is the first non-profit code academy designed with the ever evolving health industry in mind. We equip students to become successful web app developers both inside and outside healthcare.</p>
-    <p>CodeAbode is a division of <a href="http://nmhmchicago.org/">The National Museum of Health and Medicine Chicago</a>. Together, NMHM Chicago and CodeAbode uniquely bridge physical and virtual communities interested in health, medicine, technology and interdisciplinary education.</p>
-    <p>We teach &ldquo;full stack&rdquo; development – front-end HTML/CSS &amp; JavaScript as well as server-side programming in JavaScript (node.js).   Our flexible, hands-on curriculum can be taken in full-time, intensive bootcamp classes or as part-time, evening classes.</p>
-    <p>Our curriculum doesn&rsquo;t assume any prior knowledge, so if you’ve been trying to figure out how to get started in web development, apply for one of our upcoming courses!</p>
+    <p>CodeAbode is a non-profit coding school founded with the goal of making learning how to code affordable and accessible for everyone.  It is a new space in Chicago to learn how to code, share your work and connect with a community of like-minded individuals.</p>
+    <p>CodeAbode is an educational division of <a href="http://nmhmchicago.org/" target="_blank">The National Museum of Health and Medicine Chicago</a>.  The mission of the museum, and CodeAbode by extension, is to support and promote life-long learning in medicine, science and technology.   CodeAbode was developed to provide affordable education to meet the increasing demand for technical knowledge in healthcare - and virtually every other field.</p>
   </div>
 
   <div id="profile-section" class="fluid-container stripped-section vertical-margin-40">
