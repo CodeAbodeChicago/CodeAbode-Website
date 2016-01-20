@@ -14,7 +14,8 @@
 			box-shadow: 2px 2px 5px rgba(0,0,0,0.35);
 		  // Media queries 
 			@media (max-width: $screen-sm-min) {
-				margin-bottom: 16px;
+				margin-bottom: -5px;
+				width: 80%;
 			}
 		}
 		.name, .title {
