@@ -9,6 +9,7 @@ $navbar-default-link-active-color: $codeabode-green;
 $navbar-default-link-hover-color: $codeabode-green;
 $navbar-default-link-active-bg: rgba(0, 0, 0, 0);
 $navbar-height: 80px;
+$navbar-collapse-max-height: auto; // fix overflow issue in mobile navbar
 
 // Typography
 $font-family-sans-serif: "Open Sans", sans-serif;
