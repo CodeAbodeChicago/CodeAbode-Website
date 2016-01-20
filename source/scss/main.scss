@@ -28,6 +28,18 @@
 	@include set-header-sizes(20px);
 }
 
+@media (max-width: $screen-sm-min) {
+	@include set-header-sizes(18px);
+}
+
+@media (max-width: $screen-xs-min) {
+	// Add horizontal space around containers on phone screens
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
 
 /*
 	FOOTER
