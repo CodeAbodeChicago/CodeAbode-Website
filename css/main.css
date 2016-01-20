@@ -11127,13 +11127,13 @@ input[type="radio"] .styled:checked + label::after {
   height: 100%;
 }
 
-.navbar .navbar-transition {
-  -webkit-transition: all 0.25s ease 0.05s;
-  -o-transition: all 0.25s ease 0.05s;
-  transition: all 0.25s ease 0.05s;
+.navbar.navbar-transition {
+  -webkit-transition: background-color 0.25s ease 0.05s;
+  -o-transition: background-color 0.25s ease 0.05s;
+  transition: background-color 0.25s ease 0.05s;
 }
 
-.navbar .navbar-past-banner {
+.navbar.navbar-past-banner {
   background-color: black;
 }
 
@@ -11626,8 +11626,8 @@ input[type="radio"] .styled:checked + label::after {
 */
 footer {
   background-color: black;
-  font-size: 20px;
-  line-height: 22px;
+  font-size: 90%;
+  line-height: 125%;
   text-align: center;
   color: white;
 }
