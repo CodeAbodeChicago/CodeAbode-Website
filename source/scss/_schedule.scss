@@ -52,3 +52,40 @@
 		margin-bottom: 40px;
 	}
 }
+
+#comparison-section {
+	text-align: center;
+	.title {
+		margin: 0;
+	}
+	.subtitle {
+		line-height: 125%;
+		margin: 5px 0 -15px 0;
+		font-size: 22px;
+		font-style: italic;
+		padding: 0 40px;
+	}
+	.comparison {
+		margin-top: 40px;
+		line-height: 125%;
+		.icon {
+			font-size: 50px;
+		}
+		// Tweaking individual icons to get them placed evenly
+		.time {
+			.fa {
+				font-size: 55px;
+			}
+			margin-bottom: -5px;
+		}
+		.calendar {
+			margin-bottom: -1px;			
+		}
+		.graduation {
+			margin-bottom: -5px;
+		}
+		.cost {
+			margin-bottom: -1px;
+		}
+	}
+}
