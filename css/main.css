@@ -11339,18 +11339,39 @@ input[type="radio"] .styled:checked + label::after {
   font-style: italic;
 }
 
-#visit-section #map iframe {
-  width: 100%;
-  height: 400px;
+#visit-section #map, #visit-section #outside {
+  height: 450px;
   margin-top: 20px;
 }
 
-#visit-section #outside img {
+#visit-section #map iframe, #visit-section #outside img {
   width: 100%;
-  height: 400px;
+  height: 100%;
+}
+
+#visit-section #outside img {
   -o-object-fit: cover;
      object-fit: cover;
-  margin-top: 20px;
+  -o-object-position: 50% 75%;
+     object-position: 50% 75%;
+}
+
+@media (max-width: 992px) {
+  #visit-section #map, #visit-section #outside {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  #visit-section #map, #visit-section #outside {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  #visit-section #map, #visit-section #outside {
+    height: 250px;
+  }
 }
 
 #schedule-banner {
