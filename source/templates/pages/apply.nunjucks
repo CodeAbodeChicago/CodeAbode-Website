@@ -29,7 +29,7 @@
            - Indent properly, all element tags can only be on one line
   -->
       <!--Desktop Timeline-->
-      <svg version="1.1" class="visible-sm visible-md visible-lg" id="timeline-desktop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1001px" height="271.486px" viewBox="0 0 1001 271.486" enable-background="new 0 0 1001 271.486" xml:space="preserve">
+      <svg version="1.1" class="visible-sm visible-md visible-lg no-select" id="timeline-desktop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1001px" height="271.486px" viewBox="0 0 1001 271.486" enable-background="new 0 0 1001 271.486" xml:space="preserve">
         <g class="line">
           
             <image overflow="visible" opacity="0.25" width="677" height="25" xlink:href="images/timelineShadow/1916E806.png"  transform="matrix(1 0 0 1 141.3599 130.6028)">
@@ -135,7 +135,7 @@
         </g>
       </svg>
      <!--Mobile Timeline-->
-      <svg version="1.1" class="visible-xs" id="timeline-mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="315px" height="112px" viewBox="0 27.5 315 112" enable-background="new 0 27.5 315 112" xml:space="preserve">
+      <svg version="1.1" class="visible-xs no-select" id="timeline-mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="315px" height="112px" viewBox="0 27.5 315 112" enable-background="new 0 27.5 315 112" xml:space="preserve">
         <g class="line">
           
             <image overflow="visible" opacity="0.25" width="189" height="23" xlink:href="images/timelineShadow/55A08449.png"  transform="matrix(1 0 0 1 65.3599 90.8604)">
