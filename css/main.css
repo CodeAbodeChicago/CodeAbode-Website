@@ -11525,6 +11525,10 @@ footer .address {
   line-height: 150%;
 }
 
+.schedule-section .course-offering .course-details a:hover {
+  cursor: pointer;
+}
+
 .schedule-section .course-offering .course-logistics {
   font-size: 20px;
   line-height: 25px;
@@ -11544,6 +11548,12 @@ footer .address {
 
 .schedule-section .course-offering .course-logistics .btn {
   font-size: 22px;
+}
+
+.schedule-section .course-offering .course-logistics .disabled {
+  opacity: 0.5;
+  border-color: #6E6E6E;
+  background-color: #808080;
 }
 
 .schedule-section .course-separator {
@@ -11623,18 +11633,35 @@ footer .address {
   text-align: left;
 }
 
-#timeline svg {
+#timeline #timeline-desktop {
   width: 100%;
   max-width: 1001px;
   height: auto;
 }
 
-#apply, #apply-active, #instructor-call, #instructor-call-active, #reserve-seat, #reserve-seat-active, #first-day, #first-day-active {
+#timeline #timeline-mobile {
+  margin: auto;
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+}
+
+#timeline #timeline-mobile {
+  display: none;
+}
+
+.apply, .instructor-call, .reserve-seat, .first-day {
   cursor: pointer;
 }
 
 #timeline-info {
-  height: 70px;
+  height: auto;
+}
+
+@media (max-width: 480px) {
+  #timeline-info {
+    margin: 16px;
+  }
 }
 
 #apply-form .checkbox label::before, #apply-form .checkbox label::after {
@@ -11644,6 +11671,14 @@ footer .address {
       -ms-transform: translate(0, -50%);
        -o-transform: translate(0, -50%);
           transform: translate(0, -50%);
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* 
