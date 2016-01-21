@@ -7,17 +7,31 @@
 	h1, h3, p {
 		text-align: left;
 	}
-	svg {
+	#timeline-desktop {
 		width: 100%;
 		max-width: 1001px;
 		height: auto;
 	}
+	#timeline-mobile {
+		margin: auto;
+		width: 100%;
+		max-width: 480px;
+		height: auto;
+	}
+	// hide mobile timeline by default
+	#timeline-mobile {
+		display: none;
+	}
 }
-#apply, #apply-active, #instructor-call, #instructor-call-active, #reserve-seat, #reserve-seat-active, #first-day, #first-day-active {
+.apply, .instructor-call, .reserve-seat, .first-day {
 	cursor: pointer;
 }
 #timeline-info {
-	height: 70px;
+	height: auto;
+  // Media queries 
+  @media (max-width: $screen-xs-min) {
+    margin: 16px;
+  }  
 }
 
 #apply-form {
