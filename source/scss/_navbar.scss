@@ -21,8 +21,19 @@
 
   // Navbar collapse button
   .navbar-header {
-    .icon-bar {
-      background-color: $codeabode-green;
+    .navbar-toggle {
+      border: none;
+      font-size: 35px;
+      color: $codeabode-green;
+      margin: 0 15px 0 0;
+      padding: 0;
+      line-height: $navbar-height;
+    }
+    // Override the bootstrap styling for the navbar interactivity 
+    .navbar-toggle,
+    .navbar-toggle:active,
+    .navbar-toggle:hover {
+      background-color: black;
     }
   }
 
