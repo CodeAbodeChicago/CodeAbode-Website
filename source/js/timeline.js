@@ -4,7 +4,7 @@
 
 // DOM ELEMENTS
 // timeline elements
-var timelineSteps = document.querySelectorAll("#apply, #instructor-call, #reserve-seat, #first-day");
+var timelineSteps = document.querySelectorAll(".apply, .instructor-call, .reserve-seat, .first-day");
 // timeline info paragraph
 var timelineInfo = document.querySelector("#timeline-info");
 
@@ -26,7 +26,7 @@ var activeStep = "apply"; // apply is active by default
 // BIND EVENTS
 for (var i = 0; i < timelineSteps.length; i++){
 	timelineSteps[i].addEventListener("click", function() {
-		handleTimeline(event.currentTarget.id);
+		handleTimeline(event.currentTarget.getAttribute("class"));
 	});
 }
 
@@ -42,43 +42,59 @@ function handleTimeline(id) {
 	}
 }
 // set styles for active and inactive steps
-function activate(newId) {
+function activate(newClass) {
 	// setup variable for generic query selection
-	var id = "#" + newId;
+	var myClass = "." + newClass;
 	// get the selected step from the dom
-	var step = document.querySelector(id);
-	//get the circle, line, and text elements from the selected step
-	var line = step.querySelector("line");
-	var circle = step.querySelectorAll("circle");
-	var words = step.querySelectorAll("text");
+	var steps = document.querySelectorAll(myClass);
 
-	// edit styles
-	for (var i = 0; i < circle.length; i++) {
-		circle[i].setAttribute("stroke", "#545454");
-		circle[i].setAttribute("fill", "#fff");
+	// both desktop and mobile versions of the timeline
+	// are in the DOM, the for-loop accounts for both versions
+	for (var i = 0; i < steps.length; i++) {
+		//get the circle, line, and text elements from the selected step
+		var line = steps[i].querySelector("line");
+		var circle = steps[i].querySelectorAll("circle");
+		var words = steps[i].querySelectorAll("text");
+
+		// edit styles
+		for (var j = 0; j < circle.length; j++) {
+			circle[j].setAttribute("stroke", "#545454");
+			circle[j].setAttribute("fill", "#fff");
+		}
+		if (i === 0) line.setAttribute("stroke", "#545454");
+
+		words[0].setAttribute("stroke-width", "0.5px");
+		words[0].setAttribute("stroke", "#fff");
+		words[1].setAttribute("fill", "#545454");
 	}
-	line.setAttribute("stroke", "#545454");
-	words[1].setAttribute("fill", "#545454");
 
 	// display new info in the timeline-info paragraph
-	timelineInfo.textContent = timelineText[newId];
+	timelineInfo.textContent = timelineText[newClass];
 }
-function deactivate(newId) {
+function deactivate(newClass) {
 	// setup variable for generic query selection
-	var id = "#" + newId;
+	var myClass = "." + newClass;
 	// get the selected step from the dom
-	var step = document.querySelector(id);
-	//get the circle, line, and text elements from the selected step
-	var line = step.querySelector("line");
-	var circle = step.querySelectorAll("circle");
-	var words = step.querySelectorAll("text");
+	var steps = document.querySelectorAll(myClass);
 
-	// edit styles
-	for (var i = 0; i < circle.length; i++) {
-		circle[i].setAttribute("stroke", "#fff");
-		circle[i].setAttribute("fill", "#25AC6F");
+	// both desktop and mobile versions of the timeline
+	// are in the DOM, the for-loop accounts for both versions
+	for (var i = 0; i < steps.length; i++) {
+		//get the circle, line, and text elements from the selected step
+		var line = steps[i].querySelector("line");
+		var circle = steps[i].querySelectorAll("circle");
+		var words = steps[i].querySelectorAll("text");
+
+		// edit styles
+		for (var j = 0; j < circle.length; j++) {
+			circle[j].setAttribute("stroke", "#fff");
+			circle[j].setAttribute("fill", "#25AC6F");
+		}
+
+		if (i === 0) line.setAttribute("stroke", "#fff");
+
+		words[0].setAttribute("stroke", "none");
+		words[1].setAttribute("fill", "#fff");
 	}
-	line.setAttribute("stroke", "#fff");
-	words[1].setAttribute("fill", "#fff");
 }
 
