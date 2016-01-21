@@ -28,6 +28,9 @@
 		.course-details {
 			font-size: 20px;
 			line-height: 150%;
+			a:hover {
+				cursor: pointer;
+			}
 		}
 		.course-logistics {
 			font-size: 20px;
@@ -45,6 +48,11 @@
 			}
 			.btn {
 				font-size: 22px;
+			}
+			.disabled {
+				opacity: 0.5;
+				border-color: #6E6E6E;
+				background-color: #808080;
 			}
 		}
 	}
