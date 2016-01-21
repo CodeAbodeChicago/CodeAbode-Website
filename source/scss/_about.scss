@@ -37,15 +37,31 @@
 }
 
 #visit-section {
-	#map iframe {
-		width: 100%;
-		height: 400px;
+	#map, #outside {
+		height: 450px;
 		margin-top: 20px;
 	}
-	#outside img {
+	#map iframe, #outside img {
 		width: 100%;
-		height: 400px;
+		height: 100%;		
+	}
+	#outside img {
 		object-fit: cover;
-		margin-top: 20px;
+		object-position: 50% 75%;
+	}
+	@media (max-width: $screen-md-min) {
+		#map, #outside {
+			height: 300px;
+		}
+	}
+	@media (max-width: $screen-sm-min) {
+		#map, #outside {
+			height: 300px;
+		}
+	}
+	@media (max-width: $screen-xs-min) {
+		#map, #outside {
+			height: 250px;
+		}
 	}
 }
