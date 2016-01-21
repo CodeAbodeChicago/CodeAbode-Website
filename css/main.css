@@ -11137,8 +11137,19 @@ input[type="radio"] .styled:checked + label::after {
   background-color: black;
 }
 
-.navbar .navbar-header .icon-bar {
-  background-color: #25ac6f;
+.navbar .navbar-header .navbar-toggle {
+  border: none;
+  font-size: 35px;
+  color: #25ac6f;
+  margin: 0 15px 0 0;
+  padding: 0;
+  line-height: 80px;
+}
+
+.navbar .navbar-header .navbar-toggle,
+.navbar .navbar-header .navbar-toggle:active,
+.navbar .navbar-header .navbar-toggle:hover {
+  background-color: black;
 }
 
 @media (max-width: 992px) {
@@ -11149,6 +11160,114 @@ input[type="radio"] .styled:checked + label::after {
     padding-top: 12px;
     padding-bottom: 12px;
   }
+}
+
+.banner-large, .banner-small {
+  height: 650px;
+  background-image: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  overflow: auto;
+  color: white;
+  position: relative;
+}
+
+.banner-large .banner-content, .banner-small .banner-content {
+  padding-top: 80px;
+  width: 75%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.banner-large .banner-content .banner-title, .banner-small .banner-content .banner-title {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.banner-large .banner-content .banner-subtitle, .banner-small .banner-content .banner-subtitle {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+  margin: 0;
+  font-weight: 300;
+}
+
+.banner-large .banner-content .btn, .banner-small .banner-content .btn {
+  margin: 0;
+  outline: none;
+  font-weight: 300;
+}
+
+.banner-large .banner-content .highlight, .banner-small .banner-content .highlight {
+  color: #25ac6f;
+  border-bottom: 5px solid white;
+  font-weight: 800;
+}
+
+.banner-small {
+  height: 500px;
+}
+
+.banner-small .banner-title {
+  font-size: 80px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 992px) {
+  .banner-small {
+    height: 400px;
+  }
+  .banner-small .banner-title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-small {
+    height: 375px;
+  }
+  .banner-small .banner-title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-small {
+    height: 350px;
+  }
+  .banner-small .banner-content {
+    width: 100%;
+  }
+  .banner-small .banner-title {
+    font-size: 40px;
+  }
+}
+
+footer {
+  background-color: black;
+  font-size: 90%;
+  line-height: 125%;
+  text-align: center;
+  color: white;
+}
+
+footer .links {
+  margin-bottom: 18px;
+}
+
+footer .links a {
+  padding: 0 10px;
+}
+
+footer .address {
+  margin-bottom: 18px;
 }
 
 #home-banner {
@@ -11616,29 +11735,6 @@ input[type="radio"] .styled:checked + label::after {
 }
 
 /*
-	FOOTER
-*/
-footer {
-  background-color: black;
-  font-size: 90%;
-  line-height: 125%;
-  text-align: center;
-  color: white;
-}
-
-footer .links {
-  margin-bottom: 18px;
-}
-
-footer .links a {
-  padding: 0 10px;
-}
-
-footer .address {
-  margin-bottom: 18px;
-}
-
-/*
 	ALL SECTIONS
 */
 .no-navbar-overlap {
@@ -11663,97 +11759,6 @@ footer .address {
   display: inline-block;
   vertical-align: middle;
   float: none;
-}
-
-/*
-	BANNER
-*/
-.banner-large, .banner-small {
-  height: 650px;
-  background-image: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
-  overflow: auto;
-  color: white;
-  position: relative;
-}
-
-.banner-large .banner-content, .banner-small .banner-content {
-  padding-top: 80px;
-  width: 75%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-       -o-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-}
-
-.banner-large .banner-content .banner-title, .banner-small .banner-content .banner-title {
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
-  margin: 0;
-  text-transform: uppercase;
-  font-weight: 300;
-}
-
-.banner-large .banner-content .banner-subtitle, .banner-small .banner-content .banner-subtitle {
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
-  margin: 0;
-  font-weight: 300;
-}
-
-.banner-large .banner-content .btn, .banner-small .banner-content .btn {
-  margin: 0;
-  outline: none;
-  font-weight: 300;
-}
-
-.banner-large .banner-content .highlight, .banner-small .banner-content .highlight {
-  color: #25ac6f;
-  border-bottom: 5px solid white;
-  font-weight: 800;
-}
-
-.banner-small {
-  height: 500px;
-}
-
-.banner-small .banner-title {
-  font-size: 80px;
-  letter-spacing: 2px;
-}
-
-@media (max-width: 992px) {
-  .banner-small {
-    height: 400px;
-  }
-  .banner-small .banner-title {
-    font-size: 60px;
-  }
-}
-
-@media (max-width: 768px) {
-  .banner-small {
-    height: 375px;
-  }
-  .banner-small .banner-title {
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 480px) {
-  .banner-small {
-    height: 350px;
-  }
-  .banner-small .banner-content {
-    width: 100%;
-  }
-  .banner-small .banner-title {
-    font-size: 40px;
-  }
 }
 
 /*# sourceMappingURL=maps/main.css.map */
