@@ -235,70 +235,80 @@
 
   <div id="apply-section" class="container vertical-margin-50">
     <h1 class="section-title">Apply</h1>
-    <form role="form" id="apply-form">
+    <form role="form" id="apply-form" data-toggle="validator">
       <h3>Basic Information</h3>
       <div class="row">
           <div class="form-group col-sm-6">    
-              <label for="first-name" class="control-label">First Name</label>
-              <input type="text" class="form-control" id="first-name" placeholder="">
+              <label for="first-name" class="control-label">First Name<span class="required"> * </span></label>
+              <input type="text" class="form-control" name="first-name" placeholder="" required>
+              <div class="help-block with-errors"></div>
           </div>
           <div class="form-group col-sm-6">    
-              <label for="last-name" class="control-label">Last Name</label>
-              <input type="text" class="form-control" id="last-name" placeholder="">
+              <label for="last-name" class="control-label">Last Name<span class="required"> * </span></label>
+              <input type="text" class="form-control" name="last-name" placeholder="" required>
+              <div class="help-block with-errors"></div>
           </div> 
       </div>
       <div class="row">
           <div class="form-group col-sm-6">    
-              <label for="phone-number" class="control-label">Phone Number</label>
-              <input type="tel" class="form-control" id="phone-number" placeholder="">
+              <label for="phone-number" class="control-label">Phone Number<span class="required"> * </span></label>
+              <input type="tel" class="form-control" name="phone-number" placeholder="" required>
+              <div class="help-block with-errors"></div>
           </div>
           <div class="form-group col-sm-6">    
-              <label for="email" class="control-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="">
+              <label for="email" class="control-label">Email<span class="required"> * </span></label>
+              <input type="email" class="form-control" name="email" placeholder="" required>
+              <div class="help-block with-errors"></div>
           </div> 
       </div>
 
-      <h3>Classes you are applying for:</h3>
+      <h3>Classes you are applying for:<span class="required"> * </span></h3>
       <h4>Part Time Night Classes</h4>
       <div class="checkbox checkbox-primary">
-          <input type="checkbox" id="night-course1-02" value="night-course1-02">
+          <input type="checkbox" id="night-course1-02" name="course" value="night-course1-02">
           <label for="night-course1-02">
               Introduction to Modern Web Design, Feb 1st, $1000
           </label>
       </div>  
       <div class="checkbox checkbox-primary">
-          <input type="checkbox" id="night-course2-02" value="night-course2-02">
+          <input type="checkbox" id="night-course2-02" name="course" value="night-course2-02">
           <label for="night-course2-02">
               Introduction to JavaScript, Feb 1st, $1000
           </label>
       </div>  
       <div class="checkbox checkbox-primary">
-          <input type="checkbox" id="night-course3-02" value="night-course3-02">
+          <input type="checkbox" id="night-course3-02" name="course" value="night-course3-02">
           <label for="night-course3-02">
               Advanced JavaScript, Feb 1st, $1000
           </label>
       </div>
+      <div class="help-block with-errors err" id="check"></div>
 
       <h3>About You</h3>
       <div class="form-group">        
-          <label for="education-background">Tell us about your education background.</label>
-          <textarea class="form-control" rows="3" id="education-background"></textarea>
+          <label for="education-background">Tell us about your education background.<span class="required"> * </span></label>
+          <textarea class="form-control" rows="3" name="education-background" required></textarea>
+          <div class="help-block with-errors"></div>
       </div>
       <div class="form-group">        
-          <label for="motivation">What motivated you to apply for a course at CodeAbode?</label>
-          <textarea class="form-control" rows="3" id="motivation"></textarea>
+          <label for="motivation">What motivated you to apply for a course at CodeAbode?<span class="required"> * </span></label>
+          <textarea class="form-control" rows="3" name="motivation" required></textarea>
+          <div class="help-block with-errors"></div>
       </div>
       <div class="form-group">        
-          <label for="computer-experience">What level of computer experience do you have (e.g. do you know how to unzip a folder, have you studied a programming language already, etc.)?</label>
-          <textarea class="form-control" rows="3" id="computer-experience"></textarea>
+          <label for="computer-experience">What level of computer experience do you have (e.g. do you know how to unzip a folder, have you studied a programming language already, etc.)?<span class="required"> * </span></label>
+          <textarea class="form-control" rows="3" name="computer-experience" required></textarea>
+          <div class="help-block with-errors"></div>
       </div>
       <div class="form-group">        
           <label for="programming-experience">If you've tried learning programming already, what have you tried?</label>
-          <textarea class="form-control" rows="3" id="programming-experience"></textarea>
+          <textarea class="form-control" rows="3" name="programming-experience"></textarea>
+          <div class="help-block with-errors"></div>
       </div>
 
-      <button type="submit" class="btn btn-primary">Submit Application</button>
+      <button type="submit" class="btn btn-primary" name="submit" >Submit Application</button>
     </form>
+    <span class="required">* = required</span>
   </div>
 
 {% endblock %}
@@ -307,4 +317,5 @@
 {% block scripts %}
   <script src="js/timeline.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/apply-autofill.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/checkbox-validation.js" type="text/javascript" charset="utf-8"></script>
 {% endblock %}
