@@ -11502,11 +11502,8 @@ footer .address {
   padding-top: 6px;
 }
 
-@media (max-width: 768px) {
-  .schedule-section .course-offering .course-image img {
-    width: 106px;
-    margin-bottom: 16px;
-  }
+.schedule-section .course-offering .course-image img {
+  width: 100%;
 }
 
 .schedule-section .course-offering .course-title {
@@ -11547,7 +11544,7 @@ footer .address {
 }
 
 .schedule-section .course-offering .course-logistics .btn {
-  font-size: 22px;
+  font-size: 88%;
 }
 
 .schedule-section .course-offering .course-logistics .disabled {
@@ -11562,9 +11559,69 @@ footer .address {
   margin-bottom: 40px;
 }
 
+@media (max-width: 992px) {
+  .schedule-section .course-offering .course-title {
+    font-size: 100%;
+  }
+  .schedule-section .course-offering .course-subtitle {
+    font-size: 75%;
+  }
+  .schedule-section .course-offering .course-details {
+    font-size: 75%;
+    line-height: 125%;
+  }
+  .schedule-section .course-offering .course-logistics {
+    font-size: 75%;
+    line-height: 125%;
+  }
+  .schedule-section .course-offering .course-logistics .details {
+    padding-left: 7px;
+  }
+  .schedule-section .course-offering .course-logistics .btn {
+    font-size: 75%;
+  }
+}
+
 @media (max-width: 768px) {
-  .schedule-section {
+  .schedule-section .course-offering {
     text-align: center;
+  }
+  .schedule-section .course-offering .course-image {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 6px;
+    width: 20%;
+  }
+  .schedule-section .course-offering .course-image img {
+    width: 100%;
+  }
+  .schedule-section .course-offering .course-details {
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+    font-size: 100%;
+    padding-left: 15px;
+  }
+  .schedule-section .course-offering .course-details i {
+    padding-right: 3px;
+  }
+  .schedule-section .course-offering .course-details .course-title {
+    font-size: 130%;
+    margin: 0;
+  }
+  .schedule-section .course-offering .course-details .course-subtitle {
+    font-size: 110%;
+    margin: 10px 0 10px 0;
+  }
+  .schedule-section .course-offering .course-details .course-logistics {
+    font-size: 100%;
+    line-height: 130%;
+  }
+  .schedule-section .course-offering .course-details .btn {
+    margin-top: 10px;
+    line-height: 120%;
+    font-size: 90%;
   }
 }
 
