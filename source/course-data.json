@@ -1,0 +1,110 @@
+{
+	"courses": [
+		{
+			"title": "Introduction to Modern Web Design",
+			"number": 1,
+			"description": "Covers the essentials of modern web site design and development, using HTML5 and CSS3. Students will be exposed to the entire development pipeline, including early research and planning, wire framing, selecting a final design, and production.",
+			"logo": "html.svg"
+		},
+		{
+			"title": "Introduction to JavaScript",
+			"number": 2,
+			"description": "Designed to teach programming & JS fundamentals, in service of creating web applications. We will start with basic programming & web concepts: storing data, making decisions, manipulating webpages and getting user input. Then, we will move into using JS to make dynamic and interactive webpages.",
+			"logo": "js.svg"
+		},
+		{
+			"title": "Advanced JavaScript",
+			"number": 3,
+			"description": "Going beyond the fundamentals, we will be using object-oriented programming (OOP) to structure larger programs that interact with real world data (via APIs). We will then use our web programming skills to build hybrid app - web app that can be deployed to the App Store and Google Play store.",
+			"logo": "advanced-js.svg"
+		},
+		{
+			"title": "Server-side Programming",
+			"number": 4,
+			"description": "This course dives deep into the heart of the internet - how computers communicate over a network. Using <a href='https://nodejs.org/en/'>Node.js</a>, we will learn the fundamentals of creating a full-fledged web apps: serving HTML/CSS & JS files, storing persistent data, handling real time interactions between browsers and hosting on <a href='https://www.heroku.com/'>Heroku</a>.",
+			"logo": "node.svg"
+		},
+		{
+			"title": "Capstone Projects",
+			"number": 5,
+			"description": "Now that we've covered client-side and server-side programming, this course focuses on the soft, fuzzy skills of development. We will guide you through the proposing, designing, implementing & iterating on a web project of your choosing. Along the way, you will build your communication, problem solving & time management skills.",
+			"logo": "capstone.svg"
+		}
+	],
+	"nightSchedule": [
+		{
+			"courseNumber": 1,
+			"instructor": "Rex Twedt",
+			"location": "NMHMC, 1<sup>st</sup> floor",
+			"prerequisites": "None",
+			"dates": "2/1/16 - 4/8/16",
+			"days": "Mon & Wed",
+			"times": "6p - 9p",
+			"cost": "1000",
+			"openEnrollment": true,
+			"applyQuery": "course=night-course1-02"
+		},
+		{
+			"courseNumber": 2,
+			"instructor": "Mike Hadley",
+			"location": "NMHMC, 1<sup>st</sup> floor",
+			"prerequisites": "Course 1 (or prior HTML/CSS mastery)",
+			"dates": "2/1/16 - 4/8/16",
+			"days": "Tue & Thu",
+			"times": "6p - 9p",
+			"cost": "1000",
+			"openEnrollment": true,
+			"applyQuery": "course=night-course2-02"
+		},
+		{
+			"courseNumber": 3,
+			"instructor": "Mike Hadley",
+			"location": "NMHMC, 2<sup>nd</sup> floor",
+			"prerequisites": "Courses 1 & 2",
+			"dates": "2/1/16 - 4/8/16",
+			"days": "Mon & Wed",
+			"times": "6p - 9p",
+			"cost": "1000",
+			"openEnrollment": true,
+			"applyQuery": "course=night-course3-02"
+		},
+		{
+			"courseNumber": 4,
+			"instructor": "TBD",
+			"location": "TBD",
+			"prerequisites": "Courses 1 - 3",
+			"dates": "May 2016",
+			"days": "TBD",
+			"times": "6p - 9p",
+			"cost": "1000",
+			"openEnrollment": false,
+			"note": "Enrollment opens 03/16"
+		},
+		{
+			"courseNumber": 5,
+			"instructor": "TBD",
+			"location": "TBD",
+			"prerequisites": "Courses 1 - 4",
+			"dates": "Aug 2016",
+			"days": "TBD",
+			"times": "6p - 9p",
+			"cost": "1000",
+			"openEnrollment": false,
+			"note": "Enrollment opens 06/16"
+		}
+	],
+	"daySchedule": [
+		{
+			"title": "Full Stack Web Development",
+			"courses": "Web Development Courses 1 - 5",
+			"description": "Live & breathe code in an intensive 15 week, web development bootcamp. Take the full sequence of CodeAbode courses back-to-back: Modern Web Design, JavaScript, Advanced JavaScript, Server-Side Programming & Capstone Projects.",
+			"dates": "Summer 2016, TBD",
+			"days": "Mon - Fri",
+			"times": "10a - 4p",
+			"cost": "5000",
+			"openEnrollment": false,
+			"logo": "bootcamp.svg",
+			"note": "Enrollment opens 04/16"
+		}		
+	]
+}
