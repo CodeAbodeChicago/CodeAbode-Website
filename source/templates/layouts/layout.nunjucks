@@ -32,6 +32,8 @@
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins, or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap form validation -->
+    <script src="js/validator.min.js"></script>
     
     <!-- Any necessary custom JS for the page -->
     <script src="js/navbar-scroll-transition.js" type="text/javascript" charset="utf-8"></script>
