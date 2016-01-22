@@ -47,6 +47,7 @@ var concat = require("gulp-concat");
 var uglify = require("gulp-uglify");
 var nunjucksRender = require("gulp-nunjucks-render");
 var newer = require("gulp-newer");
+var data = require("gulp-data");
 
 // Other modules
 var express = require("express");
@@ -67,10 +68,15 @@ gulp.task("images", function () {
 		.pipe(newer("public/images"))
 		.pipe(gulp.dest("public/images"));
 });
-
 gulp.task("nunjucks", function () {
-	nunjucksRender.nunjucks.configure(["source/templates/layouts", "source/templates/partials"], {watch: false});
+	nunjucksRender.nunjucks.configure(
+		["source/templates/layouts", "source/templates/partials"], 
+		{watch: false, autoescape: false}
+	);
 	return gulp.src("source/templates/pages/**/*.nunjucks")
+		.pipe(data(function(file) {
+			return JSON.parse(fs.readFileSync('./source/course-data.json'));
+		}))
 		.pipe(nunjucksRender())
 		.pipe(gulp.dest("public"))
 		.pipe(liveReload());
