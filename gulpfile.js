@@ -68,6 +68,12 @@ gulp.task("images", function () {
 		.pipe(gulp.dest("public/images"));
 });
 
+gulp.task("php", function () {
+	return gulp.src("source/php/*.*")
+		.pipe(newer("public/php"))
+		.pipe(gulp.dest("public/php"));
+});
+
 gulp.task("nunjucks", function () {
 	nunjucksRender.nunjucks.configure(["source/templates/layouts", "source/templates/partials"], {watch: false});
 	return gulp.src("source/templates/pages/**/*.nunjucks")
@@ -118,7 +124,9 @@ gulp.task("vendor-js", function() {
 		.pipe(gulp.dest("public/js"));
 	var bootstrap = gulp.src("bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js")
 		.pipe(gulp.dest("public/js"));
-	return merge(jquery, bootstrap);
+	var validator = gulp.src("bower_components/bootstrap-validator-master/dist/validator.min.js")
+		.pipe(gulp.dest("public/js"));
+	return merge(jquery, bootstrap, validator);
 });
 
 // Uglify and sourcemap custom JS for the project into public/js/all.js
@@ -135,6 +143,7 @@ gulp.task("js", function() {
 gulp.task("build", [
 	"icons",
 	"images",
+	"php",
 	"nunjucks",
 	"sass",
 	"vendor-js",
