@@ -11510,18 +11510,18 @@ footer .address {
 }
 
 .schedule-section .course-offering .course-title {
-  font-size: 30px;
+  font-size: 120%;
   font-weight: bold;
   margin: 0;
 }
 
 .schedule-section .course-offering .course-subtitle {
-  font-size: 20px;
+  font-size: 80%;
   margin: 5px 0 15px 0;
 }
 
 .schedule-section .course-offering .course-details {
-  font-size: 20px;
+  font-size: 80%;
   line-height: 150%;
 }
 
@@ -11530,7 +11530,7 @@ footer .address {
 }
 
 .schedule-section .course-offering .course-logistics {
-  font-size: 20px;
+  font-size: 80%;
   line-height: 25px;
 }
 
