@@ -116,17 +116,42 @@
     {# Grab the course details from the courses array #}
     {% set course = courses[courseOffering.courseNumber - 1] %}
 
-    <div class="course-offering row">
-      <div class="course-image col-sm-2">
+    <!-- Mobile (xs) markup for course offering -->
+    <div class="visible-xs course-offering row">
+        <div class="course-image">
+          <img src="images/logos/{{course.logo}}" alt="">
+        </div><!-- 
+         --><div class="course-details">
+          <h3 class="course-title">{{course.title}}</h3>
+          <h4 class="course-subtitle">Web Development Course {{course.number}}</h4>
+          <div class="course-logistics">
+            <i class="fa fa-calendar"></i> {{courseOffering.dates}}<br>
+            <i class="fa fa-clock-o"></i> {{courseOffering.days}}, {{courseOffering.times}}<br>
+            <i class="fa fa-tag"></i> ${{courseOffering.cost}}
+            {% if courseOffering.note %}
+            <br><i class="fa fa-info-circle"></i> {{courseOffering.note}}
+            {% endif %}
+          </div>
+          {% if courseOffering.openEnrollment %}
+          <a href="./apply.html?{{courseOffering.applyQuery}}" class="btn btn-primary">Apply</a>
+          {% else %}
+          <button class="btn btn-primary disabled">Apply</button>
+          {% endif %}    
+        </div>    
+    </div>
+
+    <!-- Tablet/Desktop (s+) markup for course offering -->
+    <div class="hidden-xs course-offering row">
+      <div class="course-image col-xs-12 col-sm-2">
         <img src="images/logos/{{course.logo}}" alt="">
       </div>
-      <div class="col-sm-7">
+      <div class="col-xs-12 col-sm-7">
         <h3 class="course-title">{{course.title}}</h3>
         <h4 class="course-subtitle">Web Development Course {{course.number}}</h4>
         <p class="course-details">
           Instructor: {{courseOffering.instructor}}<br>
           Location: {{courseOffering.location}}<br>
-          Prerequisites: {{courseOffering.prequisites}}<br>
+          Prerequisites: {{courseOffering.prerequisites}}<br>
 
           <!-- Trigger the modal with a button -->
           <a data-toggle="modal" data-target="#night-offering-{{loop.index}}">Course description</a>
@@ -146,37 +171,40 @@
 
         </p>
       </div>
+
       <div class="course-logistics col-sm-3">
         <div class="row">
-          <div class="icon col-sm-2">
+          <div class="icon col-xs-12 col-sm-2">
             <i class="fa fa-calendar"></i> 
           </div>
-          <div class="details col-sm-10">
+          <div class="details col-xs-12 col-sm-10">
             {{courseOffering.dates}}
           </div>         
         </div>
         <div class="row">
-          <div class="icon col-sm-2">
+          <div class="icon col-xs-12 col-sm-2">
             <i class="fa fa-clock-o"></i>
           </div>
-          <div class="details col-sm-10">
-            {{courseOffering.days}}, {{courseOffering.times}}
+          <div class="details col-xs-12 col-sm-10">
+            {{courseOffering.days}},
+            <br class="hidden-lg">
+            {{courseOffering.times}}
           </div>         
         </div>
         <div class="row">
-          <div class="icon col-sm-2">
+          <div class="icon col-xs-12 col-sm-2">
             <i class="fa fa-tag"></i>
           </div>
-          <div class="details col-sm-10">
+          <div class="details col-xs-12 col-sm-10">
             ${{courseOffering.cost}}
           </div>         
         </div>
         {% if courseOffering.note %}
         <div class="row">
-          <div class="icon col-sm-2">
+          <div class="icon col-xs-12 col-sm-2">
             <i class="fa fa-info-circle"></i>
           </div>
-          <div class="details col-sm-10">
+          <div class="details col-xs-12 col-sm-10">
             {{courseOffering.note}}
           </div>         
         </div>
@@ -191,7 +219,7 @@
 
     {% if not loop.last %}
     <div class="row">
-      <div class="course-separator col-sm-offset-1 col-sm-10"></div>
+      <div class="course-separator col-xs-offset-1 col-xs-10"></div>
     </div>
     {% endif %}
     {% endfor %}
@@ -201,9 +229,33 @@
   <div class="container vertical-margin-50 schedule-section">
     <h1 class="section-title bottom-padding-30">Upcoming Bootcamps</h1>
 
-
     {% for courseOffering in daySchedule %}
-    <div class="course-offering row">
+
+    <!-- Mobile (xs) markup for course offering -->
+    <div class="visible-xs course-offering row">
+        <div class="course-image">
+          <img src="images/logos/{{courseOffering.logo}}" alt="">
+        </div><!-- 
+         --><div class="course-details">
+          <h3 class="course-title">{{courseOffering.title}}</h3>
+          <h4 class="course-subtitle">{{courseOffering.courses}}</h4>
+          <div class="course-logistics">
+            <i class="fa fa-calendar"></i> {{courseOffering.dates}}<br>
+            <i class="fa fa-clock-o"></i> {{courseOffering.days}}, {{courseOffering.times}}<br>
+            <i class="fa fa-tag"></i> ${{courseOffering.cost}}
+            {% if courseOffering.note %}
+            <br><i class="fa fa-info-circle"></i> {{courseOffering.note}}
+            {% endif %}
+          </div>
+          {% if courseOffering.openEnrollment %}
+          <a href="./apply.html?{{courseOffering.applyQuery}}" class="btn btn-primary">Apply</a>
+          {% else %}
+          <button class="btn btn-primary disabled">Apply</button>
+          {% endif %}    
+        </div>    
+    </div>
+
+    <div class="hidden-xs course-offering row">
       <div class="course-image col-sm-2">
         <img src="images/logos/{{courseOffering.logo}}" alt="">
       </div>
@@ -254,6 +306,13 @@
         {% endif %}
       </div>    
     </div>
+
+    {% if not loop.last %}
+    <div class="row">
+      <div class="course-separator col-xs-offset-1 col-xs-10"></div>
+    </div>
+    {% endif %}
+
     {% endfor %}
 
 
