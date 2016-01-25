@@ -61,10 +61,13 @@
 		width: 100%;
 	}
 	// Media queries 
-	@media (max-width: $screen-sm-min) {
+	@media (max-width: $screen-xs-max) {
+		.logo {
+			text-align: center;
+		}
 		img {
 			margin-top: 20px;
-			width: 100%;
+			max-width: 250px;
 		}
 	}  
 }
@@ -73,12 +76,15 @@
 	.student-profile {
 		text-align: center;
 		img {
-			// width: 100%;
-			max-width: 212px;
+			width: 100%;
 			border-radius: 50%;
-		  // Media queries 
-			@media (max-width: $screen-md-min) {
+		  	// Media queries 
+			@media (max-width: $screen-sm-max) {
 				margin-bottom: 16px;
+				max-width: 200px;
+			}
+			@media (max-width: $screen-xs-max) {
+				max-width: 125px;
 			}
 		}
 	}
@@ -87,7 +93,7 @@
 		font-size: 75%;
 		text-transform: uppercase;
 	}
-	.row:nth-child(2) img {
-		margin-top: 20px;
+	.row:first-child img {
+		margin-bottom: 20px;
 	}
 }

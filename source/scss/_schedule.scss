@@ -58,7 +58,7 @@
 		margin-bottom: 40px;
 	}
 	// Media queries 
-	@media (max-width: $screen-md-min) {
+	@media (max-width: $screen-sm-max) {
 		.course-offering {
 			.course-title {
 				font-size: 100%;
@@ -82,9 +82,8 @@
 			}
 		}
 	}
-	@media (max-width: $screen-sm-min) {
-		// text-align: center;
-		.course-offering.visible-xs {
+	@media (max-width: $screen-xs-max) {
+		.course-offering {
 			text-align: center;
 			.course-image {
 				display: inline-block;
@@ -135,7 +134,7 @@
 	.subtitle {
 		line-height: 125%;
 		margin: 5px 0 -15px 0;
-		font-size: 22px;
+		font-size: 90%;
 		font-style: italic;
 		font-weight: 300;
 		padding: 0 40px;
@@ -143,28 +142,37 @@
 	.comparison {
 		margin-top: 40px;
 		line-height: 125%;
-		.icon {
-			font-size: 50px;
-		}
 		// Tweaking individual icons to get them placed evenly
 		.time {
 			.fa {
-				font-size: 55px;
+				font-size: 250%;
 			}
 			margin-bottom: -5px;
 		}
 		.calendar {
+			.fa {
+				font-size: 200%;
+			}
 			margin-bottom: -1px;			
 		}
 		.graduation {
+			.fa {
+				font-size: 200%;
+			}
 			margin-bottom: -5px;
 		}
 		.cost {
+			.fa {
+				font-size: 200%;
+			}
 			margin-bottom: -1px;
 		}
 	}
 	// Media query to style the comparison section in a mobile layout
 	@media (max-width: $screen-xs-max) {
+		.subtitle {
+			font-size: 100%;
+		}
 		.container .row .col-xs-12:last-child {
 			margin-top: 80px;
 		}

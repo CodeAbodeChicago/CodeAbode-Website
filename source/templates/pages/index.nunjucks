@@ -22,7 +22,7 @@
           <h1 class="section-title">Full Stack Curriculum</h1>
           <p>We teach &ldquo;full stack&rdquo; development &ndash; front-end HTML/CSS &amp; JavaScript as well as server-side programming in JavaScript (node.js). Our flexible, hands-on curriculum can be taken in full-time, intensive bootcamp classes or as part-time, evening classes.</p>
         </div><!-- 
-         --><div class="col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2 vertical-center">
+         --><div class="logo col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2 vertical-center">
           <img src="images/logos/logo-grid-white-font.svg">
         </div>    
       </div>  

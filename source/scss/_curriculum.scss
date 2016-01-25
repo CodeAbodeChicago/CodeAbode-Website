@@ -5,7 +5,7 @@
 
 #course-sequence {
 	.section-title {
-		margin-bottom: 60px;
+		margin-bottom: 1em;
 	}
 	.course {
 		.course-image {
@@ -32,11 +32,11 @@
 	}
 	.course-separator {
 		border-bottom: 1px solid #BCBCBC;
-		margin-top: 36px;
-		margin-bottom: 50px;
+		margin-top: 1.5em;
+		margin-bottom: 2em;
 	}
-	@media (max-width: $screen-sm-min) {
-		.course.visible-xs {
+	@media (max-width: $screen-xs-max) {
+		.course {
 			.course-image {
 				// Making top of the images align with the rest of the row
 				padding-top: 5px;
