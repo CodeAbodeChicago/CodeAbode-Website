@@ -75,8 +75,8 @@
   
 	} else {
 		// Create the response and send email
-		// $to = 'info@codeabode.com';
-		$to = 'retwedt@gmail.com';
+		$to = 'info@codeabode.com';
+		// $to = 'retwedt@gmail.com';
 		$email_subject = "CodeAbode Application: " . $first_name . " " . $last_name;
 		$email_body = "Name: " . $first_name . " " . $last_name . "\nEmail: " . $email . "\nPhone: " . $phone_number . "\nWhich session are you interested in: " . $theCourse . "\nWhat is your education background? " . $education_background . "\nWhy do you want to learn to code? " . $motivation .	"\nWhat is your experience with computers? " . $computer_experience . "\nWhat is your experience with programming? " . $programming_experience;
 		$headers = "From: noreply@codeAbode.com\n";
