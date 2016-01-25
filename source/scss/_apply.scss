@@ -37,6 +37,9 @@
 		top: 50%;
 		transform: translate(0, -50%);
 	}
+	button[type="submit"], input[type="submit"] {
+		font-size: 110%;
+	}
 }
 
 .no-select {
