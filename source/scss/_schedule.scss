@@ -84,7 +84,7 @@
 	}
 	@media (max-width: $screen-sm-min) {
 		// text-align: center;
-		.course-offering {
+		.course-offering.visible-xs {
 			text-align: center;
 			.course-image {
 				display: inline-block;
@@ -164,8 +164,8 @@
 		}
 	}
 	// Media query to style the comparison section in a mobile layout
-	@media (max-width: $screen-sm-min) {
-		.container .row .col-sm-6:nth-child(2) {
+	@media (max-width: $screen-xs-max) {
+		.container .row .col-xs-12:last-child {
 			margin-top: 80px;
 		}
 	}
