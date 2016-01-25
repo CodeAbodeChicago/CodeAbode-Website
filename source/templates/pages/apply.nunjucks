@@ -235,24 +235,24 @@
 
   <div id="apply-section" class="container vertical-margin-50">
     <h1 class="section-title">Apply</h1>
-    <form role="form" id="apply-form" data-toggle="validator">
+    <form role="form" id="apply-form" data-toggle="validator" action="php/contact.php" method="POST" >
       <h3>Basic Information</h3>
       <div class="row">
           <div class="form-group col-sm-6">    
               <label for="first-name" class="control-label">First Name<span class="required"> * </span></label>
-              <input type="text" class="form-control" name="first-name" placeholder="" required>
+              <input type="text" pattern="^[a-zA-Z0-9.\- ]+$" class="form-control" name="first-name" placeholder="" data-error="Please only use letters in your name" required>
               <div class="help-block with-errors"></div>
           </div>
           <div class="form-group col-sm-6">    
               <label for="last-name" class="control-label">Last Name<span class="required"> * </span></label>
-              <input type="text" class="form-control" name="last-name" placeholder="" required>
+              <input type="text" pattern="^[a-zA-Z0-9.\- ]+$" class="form-control" name="last-name" placeholder="" data-error="Please only use letters in your name" required>
               <div class="help-block with-errors"></div>
           </div> 
       </div>
       <div class="row">
           <div class="form-group col-sm-6">    
               <label for="phone-number" class="control-label">Phone Number<span class="required"> * </span></label>
-              <input type="tel" class="form-control" name="phone-number" placeholder="" required>
+              <input type="tel" pattern="^[a-zA-Z0-9\-\.\(\) ]*$" class="form-control" name="phone-number" placeholder="" data-error="Please use the format XXX-XXX-XXXX" required>
               <div class="help-block with-errors"></div>
           </div>
           <div class="form-group col-sm-6">    
@@ -265,19 +265,19 @@
       <h3>Classes you are applying for:<span class="required"> * </span></h3>
       <h4>Part Time Night Classes</h4>
       <div class="checkbox checkbox-primary">
-          <input type="checkbox" id="night-course1-02" name="course" value="night-course1-02">
+          <input type="checkbox" id="night-course1-02" name="course[]" value="night-course1-02">
           <label for="night-course1-02">
               Introduction to Modern Web Design, Feb 1st, $1000
           </label>
       </div>  
       <div class="checkbox checkbox-primary">
-          <input type="checkbox" id="night-course2-02" name="course" value="night-course2-02">
+          <input type="checkbox" id="night-course2-02" name="course[]" value="night-course2-02">
           <label for="night-course2-02">
               Introduction to JavaScript, Feb 1st, $1000
           </label>
       </div>  
       <div class="checkbox checkbox-primary">
-          <input type="checkbox" id="night-course3-02" name="course" value="night-course3-02">
+          <input type="checkbox" id="night-course3-02" name="course[]" value="night-course3-02">
           <label for="night-course3-02">
               Advanced JavaScript, Feb 1st, $1000
           </label>

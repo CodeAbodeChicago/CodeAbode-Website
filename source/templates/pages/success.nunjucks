@@ -1,0 +1,17 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div id="apply-banner" class="jumbotron banner-small">
+    <div class="banner-content">
+      <h1 class="banner-title">Application Successful</h1>
+    </div>
+  </div>
+
+  <div class="container vertical-margin-40 top-padding-20">
+    <h1 class="section-title">Congratulations!</h1>
+    <p>Your application was submitted successfully.</p>
+    <a href="index.html" >Return to Main Page</a>
+  </div>
+
+{% endblock %}
+
