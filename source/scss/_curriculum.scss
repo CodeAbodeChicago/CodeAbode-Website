@@ -13,24 +13,20 @@
 			padding-top: 7px;
 			text-align: center;
 			img {
-			  // Media queries 
-				@media (max-width: $screen-sm-min) {
-					width: 106px;
-					margin-bottom: 16px;
-				}
+				width: 100%;
 			}
 		}
 		.course-title {
-			font-size: 30px;
+			font-size: 120%;
 			font-weight: bold;
 			margin: 0;
 		}
 		.course-subtitle {
-			font-size: 25px;
+			font-size: 100%;
 			margin: 5px 0 15px 0;
 		}
 		.course-description {
-			font-size: 25px;
+			font-size: 100%;
 			line-height: 150%;
 		}
 	}
@@ -38,5 +34,36 @@
 		border-bottom: 1px solid #BCBCBC;
 		margin-top: 36px;
 		margin-bottom: 50px;
+	}
+	@media (max-width: $screen-xs-min) {
+		.course {
+			.course-image {
+				// Making top of the images align with the rest of the row
+				padding-top: 5px;
+				margin-bottom: 10px;
+				text-align: center;
+				img {
+					width: 25%;
+				}
+			}
+			.course-name {
+				text-align: center;
+			}
+			.course-title {
+				font-size: 160%;
+				font-weight: bold;
+				margin: 0;
+			}
+			.course-subtitle {
+				font-size: 130%;
+				margin: 5px 0 0 0;
+			}
+			.course-description {
+				text-align: left;
+				margin-top: 15px;
+				font-size: 100%;
+				line-height: 150%;
+			}
+		}
 	}
 }
