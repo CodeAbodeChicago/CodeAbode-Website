@@ -11609,19 +11609,19 @@ footer .address {
 }
 
 @media (max-width: 768px) {
-  .schedule-section .course-offering {
+  .schedule-section .course-offering.visible-xs {
     text-align: center;
   }
-  .schedule-section .course-offering .course-image {
+  .schedule-section .course-offering.visible-xs .course-image {
     display: inline-block;
     vertical-align: top;
     padding-top: 6px;
     width: 20%;
   }
-  .schedule-section .course-offering .course-image img {
+  .schedule-section .course-offering.visible-xs .course-image img {
     width: 100%;
   }
-  .schedule-section .course-offering .course-details {
+  .schedule-section .course-offering.visible-xs .course-details {
     text-align: left;
     display: inline-block;
     vertical-align: top;
@@ -11629,22 +11629,22 @@ footer .address {
     font-size: 100%;
     padding-left: 15px;
   }
-  .schedule-section .course-offering .course-details i {
+  .schedule-section .course-offering.visible-xs .course-details i {
     padding-right: 3px;
   }
-  .schedule-section .course-offering .course-details .course-title {
+  .schedule-section .course-offering.visible-xs .course-details .course-title {
     font-size: 130%;
     margin: 0;
   }
-  .schedule-section .course-offering .course-details .course-subtitle {
+  .schedule-section .course-offering.visible-xs .course-details .course-subtitle {
     font-size: 110%;
     margin: 10px 0 10px 0;
   }
-  .schedule-section .course-offering .course-details .course-logistics {
+  .schedule-section .course-offering.visible-xs .course-details .course-logistics {
     font-size: 100%;
     line-height: 130%;
   }
-  .schedule-section .course-offering .course-details .btn {
+  .schedule-section .course-offering.visible-xs .course-details .btn {
     margin-top: 10px;
     line-height: 120%;
     font-size: 90%;
@@ -11697,8 +11697,8 @@ footer .address {
   margin-bottom: -1px;
 }
 
-@media (max-width: 768px) {
-  #comparison-section .container .row .col-sm-6:nth-child(2) {
+@media (max-width: 767px) {
+  #comparison-section .container .row .col-xs-12:last-child {
     margin-top: 80px;
   }
 }
