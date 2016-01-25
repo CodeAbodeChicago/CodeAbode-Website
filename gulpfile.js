@@ -131,7 +131,7 @@ gulp.task("vendor-js", function() {
 		.pipe(gulp.dest("public/js"));
 	var bootstrap = gulp.src("bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js")
 		.pipe(gulp.dest("public/js"));
-	var validator = gulp.src("bower_components/bootstrap-validator-master/dist/validator.min.js")
+	var validator = gulp.src("bower_components/bootstrap-validator/dist/validator.min.js")
 		.pipe(gulp.dest("public/js"));
 	return merge(jquery, bootstrap, validator);
 });
