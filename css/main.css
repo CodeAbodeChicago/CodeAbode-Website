@@ -11340,10 +11340,13 @@ footer .address {
   width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  #curriculum .logo {
+    text-align: center;
+  }
   #curriculum img {
     margin-top: 20px;
-    width: 100%;
+    max-width: 250px;
   }
 }
 
@@ -11352,13 +11355,20 @@ footer .address {
 }
 
 #testimonials .student-profile img {
-  max-width: 212px;
+  width: 100%;
   border-radius: 50%;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   #testimonials .student-profile img {
     margin-bottom: 16px;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  #testimonials .student-profile img {
+    max-width: 125px;
   }
 }
 
@@ -11368,8 +11378,8 @@ footer .address {
   text-transform: uppercase;
 }
 
-#testimonials .row:nth-child(2) img {
-  margin-top: 20px;
+#testimonials .row:first-child img {
+  margin-bottom: 20px;
 }
 
 #curriculum-banner {
@@ -11378,7 +11388,7 @@ footer .address {
 }
 
 #course-sequence .section-title {
-  margin-bottom: 60px;
+  margin-bottom: 1em;
 }
 
 #course-sequence .course .course-image {
@@ -11408,33 +11418,33 @@ footer .address {
 
 #course-sequence .course-separator {
   border-bottom: 1px solid #BCBCBC;
-  margin-top: 36px;
-  margin-bottom: 50px;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
 }
 
-@media (max-width: 768px) {
-  #course-sequence .course.visible-xs .course-image {
+@media (max-width: 767px) {
+  #course-sequence .course .course-image {
     padding-top: 5px;
     margin-bottom: 10px;
     text-align: center;
   }
-  #course-sequence .course.visible-xs .course-image img {
+  #course-sequence .course .course-image img {
     width: 25%;
     max-width: 120px;
   }
-  #course-sequence .course.visible-xs .course-name {
+  #course-sequence .course .course-name {
     text-align: center;
   }
-  #course-sequence .course.visible-xs .course-title {
+  #course-sequence .course .course-title {
     font-size: 160%;
     font-weight: bold;
     margin: 0;
   }
-  #course-sequence .course.visible-xs .course-subtitle {
+  #course-sequence .course .course-subtitle {
     font-size: 130%;
     margin: 5px 0 0 0;
   }
-  #course-sequence .course.visible-xs .course-description {
+  #course-sequence .course .course-description {
     margin-top: 15px;
     font-size: 100%;
     line-height: 150%;
@@ -11459,7 +11469,7 @@ footer .address {
           box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #profile-section .profile img {
     margin-bottom: -5px;
     width: 80%;
@@ -11471,14 +11481,14 @@ footer .address {
 }
 
 #profile-section .profile .name {
-  font-size: 20px;
+  font-size: 90%;
   margin-top: 12px;
   margin-bottom: 0;
   font-weight: 500;
 }
 
 #profile-section .profile .title {
-  font-size: 16px;
+  font-size: 70%;
   margin-top: 4px;
   font-weight: 300;
   font-style: italic;
@@ -11585,7 +11595,7 @@ footer .address {
   margin-bottom: 40px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .schedule-section .course-offering .course-title {
     font-size: 100%;
   }
@@ -11608,20 +11618,20 @@ footer .address {
   }
 }
 
-@media (max-width: 768px) {
-  .schedule-section .course-offering.visible-xs {
+@media (max-width: 767px) {
+  .schedule-section .course-offering {
     text-align: center;
   }
-  .schedule-section .course-offering.visible-xs .course-image {
+  .schedule-section .course-offering .course-image {
     display: inline-block;
     vertical-align: top;
     padding-top: 6px;
     width: 20%;
   }
-  .schedule-section .course-offering.visible-xs .course-image img {
+  .schedule-section .course-offering .course-image img {
     width: 100%;
   }
-  .schedule-section .course-offering.visible-xs .course-details {
+  .schedule-section .course-offering .course-details {
     text-align: left;
     display: inline-block;
     vertical-align: top;
@@ -11629,22 +11639,22 @@ footer .address {
     font-size: 100%;
     padding-left: 15px;
   }
-  .schedule-section .course-offering.visible-xs .course-details i {
+  .schedule-section .course-offering .course-details i {
     padding-right: 3px;
   }
-  .schedule-section .course-offering.visible-xs .course-details .course-title {
+  .schedule-section .course-offering .course-details .course-title {
     font-size: 130%;
     margin: 0;
   }
-  .schedule-section .course-offering.visible-xs .course-details .course-subtitle {
+  .schedule-section .course-offering .course-details .course-subtitle {
     font-size: 110%;
     margin: 10px 0 10px 0;
   }
-  .schedule-section .course-offering.visible-xs .course-details .course-logistics {
+  .schedule-section .course-offering .course-details .course-logistics {
     font-size: 100%;
     line-height: 130%;
   }
-  .schedule-section .course-offering.visible-xs .course-details .btn {
+  .schedule-section .course-offering .course-details .btn {
     margin-top: 10px;
     line-height: 120%;
     font-size: 90%;
@@ -11662,7 +11672,7 @@ footer .address {
 #comparison-section .subtitle {
   line-height: 125%;
   margin: 5px 0 -15px 0;
-  font-size: 22px;
+  font-size: 90%;
   font-style: italic;
   font-weight: 300;
   padding: 0 40px;
@@ -11673,31 +11683,42 @@ footer .address {
   line-height: 125%;
 }
 
-#comparison-section .comparison .icon {
-  font-size: 50px;
-}
-
 #comparison-section .comparison .time {
   margin-bottom: -5px;
 }
 
 #comparison-section .comparison .time .fa {
-  font-size: 55px;
+  font-size: 250%;
 }
 
 #comparison-section .comparison .calendar {
   margin-bottom: -1px;
 }
 
+#comparison-section .comparison .calendar .fa {
+  font-size: 200%;
+}
+
 #comparison-section .comparison .graduation {
   margin-bottom: -5px;
+}
+
+#comparison-section .comparison .graduation .fa {
+  font-size: 200%;
 }
 
 #comparison-section .comparison .cost {
   margin-bottom: -1px;
 }
 
+#comparison-section .comparison .cost .fa {
+  font-size: 200%;
+}
+
 @media (max-width: 767px) {
+  #comparison-section .subtitle {
+    font-size: 100%;
+  }
   #comparison-section .container .row .col-xs-12:last-child {
     margin-top: 80px;
   }
@@ -11727,10 +11748,6 @@ footer .address {
   width: 100%;
   max-width: 480px;
   height: auto;
-}
-
-#timeline #timeline-mobile {
-  display: none;
 }
 
 .apply, .instructor-call, .reserve-seat, .first-day {
@@ -11767,13 +11784,13 @@ footer .address {
 .required {
   color: #a94442;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 100%;
   font-family: "Open Sans";
 }
 
 .err {
   color: #a94442;
-  font-size: 24px;
+  font-size: 100%;
   font-family: "Open Sans";
 }
 
@@ -11879,7 +11896,7 @@ footer .address {
 
 .section-title {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0.4em;
 }
 
 .stripped-section {
