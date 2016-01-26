@@ -1,8 +1,9 @@
 <?php
 
 	// define variables and set to empty
-	$first_name = $last_name = $phone_number = $email = $night_course = $education_background = $motivation = $computer_experience = $programming_experience = "";
+	$first_name = $last_name = $phone_number = $email = $course[] = $theCourse = $education_background = $motivation = $computer_experience = $programming_experience = "";
 	$err = false; // is form input valid?
+
 
 	// if server recieved a POST request, get form input
 	if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -10,7 +11,7 @@
 			$err = true;
 		} else {
 			$first_name = test_input($_POST['first-name']);
-			if (!preg_match("/^[a-zA-Z ]*$/", $first_name)) {
+			if (!preg_match("/^[a-zA-Z0-9.\- ]+$/", $first_name)) {
 			  $err = true; 
 			}
 		}
@@ -18,7 +19,7 @@
 			$err = true;
 		} else {
 			$last_name = test_input($_POST['last-name']);
-			if (!preg_match("/^[a-zA-Z ]*$/", $last_name)) {
+			if (!preg_match("/^[a-zA-Z0-9.\- ]+$/", $last_name)) {
 			  $err = true; 
 			}
 		}
@@ -26,7 +27,7 @@
 			$err = true;
 		} else {
 			$phone_number = test_input($_POST['phone-number']);
-			if (!preg_match("/^[0-9\-\.\(\) ]*$/", $phone_number)) {
+			if (!preg_match("/^[a-zA-Z0-9\-\.\(\) ]*$/", $phone_number)) {
 			  $err = true; 
 			}
 		}
@@ -38,10 +39,13 @@
 			  $err = true;
 			}
 		}
-		if (empty($_POST["night-course"])) {
+		if (empty($_POST["course"])) {
 			$err = true;
 		} else {
-			$night_course = test_input($_POST['night-course']);
+			foreach($_POST["course"] as $selected) {
+				//concatenate checked boxes to a string variable for output
+				$theCourse .= $selected . ", " ;
+			}
 		}
 		if (empty($_POST["education-background"])) {
 			$err = true;
@@ -58,35 +62,37 @@
 		} else {
 			$computer_experience = test_input($_POST['computer-experience']);
 		}
-		if (empty($_POST["programming-experience"])) {
-			$err = true;
-		} else {
-			$programming_experience = test_input($_POST['programming-experience']);
-		}
+		// last step in form is not required
+		$programming_experience = test_input($_POST['programming-experience']);
 
 	}
 
-
-	//insert echo to check - like a log and can insert variables
+	// if an error exists, do not send the form,
+	// redirect to the failure.html page
 	if ($err === true) {
 		echo "form not valid!";
-		
+		header('Location: ../failure.html');
+  
 	} else {
 		// Create the response and send email
 		$to = 'info@codeabode.com';
-		$email_subject = "CodeAbode Application: " . $first_name . " " $last_name;
-		$email_body = "Name: " . $first_name . " " . $last_name . "\nEmail: " . $email . "\nPhone: " . $phone_number . "\nWhich session are you interested in: " . $night_course . "\nWhat is your education background? " . $education_background . "\nWhy do you want to learn to code? " . $motivation .	"\nWhat is your experience with computers? " . $computer_experience . "\nWhat is your experience with programming? " . $programming_experience;
+		// $to = 'retwedt@gmail.com';
+		$email_subject = "CodeAbode Application: " . $first_name . " " . $last_name;
+		$email_body = "Name: " . $first_name . " " . $last_name . "\nEmail: " . $email . "\nPhone: " . $phone_number . "\nWhich session are you interested in: " . $theCourse . "\nWhat is your education background? " . $education_background . "\nWhy do you want to learn to code? " . $motivation .	"\nWhat is your experience with computers? " . $computer_experience . "\nWhat is your experience with programming? " . $programming_experience;
 		$headers = "From: noreply@codeAbode.com\n";
 		$headers .= "Reply-To: $email";
-		// $result = mail($to, $email_subject, $email_body, $headers);
+		$result = mail($to, $email_subject, $email_body, $headers);
+
 
 		//if mail was successfully sent, redirect to thankYou page
 		if($result == 1) {
-			header('Location: ../thankYou.php');
+		   echo "Success!";
+			 header('Location: ../success.html');
 		   // return 1;
 		} else {
 		   echo "Unable to Submit Form";
-		   return 0;
+			 header('Location: ../failure.html');
+		   // return 0;
 		}
 
 	}
