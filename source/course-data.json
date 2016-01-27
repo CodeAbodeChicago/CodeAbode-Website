@@ -42,7 +42,7 @@
 			"times": "6p - 9p",
 			"cost": "1000",
 			"openEnrollment": true,
-			"applyQuery": "course=night-course1-02"
+			"id": "night-course1-02012016"
 		},
 		{
 			"courseNumber": 2,
@@ -54,7 +54,7 @@
 			"times": "6p - 9p",
 			"cost": "1000",
 			"openEnrollment": true,
-			"applyQuery": "course=night-course2-02"
+			"id": "night-course2-02012016"
 		},
 		{
 			"courseNumber": 3,
@@ -66,7 +66,7 @@
 			"times": "6p - 9p",
 			"cost": "1000",
 			"openEnrollment": true,
-			"applyQuery": "course=night-course3-02"
+			"id": "night-course3-02012016"
 		},
 		{
 			"courseNumber": 4,

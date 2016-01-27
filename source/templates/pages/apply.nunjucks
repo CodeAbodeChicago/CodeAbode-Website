@@ -263,25 +263,54 @@
       </div>
 
       <h3>Classes you are applying for:<span class="required"> * </span></h3>
-      <h4>Part Time Night Classes</h4>
+      
+      {# Check if there are any night classes with open enrollment #}
+      {% set openNightClasses = false %}
+      {% for courseOffering in nightSchedule %}
+        {% if courseOffering.openEnrollment %}
+          {% set openNightClasses = true %}
+        {% endif %}
+      {% endfor %}    
+      
+      {# If there are open night classes, create the night class checkboxes #}
+      {% if openNightClasses %}
+      <h4>Part-Time Night Classes</h4>      
+      {% for courseOffering in nightSchedule %}
+        {% if courseOffering.openEnrollment %}
+        {% set course = courses[courseOffering.courseNumber - 1] %}
       <div class="checkbox checkbox-primary">
-          <input type="checkbox" id="night-course1-02" name="course[]" value="night-course1-02">
-          <label for="night-course1-02">
-              Introduction to Modern Web Design, Feb 1st, $1000
-          </label>
+        <input type="checkbox" id="{{courseOffering.id}}" name="course[]" value="{{courseOffering.id}}">
+        <label for="{{courseOffering.id}}">
+            {{course.title}}, {{courseOffering.dates}}, ${{courseOffering.cost}}
+        </label>
       </div>  
+        {% endif %}
+      {% endfor %}
+      {% endif %}   
+      
+      {# Check if there are any day classes with open enrollment #}
+      {% set openDayClasses = false %}
+      {% for courseOffering in daySchedule %}
+        {% if courseOffering.openEnrollment %}
+          {% set openDayClasses = true %}
+        {% endif %}
+      {% endfor %}
+
+      {# If there are open night classes, create the night class checkboxes #}
+      {% if openDayClasses %}
+      <h4>Full-Time, Day Classes</h4>      
+      {% for courseOffering in daySchedule %}
+        {% if courseOffering.openEnrollment %}
+        {% set course = courses[courseOffering.courseNumber - 1] %}
       <div class="checkbox checkbox-primary">
-          <input type="checkbox" id="night-course2-02" name="course[]" value="night-course2-02">
-          <label for="night-course2-02">
-              Introduction to JavaScript, Feb 1st, $1000
-          </label>
+        <input type="checkbox" id="{{courseOffering.id}}" name="course[]" value="{{courseOffering.id}}">
+        <label for="{{courseOffering.id}}">
+            {{course.title}}, {{courseOffering.dates}}, ${{courseOffering.cost}}
+        </label>
       </div>  
-      <div class="checkbox checkbox-primary">
-          <input type="checkbox" id="night-course3-02" name="course[]" value="night-course3-02">
-          <label for="night-course3-02">
-              Advanced JavaScript, Feb 1st, $1000
-          </label>
-      </div>
+        {% endif %}
+      {% endfor %}
+      {% endif %}
       <div class="help-block with-errors err" id="check"></div>
 
       <h3>About You</h3>
