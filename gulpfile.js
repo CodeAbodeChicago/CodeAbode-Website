@@ -48,6 +48,9 @@ var uglify = require("gulp-uglify");
 var nunjucksRender = require("gulp-nunjucks-render");
 var newer = require("gulp-newer");
 var data = require("gulp-data");
+var gutil = require("gulp-util");
+var ftp = require("vinyl-ftp");
+
 
 // Other modules
 var express = require("express");
@@ -192,12 +195,30 @@ gulp.task("run", [
 // Deploying Tasks
 
 // Build & deploy the public/ folder to gh-pages
-gulp.task("deploy", ["build"], function () {
+gulp.task("gh-deploy", ["build"], function () {
   return gulp.src("./public/**/*")
 	.pipe(ghPages({
 		remoteUrl: "https://github.com/CodeAbodeChicago/CodeAbode-Website.git"
 	}));
 });
+
+// Build & deploy the public/ folder to CodeAbode ftp
+gulp.task("ftp-deploy", ["build"], function () {
+	var ftpInfo = require("./ftp-info.json");
+
+	var conn = ftp.create({
+		host: ftpInfo.host,
+		user: ftpInfo.user,
+		password: ftpInfo.password,
+		parallel: 10,
+		log: gutil.log
+	});
+
+	return gulp.src("./public/**/*.*", {base: "./public", buffer: false})
+		.pipe(conn.newer("./"))
+		.pipe(conn.dest("./"));
+});
+
 
 
 // _____________________________________________________________________________
