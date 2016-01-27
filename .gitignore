@@ -1,3 +1,6 @@
+# Ignore file with FTP info
+ftp-info.json
+
 # Ignore the built version of the site
 public
 
