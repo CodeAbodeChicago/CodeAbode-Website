@@ -45,14 +45,17 @@ Installation
 5.	Open terminal and navigate to the repository folder.
 6.	Let bower install bootstrap, fontawesome and other client-side libraries: `bower install`. (On macs: `sudo bower install`).
 7.	Let the node package manager install required dependencies for the gulp automation process: `npm install`. (On macs: `sudo npm install`).
-8.	Start the build by running: `gulp`. You can open your browser to "http://localhost:8080/" to see the site running.
+8.	Start the build by running: `gulp`. You can open your browser to "http://localhost:8080/" to see the site running.  The gulp task will open your default browser.
 9.	(Optional: install the [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) chrome extension. When the site is open, press the LiveReload icon to start LiveReload running.)
 
 Gulp Automation
 ---------------
 
-1.	`gulp` - runs the default build command which creates the public/ files, watches them for changes and sets up LiveReload.
-2.	`gulp deploy` - builds the site, and then takes the current files in the public/ folder and pushes them to the gh-pages branch. **NOTE: this needs to be run from a terminal that is set up for git!**
+1.	`gulp` - runs the default build command which creates the public/ files, watches them for changes and sets up LiveReload.  (Runs both the build and run tasks below.)
+2.	`gulp build` - builds the site into public/.
+3.	`gulp run` - watches for changes to source/ files and rebuilds the public/ folder; servers the public folder to the local host; and opens the browser to the local host.
+4.	`gulp gh-deploy` - builds the site, and then takes the current files in the public/ folder and pushes them to the gh-pages branch. **NOTE: this needs to be run from a terminal that is set up for git!**
+5.	`gulp ftp-deploy` - builds the site, and then takes the current files in the public/ folder and pushes them to codeabode.com FTP server. **NOTE: this requires login information to be stored in ftp-info.json**
 
 Previous Versions
 =================
