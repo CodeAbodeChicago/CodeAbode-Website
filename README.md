@@ -7,6 +7,7 @@ The newest version of the website uses a set of modern tools for web development
 -	[Bower](http://bower.io/) - a package manager for client-side libraries
 -	[SASS](http://sass-lang.com/) - "CSS with superpowers", a more powerful way to write CSS
 -	[Gulp](http://gulpjs.com/) - an automation tool written in [nodejs](https://nodejs.org/en/)
+-	[Nunjucks](https://mozilla.github.io/nunjucks/) - a JS-based, HTML templating language (with gulp integration)  
 -	LiveReload browser [extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) - a chrome extension that allows the page to automatically refresh when changes to the website are made.
 
 Directory Structure
